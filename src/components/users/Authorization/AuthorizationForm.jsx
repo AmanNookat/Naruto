@@ -42,6 +42,7 @@ const AuthorizationForm = () => {
       });
     }
   }
+
   return (
     <div>
       {loading ? (

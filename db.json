@@ -10,17 +10,53 @@
       "isAdmin": true,
       "points": 0,
       "id": 1
+    }
+  ],
+  "cards": [
+    {
+      "name": "Наруто Узумаки",
+      "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+      "price": "100",
+      "rank": "Генин",
+      "power": "20",
+      "description": "Наруто",
+      "id": 1
     },
     {
-      "name": "y",
-      "mail": "y",
-      "password": "y",
-      "image": "y",
-      "level": 1,
-      "inventory": [],
-      "isAdmin": false,
-      "points": 0,
+      "name": "Саске Учиха",
+      "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
+      "price": "100",
+      "rank": "Генин",
+      "power": "20",
+      "description": "Саске",
       "id": 2
+    },
+    {
+      "name": "Сакура Харуно",
+      "image": "https://images6.fanpop.com/image/photos/39600000/Sakura-haruno-sakura-39693389-640-640.jpg",
+      "price": "1",
+      "rank": "Генин",
+      "power": "1",
+      "description": "Сакура",
+      "id": 3
+    },
+    {
+      "name": "Какаши Хатаке",
+      "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
+      "price": "1000",
+      "rank": "Джонин",
+      "power": "100",
+      "description": "Какаши",
+      "id": 4
+    },
+    {
+      "name": "Ирука Умино",
+      "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+      "price": "10",
+      "rank": "Чунин",
+      "power": "10",
+      "description": "Ирука",
+      "id": 5
     }
   ]
 }

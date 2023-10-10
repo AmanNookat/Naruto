@@ -1,8 +1,48 @@
+import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const addToLocalStorage = (user) => {
   user && localStorage.setItem("NarutoUser", JSON.stringify(user));
+};
+
+export const logout = () => {
+  localStorage.removeItem("NarutoUser");
+};
+
+export const checkUserLogin = () => {
+  const user = localStorage.getItem("NarutoUser");
+  if (!user) return false;
+  return true;
+};
+
+export const getAuthUser = () => {
+  const user = JSON.parse(localStorage.getItem("NarutoUser"));
+  return user.name;
+};
+
+export const getCardRating = (cardObj) => {
+  const rating =
+    cardObj.comments.reduce((acc, commentObj) => {
+      return acc + commentObj.rating;
+    }, 0) / cardObj.comments.length;
+  return rating.toFixed(1);
+};
+
+export const checkAdmin = () => {
+  const user = JSON.parse(localStorage.getItem("NarutoUser"));
+  if (!user) {
+    return false;
+  } else {
+    if (user.isAdmin) return true;
+    return false;
+  }
+};
+
+export const getTotalPages = async (url) => {
+  const { data } = await axios.get(url);
+  const totalPages = Math.ceil(data.length / 4);
+  return totalPages;
 };
 
 // -------------------------------- notify оставляйте в самом низу

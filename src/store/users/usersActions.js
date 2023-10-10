@@ -47,7 +47,6 @@ export const loginUser = createAsyncThunk(
     if (!oneUser) {
       notify("Пользователь не найден", NOTIFY_TYPES.error);
     }
-
     return oneUser;
   }
 );
