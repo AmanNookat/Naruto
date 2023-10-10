@@ -40,5 +40,4 @@ const usersSlice = createSlice({
 });
 
 export const { clearOneUserState, getOneUser } = usersSlice.actions;
-
 export default usersSlice.reducer;
