@@ -1,3 +1,26 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "aman",
+      "mail": "a",
+      "password": "a",
+      "image": "a",
+      "level": 1,
+      "inventory": [],
+      "isAdmin": true,
+      "points": 0,
+      "id": 1
+    },
+    {
+      "name": "y",
+      "mail": "y",
+      "password": "y",
+      "image": "y",
+      "level": 1,
+      "inventory": [],
+      "isAdmin": false,
+      "points": 0,
+      "id": 2
+    }
+  ]
 }
