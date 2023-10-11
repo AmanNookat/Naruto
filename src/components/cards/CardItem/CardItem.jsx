@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { checkUserLogin } from "../../../helpers/functions";
+import { checkUserLogin, getAuthUser } from "../../../helpers/functions";
 import {
   checkCardInCart,
   toggleCardToCart,
 } from "../../../store/cart/cartActions";
 import { getCart } from "../../../store/cart/cartSlice";
+import CardLike from "../CardLike/CardLike";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { cart } = useSelector((state) => state.cart);
   const [isCardInCart, setIsCardInCart] = useState(false);
+  const [isLikedCard, setIsLikedCard] = useState(false);
 
   useEffect(() => {
     if (checkCardInCart(card.id)) {
@@ -21,6 +23,22 @@ const CardItem = ({ card }) => {
       setIsCardInCart(false);
     }
   }, [cart]);
+
+  const checkCardLike = () => {
+    const user = getAuthUser();
+    if (!card.likes) return;
+    const userLike = card.likes.find((like) => like.user === user);
+
+    if (userLike) {
+      setIsLikedCard(true);
+    } else {
+      setIsLikedCard(false);
+    }
+  };
+
+  useEffect(() => {
+    checkCardLike();
+  }, []);
 
   return (
     <div
@@ -53,16 +71,27 @@ const CardItem = ({ card }) => {
       </div>
       <div>
         {checkUserLogin() && (
-          <button
-            style={{ padding: "10px" }}
-            onClick={() => {
-              toggleCardToCart(card);
-              dispatch(getCart());
-            }}
-          >
-            {isCardInCart ? "- корзина" : "+ корзина"}
-          </button>
+          <>
+            <button
+              style={{ padding: "10px" }}
+              onClick={() => {
+                toggleCardToCart(card);
+                dispatch(getCart());
+              }}
+            >
+              {isCardInCart ? "- корзина" : "+ корзина"}
+            </button>
+            <button>
+              <CardLike
+                isLikedCard={isLikedCard}
+                likes={card.likes}
+                cardId={card.id}
+              />
+            </button>
+          </>
         )}
+
+        {card.likes ? <span>{card.likes.length}</span> : <span>0</span>}
       </div>
     </div>
   );
