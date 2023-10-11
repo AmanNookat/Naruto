@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { getOneUser } from "../../../store/users/usersSlice";
 import { checkAdmin, checkUserLogin, logout } from "../../../helpers/functions";
+import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
 
 const Navbar = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -12,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     dispatch(getOneUser());
-    // dispatch(getOneQuiz());
+    dispatch(getOneQuiz());
   }, []);
 
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
       <NavLink to="/store">Магазин</NavLink>
       {checkUserLogin() ? (
         <>
-          {/* <NavLink to="/quizzes">Викторины</NavLink> */}
+          <NavLink to="/quizzes">Викторины</NavLink>
           <NavLink to="/cart">Корзина</NavLink>
           {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
           {oneUser && (
