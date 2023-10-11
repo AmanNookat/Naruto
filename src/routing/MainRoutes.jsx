@@ -6,6 +6,8 @@ import RegisterPage from "../pages/RegisterPage/RegisterPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import CreatePage from "../pages/CreatePage/CreatePage";
 import CardDetailsPage from "../pages/CardDetailsPage/CardDetailsPage";
+import CardEditPage from "../pages/CardEditPage/CardEditPage";
+import CartPage from "../pages/CartPage/CartPage";
 
 const MainRoutes = () => {
   return (
@@ -14,8 +16,10 @@ const MainRoutes = () => {
       <Route path="/store" element={<StorePage />} />
       <Route path="/registration" element={<RegisterPage />} />
       <Route path="/authorization" element={<LoginPage />} />
-      <Route path="/create" element={<CreatePage />} />
+      <Route path="/card-create" element={<CreatePage />} />
       <Route path="/store/:id" element={<CardDetailsPage />} />
+      <Route path="/card-edit/:id" element={<CardEditPage />} />
+      <Route path="/cart" element={<CartPage />} />
     </Routes>
   );
 };
