@@ -23,7 +23,7 @@ const cardsSlice = createSlice({
       state.currentPage = action.payload.page;
     },
     changeCategory: (state, action) => {
-      if (action.payload.category === "all") {
+      if (action.payload.category === "все") {
         state.currentCategory = "";
       } else {
         state.currentCategory = action.payload.category;
@@ -45,10 +45,12 @@ const cardsSlice = createSlice({
       const { minPrice, maxPrice } = action.payload;
       if (minPrice && maxPrice) {
         state.priceRange = `&price_gte=${minPrice}&price_lte=${maxPrice}`;
-      } else if (minPrice) {
+      } else if (minPrice && !maxPrice) {
+        console.log(maxPrice);
         state.priceRange = `&price_gte=${minPrice}`;
-      } else if (maxPrice) {
+      } else if (maxPrice && !minPrice) {
         state.priceRange = `&price_lte=${maxPrice}`;
+        console.log(minPrice);
       } else {
         state.priceRange = "";
       }

@@ -52,12 +52,12 @@ const CardCreate = () => {
       <input
         type="number"
         placeholder="цена"
-        onChange={(e) => setCard({ ...card, price: e.target.value })}
+        onChange={(e) => setCard({ ...card, price: +e.target.value })}
       />
       <input
         type="number"
         placeholder="сила"
-        onChange={(e) => setCard({ ...card, power: e.target.value })}
+        onChange={(e) => setCard({ ...card, power: +e.target.value })}
       />
       <textarea
         cols="30"

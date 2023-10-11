@@ -8,6 +8,7 @@ import {
   clearQuizValues,
   onClickVariant,
 } from "../../store/quizzes/quizzesSlice";
+import style from "./Quizzes.module.css";
 
 const OneQuiz = () => {
   const { loading, oneQuiz, question, step, corrects } = useSelector(
@@ -41,9 +42,9 @@ const OneQuiz = () => {
       ) : (
         <>
           {checkQuiz ? (
-            <div>
+            <div className={style.quizBody}>
               {question && (
-                <div>
+                <div className={style.question}>
                   <span>
                     ВОПРОС: {step + 1}/{oneQuiz.questions.length}
                   </span>
@@ -66,20 +67,22 @@ const OneQuiz = () => {
             </div>
           ) : (
             <>
-              <div>
-                <div>
-                  <div>
+              <div className={style.quizBody}>
+                <div className={style.question}>
+                  <div className={style.quizResult}>
                     <p>ПОЗДРАВЛЯЮ!</p>
                     <img
-                      src="https://lzd-img-global.slatic.net/g/p/0f9d5c2642593545dd59c7f69f6211e7.jpg_720x720q80.jpg"
+                      src="https://avatanplus.com/files/resources/original/5905b2047dbf815bbe3f61a3.png"
                       alt=""
-                      width="300"
+                      width="250"
                       height="auto"
                     />
                     <p>
                       Получено баллов: {corrects}/{oneQuiz.questions.length}
                     </p>
-                    <Link to="/quizzes">ВЫЙТИ</Link>
+                    <Link to="/quizzes" className={style.quizExit}>
+                      ВЫЙТИ
+                    </Link>
                   </div>
                 </div>
               </div>
