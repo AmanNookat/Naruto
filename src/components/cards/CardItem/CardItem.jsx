@@ -7,6 +7,8 @@ import {
   toggleCardToCart,
 } from "../../../store/cart/cartActions";
 import { getCart } from "../../../store/cart/cartSlice";
+import CardLike from "../CardLike/CardLike";
+import "./CardItem.css";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
