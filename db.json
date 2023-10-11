@@ -8,7 +8,7 @@
       "level": 1,
       "inventory": [],
       "isAdmin": true,
-      "points": 6,
+      "points": 9,
       "id": 1
     },
     {
@@ -161,7 +161,34 @@
       "id": 7
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "user": "aman",
+      "totalCost": 100,
+      "cards": [
+        {
+          "count": 1,
+          "totalPrice": 100,
+          "cardItem": {
+            "name": "Саске Учиха",
+            "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
+            "price": "100",
+            "rank": "Генин",
+            "power": "20",
+            "description": "Саске",
+            "id": 2,
+            "likes": [
+              {
+                "id": 1697008462358,
+                "user": "aman"
+              }
+            ]
+          }
+        }
+      ],
+      "id": 1
+    }
+  ],
   "quizzes": [
     {
       "name": "Старт",

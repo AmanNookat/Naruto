@@ -45,6 +45,15 @@ export const getTotalPages = async (url) => {
   return totalPages;
 };
 
+export const cardColorChange = (category) => {
+  switch (category) {
+    case "Генин":
+      return "red";
+    case "Чунин":
+      return "blue";
+  }
+};
+
 // -------------------------------- notify оставляйте в самом низу
 
 export const NOTIFY_TYPES = {

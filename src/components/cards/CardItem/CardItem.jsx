@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { checkUserLogin, getAuthUser } from "../../../helpers/functions";
+import {
+  cardColorChange,
+  checkUserLogin,
+  getAuthUser,
+} from "../../../helpers/functions";
 import {
   checkCardInCart,
   toggleCardToCart,
@@ -49,6 +53,7 @@ const CardItem = ({ card }) => {
         width: "20rem",
         border: "1px solid black",
         position: "relative",
+        backgroundColor: `${cardColorChange(card.rank)}`,
       }}
       className="CardMain"
     >
