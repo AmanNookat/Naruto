@@ -8,7 +8,7 @@
       "level": 1,
       "inventory": [],
       "isAdmin": true,
-      "points": 0,
+      "points": 1,
       "id": 1
     },
     {
@@ -109,5 +109,24 @@
       "id": 7
     }
   ],
-  "orders": []
+  "orders": [],
+  "quizzes": [
+    {
+      "name": "Старт",
+      "image": "https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1589579893305-PI68R8H1KUGZACQDRKZG/image-asset.jpeg",
+      "questions": [
+        {
+          "title": "В каком году вышла манга 'Наруто'?",
+          "variants": [
+            "1999",
+            "1998",
+            "1997",
+            "1996"
+          ],
+          "correct": 0
+        }
+      ],
+      "id": 1
+    }
+  ]
 }

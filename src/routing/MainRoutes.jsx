@@ -8,6 +8,8 @@ import CreatePage from "../pages/CreatePage/CreatePage";
 import CardDetailsPage from "../pages/CardDetailsPage/CardDetailsPage";
 import CardEditPage from "../pages/CardEditPage/CardEditPage";
 import CartPage from "../pages/CartPage/CartPage";
+import QuizzesPage from "../pages/QuizzesPage/QuizzesPage";
+import OneQuiz from "../components/quiz/OneQuiz";
 
 const MainRoutes = () => {
   return (
@@ -20,6 +22,8 @@ const MainRoutes = () => {
       <Route path="/store/:id" element={<CardDetailsPage />} />
       <Route path="/card-edit/:id" element={<CardEditPage />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/quizzes" element={<QuizzesPage />} />
+      <Route path="/quizzes/:id" element={<OneQuiz />} />
     </Routes>
   );
 };
