@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { CARDS_API } from "../../helpers/consts";
-import { getTotalPages } from "../../helpers/functions";
+import { getAuthUser, getTotalPages } from "../../helpers/functions";
 
 export const createCard = createAsyncThunk(
   "cards/createCard",
@@ -17,7 +17,7 @@ export const getCards = createAsyncThunk(
     const { currentPage, currentCategory, search, sortByRating, priceRange } =
       getState().cards;
     const categoryAndSearchParams = `q=${search}${
-      currentCategory && `rank=${currentCategory}`
+      currentCategory && `&rank=${currentCategory}`
     }`;
     const pagesLimitParams = `?_page=${currentPage}&_limit=4`;
     const totalPages = await getTotalPages(
@@ -26,6 +26,7 @@ export const getCards = createAsyncThunk(
     const { data } = await axios.get(
       `${CARDS_API}${pagesLimitParams}&${categoryAndSearchParams}${priceRange}${sortByRating}`
     );
+    console.log(data);
     return { data, totalPages };
   }
 );
@@ -64,5 +65,34 @@ export const getCategories = createAsyncThunk(
       categories.push(i);
     }
     return categories;
+  }
+);
+
+export const toggleCardLike = createAsyncThunk(
+  "card/toggleCardLike",
+  async ({ setIsLike, likes, cardId }, { dispatch }) => {
+    const user = getAuthUser();
+    let updatedLikesArr;
+
+    if (!likes) {
+      updatedLikesArr = [];
+    } else {
+      updatedLikesArr = [...likes];
+    }
+
+    if (setIsLike) {
+      updatedLikesArr.push({
+        id: Date.now(),
+        user,
+      });
+    } else {
+      updatedLikesArr = updatedLikesArr.filter((like) => like.user !== user);
+    }
+
+    await axios.patch(`${CARDS_API}/${cardId}`, {
+      likes: updatedLikesArr,
+    });
+
+    dispatch(getCards());
   }
 );
