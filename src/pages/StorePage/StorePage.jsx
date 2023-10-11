@@ -4,12 +4,31 @@ import CardPagination from "../../components/cards/CardPagination/CardPagination
 import CardSearch from "../../components/cards/CardSearch/CardSearch";
 import CardsFilter from "../../components/cards/CardsFilter/CardsFilter";
 import "./StorePage.css";
+import CardsPriceRangeFilter from "../../components/cards/CardsPriceRangeFilter/CardsPriceRangeFilter";
+import CardsSortRating from "../../components/cards/CardsSortRating/CardsSortRating";
+import { clearAllFilters, setSearchVal } from "../../store/cards/cardsSlice";
+import { getCards } from "../../store/cards/cardsActions";
+import { useDispatch } from "react-redux";
+
 const StorePage = () => {
+  const dispatch = useDispatch();
+
   return (
     <div>
       <div className="searchAndFilter">
         <CardsFilter />
         <CardSearch />
+        <CardsPriceRangeFilter />
+        <CardsSortRating />
+        <button
+          onClick={() => {
+            dispatch(clearAllFilters());
+            dispatch(setSearchVal({ search: "" }));
+            dispatch(getCards());
+          }}
+        >
+          Сбросить фильтры
+        </button>
       </div>
       <CardPagination />
       <CardsList />

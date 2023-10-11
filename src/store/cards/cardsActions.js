@@ -26,7 +26,6 @@ export const getCards = createAsyncThunk(
     const { data } = await axios.get(
       `${CARDS_API}${pagesLimitParams}&${categoryAndSearchParams}${priceRange}${sortByRating}`
     );
-    console.log(data);
     return { data, totalPages };
   }
 );

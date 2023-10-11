@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { checkUserLogin, getAuthUser } from "../../../helpers/functions";
+import {
+  cardColorChange,
+  checkUserLogin,
+  getAuthUser,
+} from "../../../helpers/functions";
 import {
   checkCardInCart,
   toggleCardToCart,
 } from "../../../store/cart/cartActions";
 import { getCart } from "../../../store/cart/cartSlice";
 import CardLike from "../CardLike/CardLike";
+import "./CardItem.css";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
@@ -47,7 +52,10 @@ const CardItem = ({ card }) => {
         flexDirection: "column",
         width: "20rem",
         border: "1px solid black",
+        position: "relative",
+        backgroundColor: `${cardColorChange(card.rank)}`,
       }}
+      className="CardMain"
     >
       <div
         onClick={() => navigate(`/store/${card.id}`)}
@@ -56,18 +64,25 @@ const CardItem = ({ card }) => {
           display: "flex",
           flexDirection: "column",
           cursor: "pointer",
+          position: "relative",
         }}
       >
-        <p>{card.name}</p>
-        <img
-          src={card.image}
-          alt={card.name}
-          width="auto"
-          height="300px"
-          style={{ objectFit: "cover" }}
-        />
-        <p>{card.price}$</p>
-        <p>{card.power}</p>
+        <div className="CardInside">
+          <img
+            src={card.image}
+            alt={card.name}
+            width="299px"
+            height="300px"
+            style={{ objectFit: "cover" }}
+            className="CardImage"
+          />
+          <div className="CardTextContainer">
+            {" "}
+            <span className="CardName">{card.name}</span>
+          </div>
+        </div>
+        <p className="CardPower">{card.power}</p>
+        <span className="CardPrice">{card.price}$</span>
       </div>
       <div>
         {checkUserLogin() && (

@@ -54,7 +54,7 @@ export const loginUser = createAsyncThunk(
 export const savePoints = createAsyncThunk(
   "users/savePoints",
   async (correct) => {
-    const oneUser = JSON.parse(localStorage.getItem("OPuser"));
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
     oneUser.points = oneUser.points + +correct;
     await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
     addToLocalStorage(oneUser);
