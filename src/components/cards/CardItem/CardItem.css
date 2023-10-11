@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Young Serif", serif;
+}
+
+.CardMain {
+  background-color: rgb(34, 29, 29);
+}
+
+.CardName {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.CardPrice {
+  color: white;
+}
+
+.CardPower {
+  color: white;
+}
+
+.CardInside {
+  position: relative;
+}
+
+.CardTextContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 92%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.CardImage {
+  display: block;
+  margin: 0 auto;
+}
