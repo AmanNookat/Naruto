@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-// import { checkUserLogin } from "../../../helpers/functions";
+import { checkUserLogin } from "../../../helpers/functions";
+import {
+  checkCardInCart,
+  toggleCardToCart,
+} from "../../../store/cart/cartActions";
+import { getCart } from "../../../store/cart/cartSlice";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  //   const { cart } = useSelector((state) => state.cart);
-  //   const [isCardInCart, setIsCardInCart] = useState(false);
+  const { cart } = useSelector((state) => state.cart);
+  const [isCardInCart, setIsCardInCart] = useState(false);
 
-  //   useEffect(() => {
-  //     if (checkCardInCart(card.id)) {
-  //       setIsCardInCart(true);
-  //     } else {
-  //       setIsCardInCart(false);
-  //     }
-  //   }, [cart]);
+  useEffect(() => {
+    if (checkCardInCart(card.id)) {
+      setIsCardInCart(true);
+    } else {
+      setIsCardInCart(false);
+    }
+  }, [cart]);
 
   return (
     <div
@@ -47,7 +52,7 @@ const CardItem = ({ card }) => {
         <p>{card.power}</p>
       </div>
       <div>
-        {/* {checkUserLogin() && (
+        {checkUserLogin() && (
           <button
             style={{ padding: "10px" }}
             onClick={() => {
@@ -55,9 +60,9 @@ const CardItem = ({ card }) => {
               dispatch(getCart());
             }}
           >
-            {isCardInCart ? "Remove" : "Add"}
+            {isCardInCart ? "- корзина" : "+ корзина"}
           </button>
-        )} */}
+        )}
       </div>
     </div>
   );
