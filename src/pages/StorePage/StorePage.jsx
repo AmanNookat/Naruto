@@ -6,7 +6,7 @@ import CardsFilter from "../../components/cards/CardsFilter/CardsFilter";
 import "./StorePage.css";
 import CardsPriceRangeFilter from "../../components/cards/CardsPriceRangeFilter/CardsPriceRangeFilter";
 import CardsSortRating from "../../components/cards/CardsSortRating/CardsSortRating";
-import { clearAllFilters } from "../../store/cards/cardsSlice";
+import { clearAllFilters, setSearchVal } from "../../store/cards/cardsSlice";
 import { getCards } from "../../store/cards/cardsActions";
 import { useDispatch } from "react-redux";
 
@@ -23,6 +23,7 @@ const StorePage = () => {
         <button
           onClick={() => {
             dispatch(clearAllFilters());
+            dispatch(setSearchVal({ search: "" }));
             dispatch(getCards());
           }}
         >
