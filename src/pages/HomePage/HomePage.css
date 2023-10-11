@@ -2,6 +2,21 @@
   font-size: 16px;
   font-family: "Bebas Neue", sans-serif;
 }
+.Home {
+  background-color: #000;
+  z-index: -1000;
+  position: relative;
+}
+.manga {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.manga.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .home--odd {
   background-color: #ffac04;
@@ -11,10 +26,10 @@
 }
 .home--logo {
   position: fixed;
-  max-width: 150px;
-  max-height: 150px;
-  top: 10px;
-  left: 10px;
+  max-width: 140px;
+  max-height: 140px;
+  top: 20px;
+  left: 20px;
   z-index: 999999;
 }
 .home--logo img {
@@ -29,13 +44,22 @@
   top: 0;
   transform: translateX(-50%);
 }
+/* --------------------------------------------      START OF 1st BOOK   -------------------------------------------------------------------- */
 #home__first {
   height: 1920px;
 }
-.naruto__first--pic {
+#naruto__first--pic {
   left: 2%;
   position: absolute;
   z-index: 1;
+  opacity: 0;
+  transform: translateX(-50px) translateY(-100px);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+#naruto__first--pic.animate {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
 }
 
 .home--first__about {
@@ -61,6 +85,7 @@
 .home--first__descr p {
   letter-spacing: 1px;
   font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .home--first__h1 {
@@ -75,8 +100,9 @@
   font-size: 90px;
   font-weight: normal;
   line-height: 1;
+  font-family: "Bebas Neue", sans-serif;
 }
-.first--arc__year {
+#first--arc__year {
   position: absolute;
   left: 35%;
   top: 58%;
@@ -159,4 +185,82 @@
   z-index: 8;
   top: 1800px;
   left: 34.5%;
+}
+/* -----------------------------------------     END OF 1st BOOK   ------------------------------------------------------------- */
+/* -----------------------------------------    START OF 2nd BOOK    --------------------------------------------------------- */
+#home__second {
+  height: 1200px;
+  position: relative;
+  z-index: -1;
+}
+#hakuPic {
+  position: absolute;
+  z-index: 7;
+  left: 11.5%;
+  top: 20px;
+}
+#mangaTitle2 {
+  position: absolute;
+  z-index: 7;
+  left: 28.5%;
+  top: 80px;
+}
+#ZabuzaUnderHaku {
+  position: absolute;
+  z-index: 8;
+  left: 27%;
+  top: 300px;
+}
+#textUnderZabuza {
+  position: absolute;
+  z-index: 8;
+  left: 22%;
+  top: 590px;
+}
+#GrandpaWithSake {
+  position: absolute;
+  z-index: 7;
+  left: 50%;
+  top: 20px;
+}
+#year2000 {
+  position: absolute;
+  z-index: 8;
+  left: 69%;
+  top: 50px;
+}
+#hakuWithoutMask {
+  position: absolute;
+  z-index: 8;
+  left: 69.5%;
+  top: 180px;
+}
+#kakashiVsZabuza {
+  position: absolute;
+  z-index: 8;
+  left: 14.5%;
+  top: 700px;
+}
+#sasukeVsHaku {
+  position: absolute;
+  z-index: 8;
+  left: 50%;
+  top: 545px;
+}
+/* --------------------------------------       END OF 2nd BOOK    ------------------------------------------------------------ */
+#team7Big {
+  max-width: 100%;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  transition: clip-path 2s ease;
+}
+
+#team7Big.animate {
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+}
+
+#team7Big img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

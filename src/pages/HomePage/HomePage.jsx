@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 
 import homeLogo from "./images/homeLogo.png";
-
+import team7Big from "./images/team7Big.png";
+// Импорты для первой книги
 import narutoFirst from "./images/narutoFirst.png";
 import firstArcYear from "./images/year_1999 1.png";
 import firstArcTitle from "./images/01-title.png";
@@ -19,7 +20,41 @@ import mangaFirstTextUnderSakura from "./images/caption_b 1.png";
 import mangaFirstBubenchiki from "./images/MangaFirstBubenchiki.png";
 import mangaFirstTextPodBubenchikami from "./images/caption_c 1.png";
 
+// Импорты для второй книги
+import hakuPic from "./images/hakuPic.png";
+import mangaTitle2 from "./images/mangaTitle2.png";
+import ZabuzaUnderHaku from "./images/ZabuzaUnderHaku.png";
+import textUnderZabuza from "./images/TextUnderZabuza.png";
+import GrandpaWithSake from "./images/GrandpaWithSake.png";
+import hakuWithoutMask from "./images/hakuWithoutMask.png";
+import year2000 from "./images/year_2000 1.png";
+import kakashiVsZabuza from "./images/kakashiVsZabuza.png";
+import sasukeVsHaku from "./images/sasukeVsHaku.png";
+
 const HomePage = () => {
+  // const [animateTeam7Big, setAnimateTeam7Big] = useState(false);
+  // const [currentStep, setCurrentStep] = useState(null);
+
+  // const onStepEnter = ({ data }) => {
+  //   if (data === "team7Big") {
+  //     setAnimateTeam7Big(true);
+  //   }
+  // };
+
+  useEffect(() => {
+    const mangaElements = document.querySelectorAll(".manga");
+    mangaElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("animate");
+      }, index * 300);
+    });
+  }, []);
+
+  useEffect(() => {
+    const narutoFirstPic = document.getElementById("naruto__first--pic");
+    narutoFirstPic.classList.add("animate");
+  }, []);
+
   return (
     <div className="Home">
       <div className="line"></div>
@@ -28,7 +63,7 @@ const HomePage = () => {
       </div>
       <div className="home--content">
         <div id="home__first" className="home--odd">
-          <div className="naruto__first--pic">
+          <div id="naruto__first--pic">
             <img src={narutoFirst} alt="" />
           </div>
           <div className="home--first__about">
@@ -49,11 +84,11 @@ const HomePage = () => {
             </div>
           </div>
           {/* ГОД ВЫХОДА ПЕРВОЙ ГЛАВЫ - 1999 */}
-          <div className="first--arc__year">
+          <div id="first--arc__year" className="manga">
             <img src={firstArcYear} alt="" />
           </div>
           {/* ПЕРВЫЙ НОМЕР ГЛАВЫ С ОПИСАНИЕМ - 01 */}
-          <div id="first--arc__title" className="arc--number">
+          <div id="first--arc__title" className="manga">
             <img src={firstArcTitle} alt="" />
           </div>
           {/* ЛЕВАЯ ЧАСТЬ ПЕРВОЙ МАНГИ */}
@@ -101,7 +136,38 @@ const HomePage = () => {
             <img src={mangaFirstTextPodBubenchikami} alt="" />
           </div>
         </div>
-        <div id="home__second" className="home--even"></div>
+        <div id="home__second" className="home--even">
+          <div id="hakuPic" className="manga">
+            <img src={hakuPic} alt="" />
+          </div>
+          <div id="mangaTitle2" className="manga">
+            <img src={mangaTitle2} alt="" />
+          </div>
+          <div id="ZabuzaUnderHaku" className="manga">
+            <img src={ZabuzaUnderHaku} alt="" />
+          </div>
+          <div id="textUnderZabuza" className="manga">
+            <img src={textUnderZabuza} alt="" />
+          </div>
+          <div id="GrandpaWithSake" className="manga">
+            <img src={GrandpaWithSake} alt="" />
+          </div>
+          <div id="hakuWithoutMask" className="manga">
+            <img src={hakuWithoutMask} alt="" />
+          </div>
+          <div id="year2000" className="manga">
+            <img src={year2000} alt="" />
+          </div>
+          <div id="kakashiVsZabuza" className="manga">
+            <img src={kakashiVsZabuza} alt="" />
+          </div>
+          <div id="sasukeVsHaku" className="manga">
+            <img src={sasukeVsHaku} alt="" />
+          </div>
+        </div>
+        <div id="team7Big" className="home__photo--container">
+          <img src={team7Big} alt="" />
+        </div>
         <div id="home__third" className="home--odd"></div>
         <div id="home__fourth" className="home--even"></div>
         <div id="home__fifth" className="home--odd"></div>
