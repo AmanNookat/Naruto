@@ -22,7 +22,7 @@ const Navbar = () => {
       {checkUserLogin() ? (
         <>
           {/* <NavLink to="/quizzes">Викторины</NavLink> */}
-          {/* <NavLink to="/cart">Корзина</NavLink> */}
+          <NavLink to="/cart">Корзина</NavLink>
           {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
           {oneUser && (
             <NavLink>

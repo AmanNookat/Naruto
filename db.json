@@ -10,6 +10,17 @@
       "isAdmin": true,
       "points": 0,
       "id": 1
+    },
+    {
+      "name": "a",
+      "mail": "a",
+      "password": "a",
+      "image": "a",
+      "level": 1,
+      "inventory": [],
+      "isAdmin": false,
+      "points": 0,
+      "id": 2
     }
   ],
   "cards": [
@@ -58,5 +69,6 @@
       "description": "Ирука",
       "id": 5
     }
-  ]
+  ],
+  "orders": []
 }
