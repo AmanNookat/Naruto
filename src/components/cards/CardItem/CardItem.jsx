@@ -48,7 +48,7 @@ const CardItem = ({ card }) => {
         flexDirection: "column",
         width: "20rem",
         border: "1px solid black",
-        position: "relative", // Добавьте это свойство для .CardMain
+        position: "relative",
       }}
       className="CardMain"
     >
@@ -59,7 +59,7 @@ const CardItem = ({ card }) => {
           display: "flex",
           flexDirection: "column",
           cursor: "pointer",
-          position: "relative", // Добавьте это свойство
+          position: "relative",
         }}
       >
         <div className="CardInside">
@@ -76,8 +76,8 @@ const CardItem = ({ card }) => {
             <span className="CardName">{card.name}</span>
           </div>
         </div>
-        <span className="CardPrice">{card.price}$</span>
         <p className="CardPower">{card.power}</p>
+        <span className="CardPrice">{card.price}$</span>
       </div>
       <div>
         {checkUserLogin() && (
