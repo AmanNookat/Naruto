@@ -21,6 +21,17 @@
       "isAdmin": false,
       "points": 0,
       "id": 2
+    },
+    {
+      "name": "erkin",
+      "mail": "qwe",
+      "password": "qwe",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtHC6Lv3Q5_7WxbFKEH8PpPKt5e-mavDOjA&usqp=CAU",
+      "level": 1,
+      "inventory": [],
+      "isAdmin": true,
+      "points": 0,
+      "id": 3
     }
   ],
   "cards": [
