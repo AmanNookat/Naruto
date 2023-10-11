@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { CARDS_API } from "../../helpers/consts";
-import { getTotalPages } from "../../helpers/functions";
+import { getAuthUser, getTotalPages } from "../../helpers/functions";
 
 export const createCard = createAsyncThunk(
   "cards/createCard",
@@ -64,5 +64,34 @@ export const getCategories = createAsyncThunk(
       categories.push(i);
     }
     return categories;
+  }
+);
+
+export const toggleCardLike = createAsyncThunk(
+  "card/toggleCardLike",
+  async ({ setIsLike, likes, cardId }, { dispatch }) => {
+    const user = getAuthUser();
+    let updatedLikesArr;
+
+    if (!likes) {
+      updatedLikesArr = [];
+    } else {
+      updatedLikesArr = [...likes];
+    }
+
+    if (setIsLike) {
+      updatedLikesArr.push({
+        id: Date.now(),
+        user,
+      });
+    } else {
+      updatedLikesArr = updatedLikesArr.filter((like) => like.user !== user);
+    }
+
+    await axios.patch(`${CARDS_API}/${cardId}`, {
+      likes: updatedLikesArr,
+    });
+
+    dispatch(getCards());
   }
 );
