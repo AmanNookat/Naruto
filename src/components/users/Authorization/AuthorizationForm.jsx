@@ -49,6 +49,7 @@ const AuthorizationForm = () => {
         <h2>Loading...</h2>
       ) : (
         <div>
+          <h1>Авторизация</h1>
           <p>
             Нет аккаунта? <Link to="/registration">Создать</Link>
           </p>

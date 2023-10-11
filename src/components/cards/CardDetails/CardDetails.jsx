@@ -45,9 +45,9 @@ const CardDetails = () => {
                 <p>{oneCard.description}</p>
                 {checkAdmin() && (
                   <div>
-                    {/* <button onClick={() => navigate(`/card-edit/${id}`)}>
+                    <button onClick={() => navigate(`/card-edit/${id}`)}>
                       Edit
-                    </button> */}
+                    </button>
                     <button
                       onClick={() => {
                         dispatch(deleteCard({ id }));
