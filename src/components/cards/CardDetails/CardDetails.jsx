@@ -45,6 +45,7 @@ const CardDetails = () => {
                 <p>{oneCard.power}</p>
                 <p>{oneCard.rank}</p>
                 <p>{oneCard.description}</p>
+                <p>Rating: {oneCard.rating}</p>
                 {checkAdmin() && (
                   <div>
                     <button onClick={() => navigate(`/card-edit/${id}`)}>
