@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { deleteCard, getOneCard } from "../../../store/cards/cardsActions";
 import { clearOneCardState } from "../../../store/cards/cardsSlice";
-import { checkAdmin } from "../../../helpers/functions";
+import { checkAdmin, checkUserLogin } from "../../../helpers/functions";
+import CommentCreate from "../../comments/CommentCreate/CommentCreate";
+import CommentsList from "../../comments/CommentsList/CommentsList";
 
 const CardDetails = () => {
   const { loading, oneCard } = useSelector((state) => state.cards);
@@ -59,13 +61,13 @@ const CardDetails = () => {
                   </div>
                 )}
               </div>
-              {/* {checkUserLogin() && <CommentCreate card={oneCard} />} */}
+              {checkUserLogin() && <CommentCreate card={oneCard} />}
 
-              {/* {oneCard.comments ? (
-                <CommentList comments={oneCard.comments} />
+              {oneCard.comments ? (
+                <CommentsList comments={oneCard.comments} />
               ) : (
                 <h2>Комменты отсутсвуют</h2>
-              )} */}
+              )}
             </div>
           )}
         </>

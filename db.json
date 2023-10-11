@@ -31,7 +31,16 @@
       "rank": "Генин",
       "power": "20",
       "description": "Наруто",
-      "id": 1
+      "id": 1,
+      "comments": [
+        {
+          "id": 1697002020578,
+          "body": "Naruto",
+          "rating": 1,
+          "user": "aman"
+        }
+      ],
+      "rating": "1.0"
     },
     {
       "name": "Саске Учиха",
