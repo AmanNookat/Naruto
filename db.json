@@ -73,22 +73,40 @@
       "id": 3
     },
     {
-      "name": "Какаши Хатаке",
-      "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
-      "price": "1000",
-      "rank": "Джонин",
-      "power": "100",
-      "description": "Какаши",
-      "id": 4
-    },
-    {
       "name": "Ирука Умино",
       "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
       "price": "10",
       "rank": "Чунин",
       "power": "10",
       "description": "Ирука",
+      "id": 4
+    },
+    {
+      "name": "Какаши Хатаке",
+      "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
+      "price": "1000",
+      "rank": "Джонин",
+      "power": "100",
+      "description": "Какаши",
       "id": 5
+    },
+    {
+      "name": "Цунаде",
+      "image": "https://static.zerochan.net/Tsunade.full.2364148.jpg",
+      "price": "100000",
+      "rank": "Каге",
+      "power": "2500",
+      "description": "106 сантиметров",
+      "id": 6
+    },
+    {
+      "name": "Мадара Учиха",
+      "image": "https://pm1.aminoapps.com/6540/38f55b02fe7d2e38849515651b58940810ed37cf_hq.jpg",
+      "price": "999999",
+      "rank": "Ооцуцуки",
+      "power": "9999",
+      "description": "Бог шиноби",
+      "id": 7
     }
   ],
   "orders": []

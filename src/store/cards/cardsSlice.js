@@ -23,7 +23,7 @@ const cardsSlice = createSlice({
       state.currentPage = action.payload.page;
     },
     changeCategory: (state, action) => {
-      if (action.payload.category === "все") {
+      if (action.payload.category === "all") {
         state.currentCategory = "";
       } else {
         state.currentCategory = action.payload.category;

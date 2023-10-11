@@ -17,7 +17,7 @@ export const getCards = createAsyncThunk(
     const { currentPage, currentCategory, search, sortByRating, priceRange } =
       getState().cards;
     const categoryAndSearchParams = `q=${search}${
-      currentCategory && `rank=${currentCategory}`
+      currentCategory && `&rank=${currentCategory}`
     }`;
     const pagesLimitParams = `?_page=${currentPage}&_limit=4`;
     const totalPages = await getTotalPages(
@@ -26,6 +26,7 @@ export const getCards = createAsyncThunk(
     const { data } = await axios.get(
       `${CARDS_API}${pagesLimitParams}&${categoryAndSearchParams}${priceRange}${sortByRating}`
     );
+    console.log(data);
     return { data, totalPages };
   }
 );
