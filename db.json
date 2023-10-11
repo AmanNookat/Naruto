@@ -21,6 +21,17 @@
       "isAdmin": false,
       "points": 0,
       "id": 2
+    },
+    {
+      "name": "atai",
+      "mail": "a",
+      "password": "a",
+      "image": "a",
+      "level": 1,
+      "inventory": [],
+      "isAdmin": true,
+      "points": 0,
+      "id": 3
     }
   ],
   "cards": [
@@ -83,7 +94,8 @@
           "user": "aman"
         }
       ],
-      "rating": "3.0"
+      "rating": "3.0",
+      "likes": []
     },
     {
       "name": "Ирука Умино",
