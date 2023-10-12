@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {
   cardColorChange,
+  checkCardInFavorites,
   checkUserLogin,
   getAuthUser,
 } from "../../../helpers/functions";
@@ -15,13 +16,16 @@ import CardLike from "../CardLike/CardLike";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./CardItem.css";
 import { toggleCardFavorite } from "../../../store/users/usersActions";
+import StarIcon from "@mui/icons-material/Star";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const { oneUser } = useSelector((state) => state.users);
   const { cart } = useSelector((state) => state.cart);
   const [isCardInCart, setIsCardInCart] = useState(false);
   const [isLikedCard, setIsLikedCard] = useState(false);
+  const [isFavCard, setIsFavCard] = useState(false);
 
   useEffect(() => {
     if (checkCardInCart(card.id)) {
@@ -30,6 +34,14 @@ const CardItem = ({ card }) => {
       setIsCardInCart(false);
     }
   }, [cart]);
+
+  useEffect(() => {
+    if (checkCardInFavorites(card.id)) {
+      setIsFavCard(true);
+    } else {
+      setIsFavCard(false);
+    }
+  }, [oneUser]);
 
   const checkCardLike = () => {
     const user = getAuthUser();
@@ -146,7 +158,11 @@ const CardItem = ({ card }) => {
                 dispatch(toggleCardFavorite({ card }));
               }}
             >
-              Fav
+              {isFavCard ? (
+                <StarIcon fontSize="large" color="warning" />
+              ) : (
+                <StarIcon fontSize="large" />
+              )}
             </button>
           </div>
         )}
