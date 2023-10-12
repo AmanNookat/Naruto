@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import znakLista from "./NavImages/znakLista.png";
 import "./Navbar.css";
+import { getOneUser } from "../../../store/users/usersSlice";
+import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
+import { useDispatch } from "react-redux";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const dispatch = useDispatch();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,6 +17,11 @@ const Navbar = () => {
   function closeBurgerMenu() {
     setIsMenuOpen(false);
   }
+
+  useEffect(() => {
+    dispatch(getOneUser());
+    dispatch(getOneQuiz());
+  }, []);
 
   return (
     <div className="nav">
