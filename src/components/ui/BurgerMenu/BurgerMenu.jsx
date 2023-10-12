@@ -29,12 +29,16 @@ const BurgerMenu = ({ closeBurgerMenu }) => {
           <>
             <NavLink to="/quizzes">Викторины</NavLink>
             <NavLink to="/cart">Корзина</NavLink>
+
             {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
             {oneUser && (
-              <NavLink>
-                {oneUser.name}
-                <span>({oneUser.points})</span>
-              </NavLink>
+              <>
+                <NavLink to={`/favorites/${oneUser.id}`}>Избранные</NavLink>
+                <NavLink>
+                  {oneUser.name}
+                  <span>({oneUser.points})</span>
+                </NavLink>
+              </>
             )}
             <button
               onClick={() => {
