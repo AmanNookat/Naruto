@@ -16,7 +16,13 @@ const CardsList = () => {
       {loading ? (
         <h2>Loading...</h2>
       ) : (
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+          }}
+        >
           {/* для фильтрации, пагинации и т.д. */}
           {cards.map((card) => (
             <CardItem key={card.id} card={card} />

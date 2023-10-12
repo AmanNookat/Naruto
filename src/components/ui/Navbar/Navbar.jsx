@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import znakLista from "./NavImages/znakLista.png";
 import "./Navbar.css";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,6 +28,7 @@ const Navbar = () => {
         <div>
           <BurgerMenu />
         </div>
+
       )}
     </div>
   );

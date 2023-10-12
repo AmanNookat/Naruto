@@ -14,6 +14,7 @@ const AuthorizationForm = () => {
     image: "",
     level: 1,
     inventory: [],
+    favorites: [],
     points: 100,
     isAdmin: false,
   });
@@ -37,6 +38,7 @@ const AuthorizationForm = () => {
         image: "",
         level: 1,
         inventory: [],
+        favorites: [],
         points: 0,
         isAdmin: false,
       });
