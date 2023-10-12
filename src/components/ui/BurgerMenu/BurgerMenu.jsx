@@ -4,7 +4,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { getOneUser } from "../../../store/users/usersSlice";
 import { checkAdmin, checkUserLogin, logout } from "../../../helpers/functions";
 import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
-
 import burgerBackground from "./images/burgerMenu.png";
 import "./BurgerMenu.css";
 const BurgerMenu = () => {

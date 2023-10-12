@@ -40,9 +40,9 @@ const quizzesSlice = createSlice({
         state.loading = false;
         state.quizzes = action.payload;
       })
-      .addCase(getOneQuiz.pending, (state) => {
-        state.loading = true;
-      })
+      // .addCase(getOneQuiz.pending, (state) => {
+      //   state.loading = true;
+      // })
       .addCase(getOneQuiz.fulfilled, (state, action) => {
         state.loading = false;
         state.oneQuiz = action.payload;
