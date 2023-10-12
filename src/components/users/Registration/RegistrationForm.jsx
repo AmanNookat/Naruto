@@ -17,6 +17,7 @@ const RegistrationForm = () => {
     points: 0,
   });
 
+  console.log(user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

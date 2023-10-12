@@ -14,6 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     dispatch(getOneUser());
     dispatch(getOneQuiz());
+    console.log(oneUser);
   }, []);
 
   return (
@@ -26,10 +27,13 @@ const Navbar = () => {
           <NavLink to="/cart">Корзина</NavLink>
           {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
           {oneUser && (
-            <NavLink>
-              {oneUser.name}
-              <span>({oneUser.points})</span>
-            </NavLink>
+            <>
+              <NavLink to={`/favorites/${oneUser.id}`}>Избранные</NavLink>
+              <NavLink>
+                {oneUser.name}
+                <span>({oneUser.points})</span>
+              </NavLink>
+            </>
           )}
           <button
             onClick={() => {

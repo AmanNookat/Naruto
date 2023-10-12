@@ -98,13 +98,15 @@ const CardItem = ({ card }) => {
             </button>
 
             <button>
-              <CardLike
-                isLikedCard={isLikedCard}
-                likes={card.likes}
-                cardId={card.id}
-              />
+              <>
+                <CardLike
+                  isLikedCard={isLikedCard}
+                  likes={card.likes}
+                  cardId={card.id}
+                />
+                {card.likes ? <span>{card.likes.length}</span> : <span>0</span>}
+              </>
             </button>
-            {card.likes ? <span>{card.likes.length}</span> : <span>0</span>}
           </>
         )}
       </div>
