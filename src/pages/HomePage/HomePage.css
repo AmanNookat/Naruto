@@ -490,20 +490,24 @@
   top: 1050px;
 }
 #bookTitle5 {
+  width: 45%;
   position: relative;
   z-index: 7;
   left: 52%;
   top: 50px;
+  max-width: 500px;
 }
 #kisameAndItachi {
   position: relative;
   z-index: 7;
   left: 51.5%;
   top: 145px;
+  max-width: 500px;
 }
 #year2003 {
   position: relative;
   z-index: 8;
   left: 52%;
   top: 460px;
+  max-width: 222px;
 }
