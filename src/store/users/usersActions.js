@@ -79,5 +79,6 @@ export const toggleCardFavorite = createAsyncThunk(
 
     addToLocalStorage(oneUser);
     await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+    return oneUser;
   }
 );

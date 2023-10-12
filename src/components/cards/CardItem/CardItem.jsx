@@ -102,7 +102,6 @@ const CardItem = ({ card }) => {
                 justifyContent: "center",
               }}
             >
-
               <CardLike
                 isLikedCard={isLikedCard}
                 likes={card.likes}
@@ -142,6 +141,13 @@ const CardItem = ({ card }) => {
                 justifyContent: "center",
               }}
             ></div>
+            <button
+              onClick={() => {
+                dispatch(toggleCardFavorite({ card }));
+              }}
+            >
+              Fav
+            </button>
           </div>
         )}
       </div>
