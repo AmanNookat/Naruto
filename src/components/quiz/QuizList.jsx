@@ -11,6 +11,7 @@ const QuizList = () => {
   useEffect(() => {
     dispatch(getQuizzes());
   }, []);
+  console.log(loading);
 
   return (
     <>
