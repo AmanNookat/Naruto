@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { NOTIFY_TYPES, notify } from "../../../helpers/functions";
 import { createUser } from "../../../store/users/usersActions";
 
+import "./RegistrationForm.css";
+
 const RegistrationForm = () => {
   const { loading } = useSelector((state) => state.users);
   const [user, setUser] = useState({
@@ -55,39 +57,39 @@ const RegistrationForm = () => {
       {loading ? (
         <h2>Loading...</h2>
       ) : (
-        <>
+        <div className="regForm">
           <h1>Регистрация</h1>
           <p>
             Уже есть аккаунт? <Link to="/login">Войти</Link>
           </p>
-          <div>
+          <div className="reg__content">
             <input
               type="text"
-              placeholder="логин"
+              placeholder="Логин"
               onChange={(e) => setUser({ ...user, name: e.target.value })}
               value={user.name}
             />
             <input
               type="text"
-              placeholder="mail"
+              placeholder="Mail"
               onChange={(e) => setUser({ ...user, mail: e.target.value })}
               value={user.mail}
             />
             <input
               type="text"
-              placeholder="ссылка на изображение"
+              placeholder="Cсылка на изображение"
               onChange={(e) => setUser({ ...user, image: e.target.value })}
               value={user.image}
             />
             <input
               type="text"
-              placeholder="пароль"
+              placeholder="Пароль"
               onChange={(e) => setUser({ ...user, password: e.target.value })}
               value={user.password}
             />
             <button onClick={signUp}>Создать аккаунт</button>
           </div>
-        </>
+        </div>
       )}
     </div>
   );
