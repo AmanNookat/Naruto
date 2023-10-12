@@ -13,11 +13,11 @@ const RegistrationForm = () => {
     image: "",
     level: 1,
     inventory: [],
+    favorites: [],
     isAdmin: false,
     points: 0,
   });
 
-  console.log(user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -35,7 +35,7 @@ const RegistrationForm = () => {
 
     if (result.payload) {
       notify("Регистрация прошла успешно", NOTIFY_TYPES.success);
-      navigate("/login");
+      navigate("/authorization");
       setUser({
         name: "",
         mail: "",
@@ -43,6 +43,7 @@ const RegistrationForm = () => {
         image: "",
         level: 1,
         inventory: [],
+        favorites: [],
         isAdmin: false,
         points: 0,
       });

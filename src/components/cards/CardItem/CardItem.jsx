@@ -13,6 +13,7 @@ import {
 import { getCart } from "../../../store/cart/cartSlice";
 import CardLike from "../CardLike/CardLike";
 import "./CardItem.css";
+import { toggleCardFavorite } from "../../../store/users/usersActions";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
@@ -106,6 +107,13 @@ const CardItem = ({ card }) => {
                 />
                 {card.likes ? <span>{card.likes.length}</span> : <span>0</span>}
               </>
+            </button>
+            <button
+              onClick={() => {
+                dispatch(toggleCardFavorite({ card }));
+              }}
+            >
+              Fav
             </button>
           </>
         )}

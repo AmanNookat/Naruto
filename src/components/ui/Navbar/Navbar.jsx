@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { getOneUser } from "../../../store/users/usersSlice";
 import { checkAdmin, checkUserLogin, logout } from "../../../helpers/functions";
 import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
+import { toggleCardFavorite } from "../../../store/users/usersActions";
 
 const Navbar = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -14,7 +15,6 @@ const Navbar = () => {
   useEffect(() => {
     dispatch(getOneUser());
     dispatch(getOneQuiz());
-    console.log(oneUser);
   }, []);
 
   return (

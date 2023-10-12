@@ -4,6 +4,7 @@ import { USERS_API } from "../../helpers/consts";
 import {
   NOTIFY_TYPES,
   addToLocalStorage,
+  getAuthUser,
   notify,
 } from "../../helpers/functions";
 
@@ -59,5 +60,24 @@ export const savePoints = createAsyncThunk(
     await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
     addToLocalStorage(oneUser);
     return oneUser;
+  }
+);
+
+export const toggleCardFavorite = createAsyncThunk(
+  "users/toggleCardFavorite",
+  async ({ card }) => {
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+    const isFav = oneUser.favorites.find((oneCard) => oneCard.id === card.id);
+
+    if (isFav) {
+      oneUser.favorites = oneUser.favorites.filter(
+        (oneCard) => oneCard.id !== card.id
+      );
+    } else {
+      oneUser.favorites.push(card);
+    }
+
+    addToLocalStorage(oneUser);
+    await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
   }
 );
