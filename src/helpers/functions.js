@@ -18,7 +18,10 @@ export const checkUserLogin = () => {
 
 export const getAuthUser = () => {
   const user = JSON.parse(localStorage.getItem("NarutoUser"));
-  return user.name;
+  if (user) {
+    return user.name;
+  }
+  // return false;
 };
 
 export const getCardRating = (cardObj) => {
@@ -48,9 +51,15 @@ export const getTotalPages = async (url) => {
 export const cardColorChange = (category) => {
   switch (category) {
     case "Генин":
-      return "red";
+      return {
+        backgroundColor: "red",
+      };
     case "Чунин":
-      return "blue";
+      return {
+        backgroundColor: "blue",
+      };
+    default:
+      return {};
   }
 };
 

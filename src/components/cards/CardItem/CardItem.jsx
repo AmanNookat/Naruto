@@ -53,7 +53,7 @@ const CardItem = ({ card }) => {
         width: "20rem",
         border: "1px solid black",
         position: "relative",
-        backgroundColor: `${cardColorChange(card.rank)}`,
+        ...cardColorChange(card.rank),
       }}
       className="CardMain"
     >
@@ -96,6 +96,7 @@ const CardItem = ({ card }) => {
             >
               {isCardInCart ? "- корзина" : "+ корзина"}
             </button>
+
             <button>
               <CardLike
                 isLikedCard={isLikedCard}
@@ -103,10 +104,9 @@ const CardItem = ({ card }) => {
                 cardId={card.id}
               />
             </button>
+            {card.likes ? <span>{card.likes.length}</span> : <span>0</span>}
           </>
         )}
-
-        {card.likes ? <span>{card.likes.length}</span> : <span>0</span>}
       </div>
     </div>
   );
