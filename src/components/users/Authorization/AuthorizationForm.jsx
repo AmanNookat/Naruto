@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { NOTIFY_TYPES, notify } from "../../../helpers/functions";
 import { loginUser } from "../../../store/users/usersActions";
 
+import "./AuthForm.css";
+
 const AuthorizationForm = () => {
   const { loading } = useSelector((state) => state.users);
 
@@ -50,27 +52,28 @@ const AuthorizationForm = () => {
       {loading ? (
         <h2>Loading...</h2>
       ) : (
-        <div>
+        <div className="authForm">
           <h1>Авторизация</h1>
           <p>
-            Нет аккаунта? <Link to="/registration">Создать</Link>
+            Нет аккаунта? <br />
+            <br /> <Link to="/registration">Создать</Link>
           </p>
-          <div>
+          <div className="auth--content">
             <input
               type="text"
-              placeholder="логин"
+              placeholder="Логин"
               onChange={(e) => setUser({ ...user, name: e.target.value })}
               value={user.name}
             />
             <input
               type="text"
-              placeholder="mail"
+              placeholder="Мail"
               onChange={(e) => setUser({ ...user, mail: e.target.value })}
               value={user.mail}
             />
             <input
               type="text"
-              placeholder="пароль"
+              placeholder="Пароль"
               onChange={(e) => setUser({ ...user, password: e.target.value })}
               value={user.password}
             />
