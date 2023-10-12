@@ -1,0 +1,14 @@
+.loginPage {
+  position: relative;
+}
+.loginPage img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  filter: brightness(50%);
+}
+.loginForm {
+  position: absolute;
+  top: 150px;
+  left: 10%;
+}
