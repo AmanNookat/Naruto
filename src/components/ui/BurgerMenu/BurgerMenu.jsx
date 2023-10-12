@@ -6,7 +6,7 @@ import { checkAdmin, checkUserLogin, logout } from "../../../helpers/functions";
 import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
 import burgerBackground from "./images/burgerMenu.png";
 import "./BurgerMenu.css";
-const BurgerMenu = () => {
+const BurgerMenu = ({ closeBurgerMenu }) => {
   const { oneUser } = useSelector((state) => state.users);
 
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ const BurgerMenu = () => {
       <div className="burger--back">
         <img src={burgerBackground} alt="" />
       </div>
-      <div className="burger--links">
+      <div className="burger--links" onClick={() => closeBurgerMenu()}>
         <NavLink to="/">Домой</NavLink>
         <NavLink to="/store">Магазин</NavLink>
         {checkUserLogin() ? (

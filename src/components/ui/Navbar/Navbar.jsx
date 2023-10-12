@@ -10,6 +10,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  function closeBurgerMenu() {
+    setIsMenuOpen(false);
+  }
+
   return (
     <div className="nav">
       <button className="burgerBtn" onClick={toggleMenu}>
@@ -26,9 +30,8 @@ const Navbar = () => {
       </button>
       {isMenuOpen && (
         <div>
-          <BurgerMenu />
+          <BurgerMenu closeBurgerMenu={closeBurgerMenu} />
         </div>
-
       )}
     </div>
   );
