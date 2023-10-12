@@ -12,6 +12,7 @@ import {
 } from "../../../store/cart/cartActions";
 import { getCart } from "../../../store/cart/cartSlice";
 import CardLike from "../CardLike/CardLike";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./CardItem.css";
 import { toggleCardFavorite } from "../../../store/users/usersActions";
 
@@ -83,39 +84,65 @@ const CardItem = ({ card }) => {
           </div>
         </div>
         <p className="CardPower">{card.power}</p>
-        <span className="CardPrice">{card.price}$</span>
       </div>
-      <div>
+      <div className="CardFooter">
         {checkUserLogin() && (
-          <>
-            <button
-              style={{ padding: "10px" }}
-              onClick={() => {
-                toggleCardToCart(card);
-                dispatch(getCart());
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-evenly",
+              backgroundColor: "rgba(0, 0, 0, 0.8)",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
-              {isCardInCart ? "- корзина" : "+ корзина"}
-            </button>
 
-            <button>
-              <>
-                <CardLike
-                  isLikedCard={isLikedCard}
-                  likes={card.likes}
-                  cardId={card.id}
-                />
-                {card.likes ? <span>{card.likes.length}</span> : <span>0</span>}
-              </>
-            </button>
-            <button
-              onClick={() => {
-                dispatch(toggleCardFavorite({ card }));
+              <CardLike
+                isLikedCard={isLikedCard}
+                likes={card.likes}
+                cardId={card.id}
+              />
+              <span className="CardLikes">
+                {card.likes ? card.likes.length : 0}
+              </span>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                // justifyContent: "space-around",
               }}
             >
-              Fav
-            </button>
-          </>
+              <span className="CardPrice">{card.price}$</span>
+              <div
+                style={{ padding: "5px" }}
+                onClick={() => {
+                  toggleCardToCart(card);
+                  dispatch(getCart());
+                }}
+              >
+                {isCardInCart ? (
+                  <ShoppingCartIcon fontSize="large" color="primary" />
+                ) : (
+                  <ShoppingCartIcon fontSize="large" />
+                )}
+              </div>
+            </div>
+            <div
+              className="CardLikeButton"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+          </div>
         )}
       </div>
     </div>
