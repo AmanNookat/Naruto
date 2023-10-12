@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { getOneUser } from "../../../store/users/usersSlice";
 import { checkAdmin, checkUserLogin, logout } from "../../../helpers/functions";
 import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
+import { toggleCardFavorite } from "../../../store/users/usersActions";
 
 const Navbar = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -26,10 +27,13 @@ const Navbar = () => {
           <NavLink to="/cart">Корзина</NavLink>
           {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
           {oneUser && (
-            <NavLink>
-              {oneUser.name}
-              <span>({oneUser.points})</span>
-            </NavLink>
+            <>
+              <NavLink to={`/favorites/${oneUser.id}`}>Избранные</NavLink>
+              <NavLink>
+                {oneUser.name}
+                <span>({oneUser.points})</span>
+              </NavLink>
+            </>
           )}
           <button
             onClick={() => {

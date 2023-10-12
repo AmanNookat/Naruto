@@ -7,8 +7,40 @@
       "image": "a",
       "level": 1,
       "inventory": [],
+      "favorites": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто",
+          "id": 1,
+          "comments": [
+            {
+              "id": 1697002020578,
+              "body": "Naruto",
+              "rating": 1,
+              "user": "aman"
+            },
+            {
+              "id": 1697085501698,
+              "body": "Наруто красавчик",
+              "rating": 5,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": [
+            {
+              "id": 1697008443434,
+              "user": "a"
+            }
+          ]
+        }
+      ],
       "isAdmin": true,
-      "points": 9,
+      "points": 0,
       "id": 1
     },
     {
@@ -18,31 +50,10 @@
       "image": "a",
       "level": 1,
       "inventory": [],
+      "favorites": [],
       "isAdmin": false,
       "points": 0,
       "id": 2
-    },
-    {
-      "name": "erkin",
-      "mail": "qwe",
-      "password": "qwe",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtHC6Lv3Q5_7WxbFKEH8PpPKt5e-mavDOjA&usqp=CAU",
-      "level": 1,
-      "inventory": [],
-      "isAdmin": true,
-      "points": 1,
-      "id": 3
-    },
-    {
-      "name": "erkin",
-      "mail": "qwe",
-      "password": "qwe",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtHC6Lv3Q5_7WxbFKEH8PpPKt5e-mavDOjA&usqp=CAU",
-      "level": 1,
-      "inventory": [],
-      "isAdmin": true,
-      "points": 0,
-      "id": 4
     }
   ],
   "cards": [
@@ -60,9 +71,15 @@
           "body": "Naruto",
           "rating": 1,
           "user": "aman"
+        },
+        {
+          "id": 1697085501698,
+          "body": "Наруто красавчик",
+          "rating": 5,
+          "user": "aman"
         }
       ],
-      "rating": "1.0",
+      "rating": "3.0",
       "likes": [
         {
           "id": 1697008443434,
@@ -82,7 +99,12 @@
       "power": 20,
       "description": "Саске",
       "id": 2,
-      "likes": [],
+      "likes": [
+        {
+          "id": 1697085061696,
+          "user": "aman"
+        }
+      ],
       "comments": [
         {
           "id": 1697032793926,
@@ -110,7 +132,12 @@
         }
       ],
       "rating": "3.0",
-      "likes": []
+      "likes": [
+        {
+          "id": 1697085062859,
+          "user": "aman"
+        }
+      ]
     },
     {
       "name": "Ирука Умино",
@@ -129,7 +156,12 @@
         }
       ],
       "rating": "4.0",
-      "likes": []
+      "likes": [
+        {
+          "id": 1697085064074,
+          "user": "aman"
+        }
+      ]
     },
     {
       "name": "Какаши Хатаке",
@@ -147,7 +179,13 @@
           "user": "aman"
         }
       ],
-      "rating": "5.0"
+      "rating": "5.0",
+      "likes": [
+        {
+          "id": 1697085068034,
+          "user": "aman"
+        }
+      ]
     },
     {
       "name": "Цунаде",
@@ -165,7 +203,13 @@
           "user": "aman"
         }
       ],
-      "rating": "2.0"
+      "rating": "2.0",
+      "likes": [
+        {
+          "id": 1697085069236,
+          "user": "aman"
+        }
+      ]
     },
     {
       "name": "Мадара Учиха",
@@ -174,7 +218,13 @@
       "rank": "Ооцуцуки",
       "power": 9999,
       "description": "Бог шиноби",
-      "id": 7
+      "id": 7,
+      "likes": [
+        {
+          "id": 1697085070278,
+          "user": "aman"
+        }
+      ]
     }
   ],
   "orders": [
@@ -203,6 +253,47 @@
         }
       ],
       "id": 1
+    },
+    {
+      "user": "aman",
+      "totalCost": 100,
+      "cards": [
+        {
+          "count": 1,
+          "totalPrice": 100,
+          "cardItem": {
+            "name": "Наруто Узумаки",
+            "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+            "price": 100,
+            "rank": "Генин",
+            "power": 20,
+            "description": "Наруто",
+            "id": 1,
+            "comments": [
+              {
+                "id": 1697002020578,
+                "body": "Naruto",
+                "rating": 1,
+                "user": "aman"
+              },
+              {
+                "id": 1697085501698,
+                "body": "Наруто красавчик",
+                "rating": 5,
+                "user": "aman"
+              }
+            ],
+            "rating": "3.0",
+            "likes": [
+              {
+                "id": 1697008443434,
+                "user": "a"
+              }
+            ]
+          }
+        }
+      ],
+      "id": 2
     }
   ],
   "quizzes": [

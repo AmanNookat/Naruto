@@ -14,6 +14,7 @@ import { getCart } from "../../../store/cart/cartSlice";
 import CardLike from "../CardLike/CardLike";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./CardItem.css";
+import { toggleCardFavorite } from "../../../store/users/usersActions";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
@@ -54,7 +55,7 @@ const CardItem = ({ card }) => {
         width: "20rem",
         border: "1px solid black",
         position: "relative",
-        backgroundColor: `${cardColorChange(card.rank)}`,
+        ...cardColorChange(card.rank),
       }}
       className="CardMain"
     >
@@ -101,6 +102,7 @@ const CardItem = ({ card }) => {
                 justifyContent: "center",
               }}
             >
+
               <CardLike
                 isLikedCard={isLikedCard}
                 likes={card.likes}

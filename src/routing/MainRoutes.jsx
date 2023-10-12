@@ -10,6 +10,7 @@ import CardEditPage from "../pages/CardEditPage/CardEditPage";
 import CartPage from "../pages/CartPage/CartPage";
 import QuizzesPage from "../pages/QuizzesPage/QuizzesPage";
 import OneQuiz from "../components/quiz/OneQuiz";
+import FavoritesPage from "../pages/FavoritesPage/FavoritesPage";
 
 const MainRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const MainRoutes = () => {
       <Route path="/cart" element={<CartPage />} />
       <Route path="/quizzes" element={<QuizzesPage />} />
       <Route path="/quizzes/:id" element={<OneQuiz />} />
+      <Route path="/favorites/:id" element={<FavoritesPage />} />
     </Routes>
   );
 };
