@@ -48,6 +48,13 @@ export const getTotalPages = async (url) => {
   return totalPages;
 };
 
+// export const checkCardInCart = (cardId) => {
+//   const cart = getCartData();
+//   return cart.cards.find((card) => card.cardItem.id === cardId);
+// };
+
+export const checkCardInFavorites = () => {};
+
 export const cardColorChange = (category) => {
   switch (category) {
     case "Генин":
