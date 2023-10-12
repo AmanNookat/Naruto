@@ -1,0 +1,46 @@
+.nav {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+}
+
+.burgerBtn {
+  border: none;
+  cursor: pointer;
+}
+
+.burger--square__open {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  gap: 5px;
+  border: none;
+  color: #ffffff;
+}
+.burger--square__open img {
+  max-width: 45px;
+  max-height: 30px;
+}
+.burger--square__open p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 14px;
+}
+.burger--square__close {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: #ffff;
+  padding: 10px;
+  z-index: 1000;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.burger--square__close p {
+  font-size: 40px;
+}
