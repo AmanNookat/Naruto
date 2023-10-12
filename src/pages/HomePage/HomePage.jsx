@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Scrollama, Step } from "react-scrollama";
 import "./HomePage.css";
 
 import homeLogo from "./images/homeLogo.png";
 import team7Big from "./images/team7Big.png";
 // Импорты для первой книги
+
 import narutoFirst from "./images/narutoFirst.png";
 import firstArcYear from "./images/year_1999 1.png";
 import firstArcTitle from "./images/01-title.png";
@@ -21,6 +23,7 @@ import mangaFirstBubenchiki from "./images/MangaFirstBubenchiki.png";
 import mangaFirstTextPodBubenchikami from "./images/caption_c 1.png";
 
 // Импорты для второй книги
+
 import hakuPic from "./images/hakuPic.png";
 import mangaTitle2 from "./images/mangaTitle2.png";
 import ZabuzaUnderHaku from "./images/ZabuzaUnderHaku.png";
@@ -31,22 +34,67 @@ import year2000 from "./images/year_2000 1.png";
 import kakashiVsZabuza from "./images/kakashiVsZabuza.png";
 import sasukeVsHaku from "./images/sasukeVsHaku.png";
 
-const HomePage = () => {
-  // const [animateTeam7Big, setAnimateTeam7Big] = useState(false);
-  // const [currentStep, setCurrentStep] = useState(null);
+// Импорты для третей книги
 
-  // const onStepEnter = ({ data }) => {
-  //   if (data === "team7Big") {
-  //     setAnimateTeam7Big(true);
-  //   }
-  // };
+import year2001 from "./images/year_2001 1.png";
+import leeAndNeji from "./images/leeAndNeji.png";
+import narutoNearNeji from "./images/narutoNearNeji.png";
+import kiba from "./images/kiba.png";
+import guyAndLee from "./images/guyAndLee.png";
+import sandSphere from "./images/sandSphere.png";
+import bookTitle3 from "./images/bookTitle3.png";
+import gaaraUpsideDown from "./images/gaaraUpsideDown.png";
+import inoVsSakura from "./images/inoVsSakura.png";
+import shikamaruAndShino from "./images/shikamruAndShino.png";
+import leeVsGaara from "./images/leeVsGaara.png";
+import chidoryBySasuke from "./images/chidoryBySasuke.png";
+
+// Импорты для четвертой книги
+
+import bookTitle4 from "./images/bookTitle4.png";
+import year2002 from "./images/year_2002 1.png";
+import creepingThreat from "./images/creepingThreat.png";
+import oruch from "./images/oruch.png";
+import sandNinjas from "./images/sandNinjas.png";
+import demonOfDeath from "./images/demonOfDeath.png";
+import titleNarutoVsGaara from "./images/titleNarutoVsGaara.png";
+import babyGaara from "./images/babyGaara.png";
+import shukaku from "./images/shukaku.png";
+import garaCrying from "./images/garaCrying.png";
+import narutoClosedEyes from "./images/narutoClosedEyes.png";
+import oruchMask from "./images/oruchMask.png";
+import twoHokages from "./images/twoHokages.png";
+import titleHiruzenVsOruch from "./images/titleHiruzenVsOruch.png";
+import hiruzenDies from "./images/hiruzenDies.png";
+import gaaraVsNaruto from "./images/gaaraVsNaruto.png";
+
+// Импорты для пятой книги
+
+import itachi from "./images/itachi.png";
+import kakashi from "./images/kakashi.png";
+import moonItachi from "./images/moonItachi.png";
+import lilSaske from "./images/lilSaske.png";
+import saskeChidori from "./images/saskeChidori.png";
+import bookTitle5 from "./images/bookTitle5.png";
+import kisameAndItachi from "./images/kisameAndItachi.png";
+import year2003 from "./images/05-year_2003.png";
+
+const HomePage = () => {
+  const [animateTeam7Big, setAnimateTeam7Big] = useState(false);
+  const [currentStep, setCurrentStep] = useState(null);
+
+  const onStepEnter = ({ data }) => {
+    if (data === "team7Big") {
+      setAnimateTeam7Big(true);
+    }
+  };
 
   useEffect(() => {
     const mangaElements = document.querySelectorAll(".manga");
     mangaElements.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add("animate");
-      }, index * 300);
+      }, index * 200);
     });
   }, []);
 
@@ -165,13 +213,147 @@ const HomePage = () => {
             <img src={sasukeVsHaku} alt="" />
           </div>
         </div>
-        <div id="team7Big" className="home__photo--container">
-          <img src={team7Big} alt="" />
+        <Scrollama onStepEnter={onStepEnter}>
+          <Step data="team7Big">
+            <div
+              id="team7Big"
+              className={`home__photo--container ${
+                animateTeam7Big ? "animate" : ""
+              }`}
+            >
+              <img src={team7Big} alt="" />
+            </div>
+          </Step>
+        </Scrollama>
+        <div id="home__third" className="home--odd">
+          <div id="year2001" className="manga">
+            <img src={year2001} alt="" />
+          </div>
+          <div id="leeAndNeji" className="manga">
+            <img src={leeAndNeji} alt="" />
+          </div>
+          <div id="narutoNearNeji" className="manga">
+            <img src={narutoNearNeji} alt="" />
+          </div>
+          <div id="kiba" className="manga">
+            <img src={kiba} alt="" />
+          </div>
+          <div id="guyAndLee" className="manga">
+            <img src={guyAndLee} alt="" />
+          </div>
+          <div id="sandSphere" className="manga">
+            <img src={sandSphere} alt="" />
+          </div>
+          <div id="bookTitle3" className="manga">
+            <img src={bookTitle3} alt="" />
+          </div>
+          <div id="gaaraUpsideDown" className="manga">
+            <img src={gaaraUpsideDown} alt="" />
+          </div>
+          <div id="inoVsSakura" className="manga">
+            <img src={inoVsSakura} alt="" />
+          </div>
+          <div id="shikamaruAndShino" className="manga">
+            <img src={shikamaruAndShino} alt="" />
+          </div>
+          <div id="leeVsGaara" className="manga">
+            <img src={leeVsGaara} alt="" />
+          </div>
+          <div id="chidoryBySasuke" className="manga">
+            <img src={chidoryBySasuke} alt="" />
+          </div>
         </div>
-        <div id="home__third" className="home--odd"></div>
-        <div id="home__fourth" className="home--even"></div>
-        <div id="home__fifth" className="home--odd"></div>
-        <div id="home__sixth" className="home--even"></div>
+
+        <div id="home__fourth" className="home--even">
+          <div id="bookTitle4" className="manga">
+            <img src={bookTitle4} alt="" />
+          </div>
+
+          <div id="year2002" className="manga">
+            <img src={year2002} alt="" />
+          </div>
+
+          <div id="creepingThreat" className="manga">
+            <img src={creepingThreat} alt="" />
+          </div>
+
+          <div id="oruch" className="manga">
+            <img src={oruch} alt="" />
+          </div>
+
+          <div id="sandNinjas" className="manga">
+            <img src={sandNinjas} alt="" />
+          </div>
+
+          <div id="demonOfDeath" className="manga">
+            <img src={demonOfDeath} alt="" />
+          </div>
+
+          <div id="titleNarutoVsGaara" className="manga">
+            <img src={titleNarutoVsGaara} alt="" />
+          </div>
+
+          <div id="babyGaara" className="manga">
+            <img src={babyGaara} alt="" />
+          </div>
+
+          <div id="shukaku" className="manga">
+            <img src={shukaku} alt="" />
+          </div>
+          <div id="garaCrying" className="manga">
+            <img src={garaCrying} alt="" />
+          </div>
+
+          <div id="narutoClosedEyes" className="manga">
+            <img src={narutoClosedEyes} alt="" />
+          </div>
+
+          <div id="oruchMask" className="manga">
+            <img src={oruchMask} alt="" />
+          </div>
+
+          <div id="twoHokages" className="manga">
+            <img src={twoHokages} alt="" />
+          </div>
+
+          <div id="titleHiruzenVsOruch" className="manga">
+            <img src={titleHiruzenVsOruch} alt="" />
+          </div>
+
+          <div id="hiruzenDies" className="manga">
+            <img src={hiruzenDies} alt="" />
+          </div>
+
+          <div id="gaaraVsNaruto" className="manga">
+            <img src={gaaraVsNaruto} alt="" />
+          </div>
+        </div>
+        <div id="home__fifth" className="home--odd">
+          <div id="itachi" className="manga">
+            <img src={itachi} alt="" />
+          </div>
+          <div id="kakashi" className="manga">
+            <img src={kakashi} alt="" />
+          </div>
+          <div id="moonItachi" className="manga">
+            <img src={moonItachi} alt="" />
+          </div>
+          <div id="lilSaske" className="manga">
+            <img src={lilSaske} alt="" />
+          </div>
+          <div id="saskeChidori" className="manga">
+            <img src={saskeChidori} alt="" />
+          </div>
+          <div id="bookTitle5" className="manga">
+            <img src={bookTitle5} alt="" />
+          </div>
+          <div id="kisameAndItachi" className="manga">
+            <img src={kisameAndItachi} alt="" />
+          </div>
+          <div id="year2003" className="manga">
+            <img src={year2003} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );
