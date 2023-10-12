@@ -23,6 +23,18 @@
       "isAdmin": false,
       "points": 0,
       "id": 2
+    },
+    {
+      "name": "erkin",
+      "mail": "qwe",
+      "password": "qwe",
+      "image": "qwe",
+      "level": 1,
+      "inventory": [],
+      "favorites": [],
+      "isAdmin": true,
+      "points": 5,
+      "id": 3
     }
   ],
   "cards": [
