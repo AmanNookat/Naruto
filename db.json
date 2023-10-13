@@ -6,7 +6,85 @@
       "password": "a",
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
       "level": 1,
-      "inventory": [],
+      "inventory": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто",
+          "id": 1,
+          "comments": [
+            {
+              "id": 1697002020578,
+              "body": "Naruto",
+              "rating": 1,
+              "user": "aman"
+            },
+            {
+              "id": 1697085501698,
+              "body": "Наруто красавчик",
+              "rating": 5,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": [
+            {
+              "id": 1697008443434,
+              "user": "a"
+            },
+            {
+              "id": 1697088984199,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Саске",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697127635039,
+              "user": "aman"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697032793926,
+              "body": "круто",
+              "rating": 2,
+              "user": "aman"
+            }
+          ],
+          "rating": "2.0"
+        },
+        {
+          "name": "Сакура Харуно",
+          "image": "https://images6.fanpop.com/image/photos/39600000/Sakura-haruno-sakura-39693389-640-640.jpg",
+          "price": 1,
+          "rank": "Генин",
+          "power": 1,
+          "description": "Сакура",
+          "id": 3,
+          "comments": [
+            {
+              "id": 1697032804071,
+              "body": "ахахахах",
+              "rating": 3,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": []
+        }
+      ],
       "favorites": [],
       "isAdmin": true,
       "points": 799,

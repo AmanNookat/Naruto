@@ -127,11 +127,12 @@ const CardFooter = ({ card }) => {
             onClick={() => {
               dispatch(toggleCardFavorite({ card }));
             }}
+            style={{ padding: "5px", borderRadius: "50%" }}
           >
             {isFavCard ? (
-              <StarIcon fontSize="large" color="warning" />
+              <StarIcon fontSize="medium" color="warning" />
             ) : (
-              <StarIcon fontSize="large" />
+              <StarIcon fontSize="medium" />
             )}
           </button>
           <button onClick={() => navigate(`/store/${card.id}`)}>about</button>
