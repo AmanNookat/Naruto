@@ -54,6 +54,18 @@
       "isAdmin": false,
       "points": 0,
       "id": 2
+    },
+    {
+      "name": "china",
+      "mail": "a",
+      "password": "a",
+      "image": "a",
+      "level": 1,
+      "inventory": [],
+      "favorites": [],
+      "isAdmin": true,
+      "points": 0,
+      "id": 3
     }
   ],
   "cards": [
@@ -225,6 +237,15 @@
           "user": "aman"
         }
       ]
+    },
+    {
+      "name": "bdndndndndndn",
+      "image": "tyguhijsnv",
+      "price": 456789,
+      "rank": "trfdyguhijo",
+      "power": 456789,
+      "description": "rdtfgyuhikop",
+      "id": 8
     }
   ],
   "orders": [
