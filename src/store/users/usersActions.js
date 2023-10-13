@@ -82,11 +82,3 @@ export const toggleCardFavorite = createAsyncThunk(
     return oneUser;
   }
 );
-
-// export const getCardsFromInventory = createAsyncThunk(
-//   "users/getCardsFromInventory",
-//   async () => {
-//     const { data } = await axios.get(USERS_API);
-
-//   }
-// );

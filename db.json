@@ -5,7 +5,7 @@
       "mail": "a",
       "password": "a",
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
-      "level": 1,
+      "level": 7,
       "inventory": [
         {
           "name": "Наруто Узумаки",
@@ -131,6 +131,45 @@
               "user": "aman"
             }
           ]
+        },
+        {
+          "name": "Цунаде",
+          "image": "https://static.zerochan.net/Tsunade.full.2364148.jpg",
+          "price": 100000,
+          "rank": "Каге",
+          "power": 2500,
+          "description": "106 сантиметров",
+          "id": 6,
+          "comments": [
+            {
+              "id": 1697032853782,
+              "body": "106",
+              "rating": 2,
+              "user": "aman"
+            }
+          ],
+          "rating": "2.0",
+          "likes": [
+            {
+              "id": 1697085069236,
+              "user": "aman"
+            }
+          ]
+        },
+        {
+          "name": "Мадара Учиха",
+          "image": "https://pm1.aminoapps.com/6540/38f55b02fe7d2e38849515651b58940810ed37cf_hq.jpg",
+          "price": 999999,
+          "rank": "Ооцуцуки",
+          "power": 9999,
+          "description": "Бог шиноби",
+          "id": 7,
+          "likes": [
+            {
+              "id": 1697085070278,
+              "user": "aman"
+            }
+          ]
         }
       ],
       "favorites": [
@@ -171,10 +210,44 @@
               "user": "aman"
             }
           ]
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Саске",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697191189118,
+              "user": "aman"
+            },
+            {
+              "id": 1697190376659,
+              "user": "atai"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697032793926,
+              "body": "круто",
+              "rating": 2,
+              "user": "aman"
+            },
+            {
+              "id": 1697192766881,
+              "body": "ыудшоащ",
+              "rating": 4,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0"
         }
       ],
       "isAdmin": true,
-      "points": 99999003,
+      "points": 98899017,
       "id": 1
     },
     {
@@ -220,6 +293,62 @@
       "isAdmin": true,
       "points": 0,
       "id": 3
+    },
+    {
+      "name": "nurdin",
+      "mail": "a",
+      "password": "a",
+      "image": "a",
+      "level": 1,
+      "inventory": [
+        {
+          "name": "Сакура Харуно",
+          "image": "https://images6.fanpop.com/image/photos/39600000/Sakura-haruno-sakura-39693389-640-640.jpg",
+          "price": 1,
+          "rank": "Генин",
+          "power": 1,
+          "description": "Сакура",
+          "id": 3,
+          "comments": [
+            {
+              "id": 1697032804071,
+              "body": "ахахахах",
+              "rating": 3,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": []
+        },
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 10,
+          "rank": "Чунин",
+          "power": 10,
+          "description": "Ирука",
+          "id": 4,
+          "comments": [
+            {
+              "id": 1697032815845,
+              "body": "лох",
+              "rating": 4,
+              "user": "aman"
+            }
+          ],
+          "rating": "4.0",
+          "likes": [
+            {
+              "id": 1697085064074,
+              "user": "aman"
+            }
+          ]
+        }
+      ],
+      "favorites": [],
+      "isAdmin": false,
+      "points": 0,
+      "id": 4
     }
   ],
   "cards": [
@@ -792,6 +921,64 @@
         }
       ],
       "id": 3
+    }
+  ],
+  "company": [
+    {
+      "enemy": {
+        "name": "Мизуки",
+        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
+        "power": 15
+      },
+      "id": 1
+    },
+    {
+      "enemy": {
+        "name": "Хаку",
+        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
+        "power": 39
+      },
+      "id": 2
+    },
+    {
+      "enemy": {
+        "name": "Неджи Хьюга",
+        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
+        "power": 50
+      },
+      "id": 3
+    },
+    {
+      "enemy": {
+        "name": "Гаара (биджу)",
+        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
+        "power": 69
+      },
+      "id": 4
+    },
+    {
+      "enemy": {
+        "name": "Орочимару (без рук)",
+        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
+        "power": 100
+      },
+      "id": 5
+    },
+    {
+      "enemy": {
+        "name": "Кимимаро",
+        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
+        "power": 111
+      },
+      "id": 6
+    },
+    {
+      "enemy": {
+        "name": "Саске Учиха (печать 2)",
+        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
+        "power": 150
+      },
+      "id": 7
     }
   ]
 }
