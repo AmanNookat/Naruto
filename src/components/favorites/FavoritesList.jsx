@@ -8,11 +8,14 @@ const FavoritesList = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div
+      style={{ width: "100%", border: "1px solid black", textAlign: "center" }}
+    >
       {oneUser && (
-        <div>
+        <>
           {oneUser.favorites.length ? (
-            <div>
+            <>
+              <h2>Избранные</h2>
               {oneUser.favorites.map((card) => (
                 <div key={card.id}>
                   <p>{card.name}</p>
@@ -21,15 +24,15 @@ const FavoritesList = () => {
                       dispatch(toggleCardFavorite({ card }));
                     }}
                   >
-                    Fav
+                    убрать
                   </button>
                 </div>
               ))}
-            </div>
+            </>
           ) : (
             <h2>Избранных нет</h2>
           )}
-        </div>
+        </>
       )}
     </div>
   );
