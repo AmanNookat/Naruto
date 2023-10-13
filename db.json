@@ -25,7 +25,6 @@
       "id": 2
     },
     {
-
       "name": "erkin",
       "mail": "qwe",
       "password": "qwe",
@@ -85,6 +84,10 @@
         {
           "id": 1697191189118,
           "user": "aman"
+        },
+        {
+          "id": 1697190376659,
+          "user": "atai"
         }
       ],
       "comments": [
@@ -600,6 +603,7 @@
             "Акатон"
           ],
           "correct": 0
+
         }
       ],
       "id": 3

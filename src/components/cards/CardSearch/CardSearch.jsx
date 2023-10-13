@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCards } from "../../../store/cards/cardsActions";
 import { setSearchVal } from "../../../store/cards/cardsSlice";
+import "./CardSearch.css";
 
 const CardSearch = () => {
   const { search } = useSelector((state) => state.cards);

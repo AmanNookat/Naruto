@@ -1,3 +1,28 @@
+.StoreMain {
+  background-image: url("https://images.hdqwalls.com/wallpapers/anime-naruto-minimalism-j9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* чтобы изображение покрывало всю видимую область */
+  background-attachment: fixed; /* чтобы изображение оставалось неподвижным при прокрутке страницы */
+}
+
 .searchAndFilter {
   display: flex;
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: orange;
+}
+
+.ThrowButton {
+  padding: 8px 20px;
+  background-color: black;
+  color: orange;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ThrowButton:hover {
+  background-color: rgb(32, 29, 29);
 }
