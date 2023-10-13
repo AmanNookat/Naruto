@@ -62,11 +62,23 @@ export const cardColorChange = (category) => {
   switch (category) {
     case "Генин":
       return {
-        backgroundColor: "red",
+        backgroundColor: "#006400",
       };
     case "Чунин":
       return {
-        backgroundColor: "blue",
+        backgroundColor: "#FFD700",
+      };
+    case "Джонин":
+      return {
+        backgroundColor: "#FF8C00",
+      };
+    case "Каге":
+      return {
+        backgroundColor: "#B22222",
+      };
+    case "Ооцуцуки":
+      return {
+        backgroundColor: "#FFFFFF",
       };
     default:
       return {};
