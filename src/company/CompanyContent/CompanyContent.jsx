@@ -3,6 +3,8 @@ import Level from "../Level/Level";
 import { useDispatch, useSelector } from "react-redux";
 import { getOneUser } from "../../store/users/usersSlice";
 import BattleMenu from "../BattleMenu/BattleMenu";
+import CardsMenu from "../CardsMenu/CardsMenu";
+import { cleanBattleSlots } from "../../store/company/companyActions";
 
 const CompanyContent = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -13,6 +15,7 @@ const CompanyContent = () => {
 
   useEffect(() => {
     dispatch(getOneUser());
+    cleanBattleSlots();
   }, []);
 
   if (oneUser) {
@@ -27,11 +30,18 @@ const CompanyContent = () => {
         onClick={() => {
           setModal(true);
         }}
-        style={{ marginTop: "5%" }}
+        style={{ marginTop: "5%", display: "flex" }}
       >
         {oneLevel}
       </div>
-      <div> {modal && <BattleMenu setModal={setModal} />}</div>
+      <div>
+        {modal && (
+          <>
+            <BattleMenu setModal={setModal} />
+            <CardsMenu />
+          </>
+        )}
+      </div>
     </>
   );
 };
