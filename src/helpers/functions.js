@@ -87,6 +87,20 @@ export const cardColorChange = (category) => {
   }
 };
 
+// export const countCartTotalCost = (cartCards) => {
+//   return cartCards.reduce((acc, currVal) => {
+//     return acc + currVal.totalPrice;
+//   }, 0);
+// };
+
+export const getTotalPower = () => {
+  let data = JSON.parse(localStorage.getItem("NarutoBattle"));
+  data = data.reduce((acc, currVal) => {
+    return acc + currVal.power;
+  }, 0);
+  return data;
+};
+
 // -------------------------------- notify оставляйте в самом низу
 
 export const NOTIFY_TYPES = {

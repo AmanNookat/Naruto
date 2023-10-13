@@ -797,8 +797,9 @@
     {
       "enemy": {
         "name": "Мизуки",
-        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
-        "power": 15
+        "image": "https://pm1.aminoapps.com/6577/7c6d6e036bc6589b3d5631608af09566bdd5f2cd_00.jpg",
+        "power": 15,
+        "rank": "Генин"
       },
       "id": 1
     },
@@ -806,47 +807,53 @@
       "enemy": {
         "name": "Хаку",
         "image": "https://i.pinimg.com/474x/d0/17/7b/d0177b24a1bc5f8dcf4a25e1467206ce.jpg",
-        "power": 39
+        "power": 39,
+        "rank": "Чунин"
       },
       "id": 2
     },
     {
       "enemy": {
         "name": "Неджи Хьюга",
-        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
-        "power": 50
+        "image": "https://wallpapers.com/images/featured/neji-hyuga-zm6tk5hnvtbrd6a2.jpg",
+        "power": 50,
+        "rank": "Чунин"
       },
       "id": 3
     },
     {
       "enemy": {
         "name": "Гаара (биджу)",
-        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
-        "power": 69
+        "image": "https://i.ytimg.com/vi/5yncdfdsYUU/sddefault.jpg",
+        "power": 69,
+        "rank": "Джонин"
       },
       "id": 4
     },
     {
       "enemy": {
         "name": "Орочимару (без рук)",
-        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
-        "power": 100
+        "image": "https://preview.redd.it/rlxya9i9tq561.png?auto=webp&s=3238d30134fab3c56d0d6f32d65ce218733334b9",
+        "power": 100,
+        "rank": "Джонин"
       },
       "id": 5
     },
     {
       "enemy": {
         "name": "Кимимаро",
-        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
-        "power": 111
+        "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/3/38952/1644293-kimimaro_blood_limit_by_kimimaro77.jpg",
+        "power": 111,
+        "rank": "Джонин"
       },
       "id": 6
     },
     {
       "enemy": {
         "name": "Саске Учиха (печать 2)",
-        "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png/revision/latest?cb=20170830111403&path-prefix=ru",
-        "power": 150
+        "image": "https://i.redd.it/kid-sasuke-curse-mark-2-vs-rampage-obito-v0-cz0vn7yj6sdb1.jpg?width=850&format=pjpg&auto=webp&s=6d486276006eeee39e0ad928e943cec1cf52b6a5",
+        "power": 150,
+        "rank": "Джонин"
       },
       "id": 7
     }
