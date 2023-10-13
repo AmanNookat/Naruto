@@ -18,7 +18,10 @@ export const checkUserLogin = () => {
 
 export const getAuthUser = () => {
   const user = JSON.parse(localStorage.getItem("NarutoUser"));
-  return user.name;
+  if (user) {
+    return user.name;
+  }
+  // return false;
 };
 
 export const getCardRating = (cardObj) => {
@@ -45,12 +48,28 @@ export const getTotalPages = async (url) => {
   return totalPages;
 };
 
+// export const checkCardInCart = (cardId) => {
+//   const cart = getCartData();
+//   return cart.cards.find((card) => card.cardItem.id === cardId);
+// };
+
+export const checkCardInFavorites = (cardId) => {
+  const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+  return oneUser.favorites.find((card) => card.id === cardId);
+};
+
 export const cardColorChange = (category) => {
   switch (category) {
     case "Генин":
-      return "red";
+      return {
+        backgroundColor: "red",
+      };
     case "Чунин":
-      return "blue";
+      return {
+        backgroundColor: "blue",
+      };
+    default:
+      return {};
   }
 };
 

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {
   cardColorChange,
+  checkCardInFavorites,
   checkUserLogin,
   getAuthUser,
 } from "../../../helpers/functions";
@@ -14,13 +15,17 @@ import { getCart } from "../../../store/cart/cartSlice";
 import CardLike from "../CardLike/CardLike";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./CardItem.css";
+import { toggleCardFavorite } from "../../../store/users/usersActions";
+import StarIcon from "@mui/icons-material/Star";
 
 const CardItem = ({ card }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const { oneUser } = useSelector((state) => state.users);
   const { cart } = useSelector((state) => state.cart);
   const [isCardInCart, setIsCardInCart] = useState(false);
   const [isLikedCard, setIsLikedCard] = useState(false);
+  const [isFavCard, setIsFavCard] = useState(false);
 
   useEffect(() => {
     if (checkCardInCart(card.id)) {
@@ -29,6 +34,14 @@ const CardItem = ({ card }) => {
       setIsCardInCart(false);
     }
   }, [cart]);
+
+  useEffect(() => {
+    if (checkCardInFavorites(card.id)) {
+      setIsFavCard(true);
+    } else {
+      setIsFavCard(false);
+    }
+  }, [oneUser]);
 
   const checkCardLike = () => {
     const user = getAuthUser();
@@ -54,7 +67,7 @@ const CardItem = ({ card }) => {
         width: "20rem",
         border: "1px solid black",
         position: "relative",
-        backgroundColor: `${cardColorChange(card.rank)}`,
+        ...cardColorChange(card.rank),
       }}
       className="CardMain"
     >
@@ -140,6 +153,17 @@ const CardItem = ({ card }) => {
                 justifyContent: "center",
               }}
             ></div>
+            <button
+              onClick={() => {
+                dispatch(toggleCardFavorite({ card }));
+              }}
+            >
+              {isFavCard ? (
+                <StarIcon fontSize="large" color="warning" />
+              ) : (
+                <StarIcon fontSize="large" />
+              )}
+            </button>
           </div>
         )}
       </div>

@@ -94,7 +94,7 @@ const HomePage = () => {
     mangaElements.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add("animate");
-      }, index * 200);
+      }, index * 300);
     });
   }, []);
 
@@ -184,6 +184,7 @@ const HomePage = () => {
             <img src={mangaFirstTextPodBubenchikami} alt="" />
           </div>
         </div>
+
         <div id="home__second" className="home--even">
           <div id="hakuPic" className="manga">
             <img src={hakuPic} alt="" />
@@ -213,6 +214,7 @@ const HomePage = () => {
             <img src={sasukeVsHaku} alt="" />
           </div>
         </div>
+
         <Scrollama onStepEnter={onStepEnter}>
           <Step data="team7Big">
             <div
@@ -225,6 +227,7 @@ const HomePage = () => {
             </div>
           </Step>
         </Scrollama>
+
         <div id="home__third" className="home--odd">
           <div id="year2001" className="manga">
             <img src={year2001} alt="" />
@@ -328,6 +331,7 @@ const HomePage = () => {
             <img src={gaaraVsNaruto} alt="" />
           </div>
         </div>
+
         <div id="home__fifth" className="home--odd">
           <div id="itachi" className="manga">
             <img src={itachi} alt="" />

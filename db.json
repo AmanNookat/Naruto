@@ -7,8 +7,34 @@
       "image": "a",
       "level": 1,
       "inventory": [],
+      "favorites": [
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 10,
+          "rank": "Чунин",
+          "power": 10,
+          "description": "Ирука",
+          "id": 4,
+          "comments": [
+            {
+              "id": 1697032815845,
+              "body": "лох",
+              "rating": 4,
+              "user": "aman"
+            }
+          ],
+          "rating": "4.0",
+          "likes": [
+            {
+              "id": 1697085064074,
+              "user": "aman"
+            }
+          ]
+        }
+      ],
       "isAdmin": true,
-      "points": 9,
+      "points": 21,
       "id": 1
     },
     {
@@ -18,31 +44,10 @@
       "image": "a",
       "level": 1,
       "inventory": [],
+      "favorites": [],
       "isAdmin": false,
       "points": 0,
       "id": 2
-    },
-    {
-      "name": "erkin",
-      "mail": "qwe",
-      "password": "qwe",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtHC6Lv3Q5_7WxbFKEH8PpPKt5e-mavDOjA&usqp=CAU",
-      "level": 1,
-      "inventory": [],
-      "isAdmin": true,
-      "points": 1,
-      "id": 3
-    },
-    {
-      "name": "erkin",
-      "mail": "qwe",
-      "password": "qwe",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtHC6Lv3Q5_7WxbFKEH8PpPKt5e-mavDOjA&usqp=CAU",
-      "level": 1,
-      "inventory": [],
-      "isAdmin": true,
-      "points": 0,
-      "id": 4
     }
   ],
   "cards": [
@@ -60,9 +65,15 @@
           "body": "Naruto",
           "rating": 1,
           "user": "aman"
+        },
+        {
+          "id": 1697085501698,
+          "body": "Наруто красавчик",
+          "rating": 5,
+          "user": "aman"
         }
       ],
-      "rating": "1.0",
+      "rating": "3.0",
       "likes": [
         {
           "id": 1697008443434,
@@ -71,6 +82,10 @@
         {
           "id": 1697088984199,
           "user": "atai"
+        },
+        {
+          "id": 1697100331395,
+          "user": "aman"
         }
       ]
     },
@@ -82,7 +97,12 @@
       "power": 20,
       "description": "Саске",
       "id": 2,
-      "likes": [],
+      "likes": [
+        {
+          "id": 1697127635039,
+          "user": "aman"
+        }
+      ],
       "comments": [
         {
           "id": 1697032793926,
@@ -129,7 +149,12 @@
         }
       ],
       "rating": "4.0",
-      "likes": []
+      "likes": [
+        {
+          "id": 1697085064074,
+          "user": "aman"
+        }
+      ]
     },
     {
       "name": "Какаши Хатаке",
@@ -147,7 +172,13 @@
           "user": "aman"
         }
       ],
-      "rating": "5.0"
+      "rating": "5.0",
+      "likes": [
+        {
+          "id": 1697085068034,
+          "user": "aman"
+        }
+      ]
     },
     {
       "name": "Цунаде",
@@ -165,7 +196,13 @@
           "user": "aman"
         }
       ],
-      "rating": "2.0"
+      "rating": "2.0",
+      "likes": [
+        {
+          "id": 1697085069236,
+          "user": "aman"
+        }
+      ]
     },
     {
       "name": "Мадара Учиха",
@@ -174,7 +211,13 @@
       "rank": "Ооцуцуки",
       "power": 9999,
       "description": "Бог шиноби",
-      "id": 7
+      "id": 7,
+      "likes": [
+        {
+          "id": 1697085070278,
+          "user": "aman"
+        }
+      ]
     }
   ],
   "orders": [
@@ -203,6 +246,47 @@
         }
       ],
       "id": 1
+    },
+    {
+      "user": "aman",
+      "totalCost": 100,
+      "cards": [
+        {
+          "count": 1,
+          "totalPrice": 100,
+          "cardItem": {
+            "name": "Наруто Узумаки",
+            "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+            "price": 100,
+            "rank": "Генин",
+            "power": 20,
+            "description": "Наруто",
+            "id": 1,
+            "comments": [
+              {
+                "id": 1697002020578,
+                "body": "Naruto",
+                "rating": 1,
+                "user": "aman"
+              },
+              {
+                "id": 1697085501698,
+                "body": "Наруто красавчик",
+                "rating": 5,
+                "user": "aman"
+              }
+            ],
+            "rating": "3.0",
+            "likes": [
+              {
+                "id": 1697008443434,
+                "user": "a"
+              }
+            ]
+          }
+        }
+      ],
+      "id": 2
     }
   ],
   "quizzes": [
@@ -212,93 +296,200 @@
       "questions": [
         {
           "title": "В каком году вышла манга 'Наруто'?",
-          "variants": [
-            "1999",
-            "1998",
-            "1997",
-            "1996"
-          ],
+          "variants": ["1999", "1998", "1997", "1996"],
           "correct": 0
         }
       ],
       "id": 1
     },
     {
-      "name": "Угадай возраст персонажа",
-      "image": "https://images7.alphacoders.com/318/thumb-1920-318280.png",
+      "name": "Правда или ложь",
+      "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/12/Header-4.jpg",
       "questions": [
         {
-          "title": "Монки Д. Луффи",
-          "variants": [
-            "18",
-            "21",
-            "17",
-            "19"
-          ],
-          "correct": 3
-        },
-        {
-          "title": "Боа Хэнкок",
-          "variants": [
-            "29",
-            "18",
-            "31",
-            "40"
-          ],
-          "correct": 2
-        },
-        {
-          "title": "Смокер",
-          "variants": [
-            "32",
-            "36",
-            "28",
-            "30"
-          ],
+          "title": "Аниме 'Наруто' вышло в эфир в ноябре 2002 года",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
           "correct": 1
         },
         {
-          "title": "Трафальгар Ло",
-          "variants": [
-            "24",
-            "26",
-            "25",
-            "22"
-          ],
-          "correct": 1
-        },
-        {
-          "title": "Крокодайл",
-          "variants": [
-            "46",
-            "35",
-            "50",
-            "27"
-          ],
+          "title": "Изначально 'Наруто' должен был быть историей про поиск ингредиентов для рамена",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
           "correct": 0
         },
         {
-          "title": "Чоппер",
-          "variants": [
-            "14",
-            "15",
-            "16",
-            "17"
-          ],
-          "correct": 3
+          "title": "Джирайя, Цунаде и Орочимару - отсылка на классическую японскую литературу",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
         },
         {
-          "title": "Донкихот Дофламинго",
-          "variants": [
-            "24",
-            "37",
-            "41",
-            "35"
-          ],
-          "correct": 2
+          "title": "Стиль битвы клана Хьюга основан на реальном стиле единоборств",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
+        },
+        {
+          "title": "Настоящее имя джинчурики 8-хвостого - Би",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Сакура и Паккун используют один и тот же шампунь",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
+        },
+        {
+          "title": "Хатаке Сакумо был убит шиноби деревни Песка",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Шимура Данзо был Хокаге",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Кагуя была женой императора Тендзи",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Битва за мост Канаби произошла на 3 Мировой войне шиноби",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
+        },
+        {
+          "title": "Майто Дай умер генином",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
+        },
+        {
+          "title": "Рок Ли был парнем Сакуры",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Джирайя и Орочимару - реинкарнации Ашуры и Индры",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "За время действия сюжета умерло больше 150ти персонажей",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
+        },
+        {
+          "title": "В общей сложности в аниме 'Наруто' 700 серий",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Кагуя - представитель древнейшего клана Конохи",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "План Мадары был внушен ему Черным Зецу",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
+        },
+        {
+          "title": "Все хвостатые основаны на мифических животных",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Саске был назван в честь своего прадеда",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 1
+        },
+        {
+          "title": "Хатаке - это клан",
+          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "correct": 0
         }
       ],
       "id": 2
+    },
+    {
+      "name": "Название элемента на японском",
+      "image": "https://steamuserimages-a.akamaihd.net/ugc/867359862992460933/C5F147F13D44108F5E91166149692BA3D8044ECE/?imw=1024&imh=487&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+      "questions": [
+        {
+          "title": "Стихия огня",
+          "variants": ["Футон", "Катон", "Райтон", "Готон"],
+          "correct": 1
+        },
+        {
+          "title": "Стихия воды",
+          "variants": ["Интон", "Суитон", "Мизутон", "Киритон"],
+          "correct": 1
+        },
+        {
+          "title": "Стихия земли",
+          "variants": ["Дотон", "Шотон", "Такетон", "Даратон"],
+          "correct": 0
+        },
+        {
+          "title": "Стихия молнии",
+          "variants": ["Райтон", "Инадзутон", "Киритон", "Дзинтон"],
+          "correct": 0
+        },
+        {
+          "title": "Стихия ветра",
+          "variants": ["Фуутон", "Макитон", "Футон", "Хакатон"],
+          "correct": 2
+        },
+        {
+          "title": "Стихия воды",
+          "variants": ["Интон", "Суйтон", "Мизутон", "Киритон"],
+          "correct": 1
+        },
+        {
+          "title": "Стихия дерева",
+          "variants": ["Хашитон", "Ханатон", "Рокутон", "Мокутон"],
+          "correct": 3
+        },
+        {
+          "title": "Стихия льда",
+          "variants": ["Интон", "Хакутон", "Хьётон", "Юкитон"],
+          "correct": 2
+        },
+        {
+          "title": "Стихия кипения",
+          "variants": ["Футтон", "Фуутон", "Ширатон", "Кацутон"],
+          "correct": 0
+        },
+        {
+          "title": "Стихия лавы",
+          "variants": ["Каратон", "Магутон", "Мератон", "Йотон"],
+          "correct": 1
+        },
+        {
+          "title": "Стихия шторма",
+          "variants": ["Хелутон", "Кайтон", "Куцутон", "Рантон"],
+          "correct": 3
+        },
+        {
+          "title": "Стихия пыли",
+          "variants": ["Джинтон", "Хутон", "Шатон", "Уцутон"],
+          "correct": 0
+        },
+        {
+          "title": "Стихия взрыва",
+          "variants": ["Бакутон", "Кацутон", "Шаттон", "Татон"],
+          "correct": 0
+        },
+        {
+          "title": "Стихия жара",
+          "variants": ["Шакутон", "Хайтон", "Мератон", "Акатон"],
+          "correct": 0
+        },
+        {
+          "title": "Стихия воды",
+          "variants": ["Интон", "Суйтон", "Мизутон", "Киритон"],
+          "correct": 1
+        }
+      ],
+      "id": 3
     }
   ]
 }

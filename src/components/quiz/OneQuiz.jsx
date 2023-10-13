@@ -77,9 +77,11 @@ const OneQuiz = () => {
                       width="250"
                       height="auto"
                     />
-                    <p>
-                      Получено баллов: {corrects}/{oneQuiz.questions.length}
-                    </p>
+                    {oneQuiz && (
+                      <p>
+                        Получено баллов: {corrects}/{oneQuiz.questions.length}
+                      </p>
+                    )}
                     <Link to="/quizzes" className={style.quizExit}>
                       ВЫЙТИ
                     </Link>
