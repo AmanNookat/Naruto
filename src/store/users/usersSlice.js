@@ -6,6 +6,7 @@ import {
   toggleCardFavorite,
 } from "./usersActions";
 import { addToLocalStorage } from "../../helpers/functions";
+import { unlockCard } from "../cards/cardsActions";
 
 const usersSlice = createSlice({
   name: "users",
@@ -42,6 +43,9 @@ const usersSlice = createSlice({
         state.oneUser = action.payload;
       })
       .addCase(toggleCardFavorite.fulfilled, (state, action) => {
+        state.oneUser = action.payload;
+      })
+      .addCase(unlockCard.fulfilled, (state, action) => {
         state.oneUser = action.payload;
       });
   },

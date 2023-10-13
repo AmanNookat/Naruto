@@ -4,37 +4,12 @@
       "name": "aman",
       "mail": "a",
       "password": "a",
-      "image": "a",
+      "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
       "level": 1,
       "inventory": [],
-      "favorites": [
-        {
-          "name": "Ирука Умино",
-          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
-          "price": 10,
-          "rank": "Чунин",
-          "power": 10,
-          "description": "Ирука",
-          "id": 4,
-          "comments": [
-            {
-              "id": 1697032815845,
-              "body": "лох",
-              "rating": 4,
-              "user": "aman"
-            }
-          ],
-          "rating": "4.0",
-          "likes": [
-            {
-              "id": 1697085064074,
-              "user": "aman"
-            }
-          ]
-        }
-      ],
+      "favorites": [],
       "isAdmin": true,
-      "points": 21,
+      "points": 799,
       "id": 1
     },
     {
@@ -50,38 +25,13 @@
       "id": 2
     },
     {
-      "name": "atai",
-      "mail": "a",
-      "password": "a",
-      "image": "a",
+      "name": "erkin",
+      "mail": "qwe",
+      "password": "qwe",
+      "image": "qwe",
       "level": 1,
       "inventory": [],
-      "favorites": [
-        {
-          "name": "Саске Учиха",
-          "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
-          "price": 100,
-          "rank": "Генин",
-          "power": 20,
-          "description": "Саске",
-          "id": 2,
-          "likes": [
-            {
-              "id": 1697127635039,
-              "user": "aman"
-            }
-          ],
-          "comments": [
-            {
-              "id": 1697032793926,
-              "body": "круто",
-              "rating": 2,
-              "user": "aman"
-            }
-          ],
-          "rating": "2.0"
-        }
-      ],
+      "favorites": [],
       "isAdmin": true,
       "points": 0,
       "id": 3
@@ -119,10 +69,6 @@
         {
           "id": 1697088984199,
           "user": "atai"
-        },
-        {
-          "id": 1697100331395,
-          "user": "aman"
         }
       ]
     },
@@ -136,7 +82,7 @@
       "id": 2,
       "likes": [
         {
-          "id": 1697127635039,
+          "id": 1697191189118,
           "user": "aman"
         },
         {
@@ -259,6 +205,15 @@
           "user": "aman"
         }
       ]
+    },
+    {
+      "name": "bdndndndndndn",
+      "image": "tyguhijsnv",
+      "price": 456789,
+      "rank": "trfdyguhijo",
+      "power": 456789,
+      "description": "rdtfgyuhikop",
+      "id": 8
     }
   ],
   "orders": [
@@ -570,16 +525,6 @@
           "correct": 2
         },
         {
-          "title": "Стихия воды",
-          "variants": [
-            "Интон",
-            "Суйтон",
-            "Мизутон",
-            "Киритон"
-          ],
-          "correct": 1
-        },
-        {
           "title": "Стихия дерева",
           "variants": [
             "Хашитон",
@@ -617,7 +562,7 @@
             "Мератон",
             "Йотон"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "title": "Стихия шторма",
@@ -658,16 +603,7 @@
             "Акатон"
           ],
           "correct": 0
-        },
-        {
-          "title": "Стихия воды",
-          "variants": [
-            "Интон",
-            "Суйтон",
-            "Мизутон",
-            "Киритон"
-          ],
-          "correct": 1
+
         }
       ],
       "id": 3

@@ -1,0 +1,33 @@
+.card--footer {
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+}
+.card--likes {
+  align-items: center;
+  justify-content: center;
+}
+.like--btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.likes--count {
+  color: white;
+}
+.CardPrice {
+  color: white;
+}
+.card--fav {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.card--toCart {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
