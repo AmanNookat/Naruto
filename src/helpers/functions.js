@@ -55,7 +55,9 @@ export const getTotalPages = async (url) => {
 
 export const checkCardInFavorites = (cardId) => {
   const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
-  return oneUser.favorites.find((card) => card.id === cardId);
+  if (oneUser) {
+    return oneUser.favorites.find((card) => card.id === cardId);
+  }
 };
 
 export const cardColorChange = (category) => {

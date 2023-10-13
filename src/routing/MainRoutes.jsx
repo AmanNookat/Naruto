@@ -12,6 +12,7 @@ import QuizzesPage from "../pages/QuizzesPage/QuizzesPage";
 import OneQuiz from "../components/quiz/OneQuiz";
 import FavoritesPage from "../pages/FavoritesPage/FavoritesPage";
 import ProfilePage from "../pages/ProfilePage/ProfilePage";
+import MapPage from "../pages/MapPage/MapPage";
 
 const MainRoutes = () => {
   return (
@@ -28,6 +29,7 @@ const MainRoutes = () => {
       <Route path="/quizzes/:id" element={<OneQuiz />} />
       {/* <Route path="/favorites/:id" element={<FavoritesPage />} /> */}
       <Route path="/user/:id" element={<ProfilePage />} />
+      <Route path="/company" element={<MapPage />} />
     </Routes>
   );
 };

@@ -4,6 +4,7 @@ import cardsReducer from "./cards/cardsSlice";
 import cartReducer from "./cart/cartSlice";
 import commentsReducer from "./comments/commentsSlice";
 import quizzesReducer from "./quizzes/quizzesSlice";
+import companyReducer from "./company/companySlice";
 
 export default configureStore({
   middleware: (getDefaultMiddleware) =>
@@ -16,5 +17,6 @@ export default configureStore({
     cart: cartReducer,
     comments: commentsReducer,
     quizzes: quizzesReducer,
+    company: companyReducer,
   },
 });
