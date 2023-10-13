@@ -28,7 +28,7 @@ const StorePage = () => {
       </h2>
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "#e5e5e5",
           padding: "2% 10px",
           width: "80%",
           margin: "0 auto",

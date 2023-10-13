@@ -22,7 +22,7 @@
   right: 0;
   top: 0;
   background-color: black;
-  width: 20px;
+  width: 30px;
   height: 20px;
   display: flex;
   justify-content: center;
@@ -31,6 +31,7 @@
 }
 .card--pover__text {
   color: white;
+  padding: 2px auto;
 }
 
 .card--name {

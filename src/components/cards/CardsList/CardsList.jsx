@@ -20,9 +20,10 @@ const CardsList = () => {
           style={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "space-around",
-            width: "90%",
-            margin: "0 auto",
+            gap: "50px",
+            justifyContent: "space-between",
+            width: "80%",
+            margin: "50px auto",
           }}
         >
           {/* для фильтрации, пагинации и т.д. */}
