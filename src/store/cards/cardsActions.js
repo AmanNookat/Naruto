@@ -1,7 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { CARDS_API } from "../../helpers/consts";
-import { getAuthUser, getTotalPages } from "../../helpers/functions";
+import { CARDS_API, USERS_API } from "../../helpers/consts";
+import {
+  NOTIFY_TYPES,
+  addToLocalStorage,
+  getAuthUser,
+  getTotalPages,
+  notify,
+} from "../../helpers/functions";
 
 export const createCard = createAsyncThunk(
   "cards/createCard",
@@ -93,5 +99,29 @@ export const toggleCardLike = createAsyncThunk(
     });
 
     dispatch(getCards());
+  }
+);
+
+export const unlockCard = createAsyncThunk(
+  "cards/unclockCard",
+  async ({ cardId }) => {
+    const { data } = await axios.get(`${CARDS_API}/${cardId}`);
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+    const checkCard = oneUser.inventory.find((oneCard) => oneCard.id == cardId);
+
+    if (checkCard) {
+      notify("Эта карта уже есть", NOTIFY_TYPES.error);
+    } else {
+      if (oneUser.points >= data.price) {
+        oneUser.points = +oneUser.points - +data.price;
+        oneUser.inventory.push(data);
+        await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+        addToLocalStorage(oneUser);
+        notify("Герой получен");
+      } else {
+        notify("Недостаточно средств", NOTIFY_TYPES.warning);
+      }
+    }
+    return oneUser;
   }
 );
