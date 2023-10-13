@@ -46,11 +46,9 @@ const cardsSlice = createSlice({
       if (minPrice && maxPrice) {
         state.priceRange = `&price_gte=${minPrice}&price_lte=${maxPrice}`;
       } else if (minPrice && !maxPrice) {
-        console.log(maxPrice);
         state.priceRange = `&price_gte=${minPrice}`;
       } else if (maxPrice && !minPrice) {
         state.priceRange = `&price_lte=${maxPrice}`;
-        console.log(minPrice);
       } else {
         state.priceRange = "";
       }
