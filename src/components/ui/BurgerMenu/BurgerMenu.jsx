@@ -7,7 +7,7 @@ import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
 import burgerBackground from "./images/burgerMenu.png";
 import "./BurgerMenu.css";
 const BurgerMenu = ({ closeBurgerMenu }) => {
-  const { oneUser } = useSelector((state) => state.users);
+  const { oneUser, inventory } = useSelector((state) => state.users);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();

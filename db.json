@@ -107,6 +107,30 @@
               "user": "aman"
             }
           ]
+        },
+        {
+          "name": "Какаши Хатаке",
+          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
+          "price": 1000,
+          "rank": "Джонин",
+          "power": 100,
+          "description": "Какаши",
+          "id": 5,
+          "comments": [
+            {
+              "id": 1697032825694,
+              "body": "топ",
+              "rating": 5,
+              "user": "aman"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697085068034,
+              "user": "aman"
+            }
+          ]
         }
       ],
       "favorites": [
@@ -150,7 +174,7 @@
         }
       ],
       "isAdmin": true,
-      "points": 789,
+      "points": 99999003,
       "id": 1
     },
     {
@@ -745,7 +769,6 @@
             "Акатон"
           ],
           "correct": 0
-
         }
       ],
       "id": 3
