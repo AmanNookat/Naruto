@@ -14,13 +14,11 @@ import {
 import { getCart } from "../../../store/cart/cartSlice";
 import CardLike from "../CardLike/CardLike";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import "./CardItem.css";
 import { toggleCardFavorite } from "../../../store/users/usersActions";
 import StarIcon from "@mui/icons-material/Star";
 import CardFooter from "../CardFooter/CardFooter";
-import CardInvet from "../CardInvent/CardInvet";
 
-const CardItem = ({ card }) => {
+const CardInvet = ({ card }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { oneUser } = useSelector((state) => state.users);
@@ -62,11 +60,33 @@ const CardItem = ({ card }) => {
   }, []);
 
   return (
-    <div className="CardMain">
-      <CardInvet card={card} />
-      <CardFooter card={card} />
+    <div>
+      <div
+        style={{
+          width: "auto",
+          display: "flex",
+          flexDirection: "column",
+          position: "relative",
+        }}
+      >
+        <div className="CardInside">
+          <img
+            src={card.image}
+            alt={card.name}
+            width="299px"
+            height="300px"
+            style={{ objectFit: "cover" }}
+            className="CardImage"
+          />
+        </div>
+        <p className="CardPower">{card.power}</p>
+        <div className="CardTextContainer">
+          {" "}
+          <span className="CardName">{card.name}</span>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default CardItem;
+export default CardInvet;
