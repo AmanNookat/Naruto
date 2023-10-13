@@ -33,8 +33,7 @@ const BurgerMenu = ({ closeBurgerMenu }) => {
             {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
             {oneUser && (
               <>
-                <NavLink to={`/favorites/${oneUser.id}`}>Избранные</NavLink>
-                <NavLink>
+                <NavLink to={`/user/${oneUser.id}`}>
                   {oneUser.name}
                   <span>({oneUser.points})</span>
                 </NavLink>

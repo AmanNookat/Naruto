@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSortByRating } from "../../../store/cards/cardsSlice";
 import { getCards } from "../../../store/cards/cardsActions";
+import "./CardsSortRating.css";
 
 const CardsSortRating = () => {
   const { sortByRating } = useSelector((state) => state.cards);
@@ -20,7 +21,11 @@ const CardsSortRating = () => {
   }, [sortByRating]);
   return (
     <div>
-      <select onChange={(e) => setSortBy(e.target.value)} value={sortBy}>
+      <select
+        onChange={(e) => setSortBy(e.target.value)}
+        value={sortBy}
+        className="select-container"
+      >
         <option value="">Не сортировать</option>
         <option value="asc">По возрастанию</option>
         <option value="desc">По убыванию</option>

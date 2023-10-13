@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPriceRangeState } from "../../../store/cards/cardsSlice";
 import { getCards } from "../../../store/cards/cardsActions";
+import "./CardsPriceRangeFilter.css";
 
 const CardsPriceRangeFilter = () => {
   const { priceRange } = useSelector((state) => state.cards);
@@ -22,7 +23,7 @@ const CardsPriceRangeFilter = () => {
   }, [priceRange]);
 
   return (
-    <div>
+    <div className="cards-price-range-container">
       <input
         type="number"
         placeholder="Минимальная цена"
@@ -31,7 +32,7 @@ const CardsPriceRangeFilter = () => {
         }
         value={priceRangeVal.minPrice}
       />
-      <span>---</span>
+      <span>--</span>
       <input
         type="number"
         placeholder="Максимальная цена"

@@ -1,4 +1,4 @@
-.custom-select {
+.select-container {
   width: 100%;
   padding: 10px;
   /* border: 1px solid #ccc; */
@@ -12,16 +12,16 @@
   color: orange;
 }
 
-.custom-select:hover {
+.select-container:hover {
   border-color: #333;
 }
 
-.custom-select:focus {
+.select-container:focus {
   border-color: orange;
 }
 
 /* Custom dropdown arrow */
-.custom-select::after {
+.select-container::after {
   content: "\25BC"; /* Unicode for a down arrow */
   position: absolute;
   top: 50%;
@@ -31,13 +31,13 @@
 }
 
 /* Styling for options */
-.custom-select option {
+.select-container option {
   background: white;
   color: black;
 }
 
 /* Hover effect for options */
-.custom-select option:hover {
+.select-container option:hover {
   background: #007bff;
   color: white;
 }

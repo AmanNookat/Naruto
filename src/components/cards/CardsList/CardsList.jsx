@@ -21,6 +21,8 @@ const CardsList = () => {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-around",
+            width: "90%",
+            margin: "0 auto",
           }}
         >
           {/* для фильтрации, пагинации и т.д. */}
