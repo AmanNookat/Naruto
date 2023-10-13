@@ -21,6 +21,8 @@ const BattleMenu = ({ setModal }) => {
           >
             {oneLevel.enemy.name}
           </p>
+          <img src={oneLevel.enemy.image} alt="" width="100" height="100" />
+          <p>{oneLevel.enemy.power}</p>
         </>
       )}
     </>
