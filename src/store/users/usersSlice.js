@@ -1,5 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createUser, loginUser, savePoints } from "./usersActions";
+import {
+  createUser,
+  loginUser,
+  savePoints,
+  toggleCardFavorite,
+} from "./usersActions";
 import { addToLocalStorage } from "../../helpers/functions";
 
 const usersSlice = createSlice({
@@ -34,6 +39,9 @@ const usersSlice = createSlice({
         addToLocalStorage(action.payload);
       })
       .addCase(savePoints.fulfilled, (state, action) => {
+        state.oneUser = action.payload;
+      })
+      .addCase(toggleCardFavorite.fulfilled, (state, action) => {
         state.oneUser = action.payload;
       });
   },

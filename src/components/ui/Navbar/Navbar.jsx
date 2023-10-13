@@ -1,16 +1,23 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { NavLink, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import znakLista from "./NavImages/znakLista.png";
+import "./Navbar.css";
 import { getOneUser } from "../../../store/users/usersSlice";
-import { checkAdmin, checkUserLogin, logout } from "../../../helpers/functions";
 import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
-import { toggleCardFavorite } from "../../../store/users/usersActions";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 const Navbar = () => {
-  const { oneUser } = useSelector((state) => state.users);
-
-  const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const dispatch = useDispatch();
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  function closeBurgerMenu() {
+    setIsMenuOpen(false);
+  }
 
   useEffect(() => {
     dispatch(getOneUser());
@@ -18,37 +25,23 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
-      <NavLink to="/">Домой</NavLink>
-      <NavLink to="/store">Магазин</NavLink>
-      {checkUserLogin() ? (
-        <>
-          <NavLink to="/quizzes">Викторины</NavLink>
-          <NavLink to="/cart">Корзина</NavLink>
-          {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
-          {oneUser && (
-            <>
-              <NavLink to={`/favorites/${oneUser.id}`}>Избранные</NavLink>
-              <NavLink>
-                {oneUser.name}
-                <span>({oneUser.points})</span>
-              </NavLink>
-            </>
-          )}
-          <button
-            onClick={() => {
-              logout();
-              navigate("/");
-            }}
-          >
-            Выход
-          </button>
-        </>
-      ) : (
-        <>
-          <NavLink to="/registration">Регистрация</NavLink>
-          <NavLink to="/authorization">Авторизация</NavLink>
-        </>
+    <div className="nav">
+      <button className="burgerBtn" onClick={toggleMenu}>
+        {isMenuOpen ? (
+          <div className="burger--square__close">
+            <p>X</p>
+          </div>
+        ) : (
+          <div className="burger--square__open">
+            <img src={znakLista} alt="" />
+            <p>MENU</p>
+          </div>
+        )}
+      </button>
+      {isMenuOpen && (
+        <div>
+          <BurgerMenu closeBurgerMenu={closeBurgerMenu} />
+        </div>
       )}
     </div>
   );
