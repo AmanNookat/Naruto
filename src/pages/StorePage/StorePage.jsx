@@ -14,24 +14,60 @@ const StorePage = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
-      <div className="searchAndFilter">
-        <CardsFilter />
-        <CardSearch />
-        <CardsPriceRangeFilter />
-        <CardsSortRating />
-        <button
-          onClick={() => {
-            dispatch(clearAllFilters());
-            dispatch(setSearchVal({ search: "" }));
-            dispatch(getCards());
+    <div className="StoreMain">
+      <h2
+        style={{
+          textAlign: "center",
+          margin: "0px 5% 2%",
+          fontSize: "5rem",
+          marginTop: "0",
+          paddingTop: "3%",
+        }}
+      >
+        МАГАЗИН
+      </h2>
+      <div
+        style={{
+          backgroundColor: "white",
+          padding: "2% 10px",
+          width: "80%",
+          margin: "0 auto",
+          borderRadius: "20px",
+        }}
+      >
+        <div
+          className="searchAndFilter"
+          style={{ display: "flex", justifyContent: "space-evenly" }}
+        >
+          <CardsFilter />
+          <CardsPriceRangeFilter />
+          <CardsSortRating />
+          <CardSearch />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "end",
+            paddingRight: "4.3%",
+            paddingTop: "0.5%",
           }}
         >
-          Сбросить фильтры
-        </button>
+          <button
+            onClick={() => {
+              dispatch(clearAllFilters());
+              dispatch(setSearchVal({ search: "" }));
+              dispatch(getCards());
+            }}
+            style={{ alignItems: "center" }}
+            className="ThrowButton"
+          >
+            Сбросить фильтры
+          </button>
+        </div>
       </div>
       <CardPagination />
       <CardsList />
+      <CardPagination />
     </div>
   );
 };

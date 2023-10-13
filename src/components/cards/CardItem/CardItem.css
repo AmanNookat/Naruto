@@ -8,6 +8,7 @@
 .CardMain {
   background-color: rgb(34, 29, 29);
   position: relative;
+  margin-top: 3%;
 }
 
 .CardName {

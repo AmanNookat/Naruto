@@ -19,7 +19,7 @@ export const getCards = createAsyncThunk(
     const categoryAndSearchParams = `q=${search}${
       currentCategory && `&rank=${currentCategory}`
     }`;
-    const pagesLimitParams = `?_page=${currentPage}&_limit=4`;
+    const pagesLimitParams = `?_page=${currentPage}&_limit=8`;
     const totalPages = await getTotalPages(
       `${CARDS_API}?${categoryAndSearchParams}${priceRange}${sortByRating}`
     );
