@@ -14,6 +14,7 @@ const usersSlice = createSlice({
     users: [],
     oneUser: null,
     loading: false,
+    inventory: [],
   },
   reducers: {
     clearOneUserState: (state) => {
@@ -21,6 +22,7 @@ const usersSlice = createSlice({
     },
     getOneUser: (state) => {
       state.oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+      state.inventory = state.oneUser.inventory;
     },
   },
   extraReducers: (builder) => {
@@ -43,9 +45,6 @@ const usersSlice = createSlice({
         state.oneUser = action.payload;
       })
       .addCase(toggleCardFavorite.fulfilled, (state, action) => {
-        state.oneUser = action.payload;
-      })
-      .addCase(unlockCard.fulfilled, (state, action) => {
         state.oneUser = action.payload;
       });
   },

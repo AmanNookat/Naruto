@@ -1,11 +1,19 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useParams } from "react-router-dom";
 import FavoritesList from "../../favorites/FavoritesList";
+import CardInvet from "../../cards/CardInvent/CardInvet";
+import { getOneUser } from "../../../store/users/usersSlice";
 
 const UserProfile = () => {
   //   const { id } = useParams();
-  const { oneUser, loading } = useSelector((state) => state.users);
+  const { oneUser, loading, inventory } = useSelector((state) => state.users);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getOneUser());
+  }, []);
+
   return (
     <div
       style={{
@@ -53,15 +61,23 @@ const UserProfile = () => {
                   <p>{oneUser.name}</p>
                   <p>{oneUser.points} 両</p>
                   <p>{oneUser.level} уровень</p>
-                  {/* <NavLink to={`/favorites/${oneUser.id}`}>Избранные</NavLink> */}
                 </div>
                 <>
                   <FavoritesList />
                 </>
               </div>
 
-              <div style={{ border: "1px solid black", width: "70rem" }}>
-                <h1 style={{ textAlign: "center" }}>Инвентарь</h1>
+              <div style={{ border: "1px solid black", width: "60rem" }}>
+                <h2 style={{ textAlign: "center" }}>Инвентарь</h2>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  {inventory && (
+                    <>
+                      {inventory.map((card) => (
+                        <CardInvet key={card.id} card={card} />
+                      ))}
+                    </>
+                  )}
+                </div>
               </div>
             </>
           )}
