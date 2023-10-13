@@ -18,6 +18,8 @@ import { toggleCardFavorite } from "../../../store/users/usersActions";
 import StarIcon from "@mui/icons-material/Star";
 import { unlockCard } from "../../../store/cards/cardsActions";
 
+import "./CardFooter.css";
+
 const CardFooter = ({ card }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -60,29 +62,18 @@ const CardFooter = ({ card }) => {
   }, []);
 
   return (
-    <div className="CardFooter">
+    <div className="cardFooter">
       {checkUserLogin() && (
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-evenly",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CardLike
-              isLikedCard={isLikedCard}
-              likes={card.likes}
-              cardId={card.id}
-            />
-            <span className="CardLikes">
+        <div style={{ display: "flex" }} className="card--footer">
+          <div style={{ display: "flex" }} className="card--likes">
+            <button className="like--btn">
+              <CardLike
+                isLikedCard={isLikedCard}
+                likes={card.likes}
+                cardId={card.id}
+              />
+            </button>
+            <span className="likes--count">
               {card.likes ? card.likes.length : 0}
             </span>
           </div>
@@ -90,19 +81,18 @@ const CardFooter = ({ card }) => {
             style={{
               display: "flex",
               alignItems: "center",
-              // justifyContent: "space-around",
             }}
           >
-            <span
+             <span
               onClick={() => {
                 dispatch(unlockCard({ cardId: card.id }));
               }}
               className="CardPrice"
             >
               {card.price}$
-            </span>
-            <div
-              style={{ padding: "5px" }}
+            </span> 
+            <button
+              className="card--toCart"
               onClick={() => {
                 toggleCardToCart(card);
                 dispatch(getCart());
@@ -113,7 +103,7 @@ const CardFooter = ({ card }) => {
               ) : (
                 <ShoppingCartIcon fontSize="large" />
               )}
-            </div>
+            </button>
           </div>
           <div
             className="CardLikeButton"
@@ -124,6 +114,7 @@ const CardFooter = ({ card }) => {
             }}
           ></div>
           <button
+            className="card--fav"
             onClick={() => {
               dispatch(toggleCardFavorite({ card }));
             }}

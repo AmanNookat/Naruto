@@ -62,7 +62,12 @@ const CardItem = ({ card }) => {
   }, []);
 
   return (
-    <div className="CardMain">
+    <div
+      className="CardMain"
+      style={{
+        ...cardColorChange(card.rank),
+      }}
+    >
       <CardInvet card={card} />
       <CardFooter card={card} />
     </div>
