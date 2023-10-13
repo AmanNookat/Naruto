@@ -83,11 +83,74 @@
           ],
           "rating": "3.0",
           "likes": []
+        },
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 10,
+          "rank": "Чунин",
+          "power": 10,
+          "description": "Ирука",
+          "id": 4,
+          "comments": [
+            {
+              "id": 1697032815845,
+              "body": "лох",
+              "rating": 4,
+              "user": "aman"
+            }
+          ],
+          "rating": "4.0",
+          "likes": [
+            {
+              "id": 1697085064074,
+              "user": "aman"
+            }
+          ]
         }
       ],
-      "favorites": [],
+      "favorites": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто",
+          "id": 1,
+          "comments": [
+            {
+              "id": 1697002020578,
+              "body": "Naruto",
+              "rating": 1,
+              "user": "aman"
+            },
+            {
+              "id": 1697085501698,
+              "body": "Наруто красавчик",
+              "rating": 5,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": [
+            {
+              "id": 1697008443434,
+              "user": "a"
+            },
+            {
+              "id": 1697088984199,
+              "user": "atai"
+            },
+            {
+              "id": 1697192738612,
+              "user": "aman"
+            }
+          ]
+        }
+      ],
       "isAdmin": true,
-      "points": 799,
+      "points": 789,
       "id": 1
     },
     {
@@ -103,7 +166,6 @@
       "id": 2
     },
     {
-
       "name": "erkin",
       "mail": "qwe",
       "password": "qwe",
@@ -148,6 +210,10 @@
         {
           "id": 1697088984199,
           "user": "atai"
+        },
+        {
+          "id": 1697192738612,
+          "user": "aman"
         }
       ]
     },
@@ -171,9 +237,15 @@
           "body": "круто",
           "rating": 2,
           "user": "aman"
+        },
+        {
+          "id": 1697192766881,
+          "body": "ыудшоащ",
+          "rating": 4,
+          "user": "aman"
         }
       ],
-      "rating": "2.0"
+      "rating": "3.0"
     },
     {
       "name": "Сакура Харуно",
@@ -280,15 +352,6 @@
           "user": "aman"
         }
       ]
-    },
-    {
-      "name": "bdndndndndndn",
-      "image": "tyguhijsnv",
-      "price": 456789,
-      "rank": "trfdyguhijo",
-      "power": 456789,
-      "description": "rdtfgyuhikop",
-      "id": 8
     }
   ],
   "orders": [

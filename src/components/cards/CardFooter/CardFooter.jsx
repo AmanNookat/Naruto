@@ -83,14 +83,14 @@ const CardFooter = ({ card }) => {
               alignItems: "center",
             }}
           >
-             <span
+            <span
               onClick={() => {
                 dispatch(unlockCard({ cardId: card.id }));
               }}
               className="CardPrice"
             >
               {card.price}$
-            </span> 
+            </span>
             <button
               className="card--toCart"
               onClick={() => {
@@ -118,12 +118,11 @@ const CardFooter = ({ card }) => {
             onClick={() => {
               dispatch(toggleCardFavorite({ card }));
             }}
-            style={{ padding: "5px", borderRadius: "50%" }}
           >
             {isFavCard ? (
-              <StarIcon fontSize="medium" color="warning" />
+              <StarIcon fontSize="large" color="warning" />
             ) : (
-              <StarIcon fontSize="medium" />
+              <StarIcon fontSize="large" />
             )}
           </button>
           <button onClick={() => navigate(`/store/${card.id}`)}>about</button>
