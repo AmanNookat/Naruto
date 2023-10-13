@@ -169,9 +169,29 @@
       "name": "erkin",
       "mail": "qwe",
       "password": "qwe",
-      "image": "qwe",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8640563-599e-4534-ac31-b312c20ddec8/d9wzusg-c2ba498e-46c4-4875-9f81-1f93b0093800.jpg/v1/fill/w_1024,h_1449,q_75,strp/fan_art___nagato_and_6_pains_by_deyvidson_d9wzusg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ0OSIsInBhdGgiOiJcL2ZcL2Q4NjQwNTYzLTU5OWUtNDUzNC1hYzMxLWIzMTJjMjBkZGVjOFwvZDl3enVzZy1jMmJhNDk4ZS00NmM0LTQ4NzUtOWY4MS0xZjkzYjAwOTM4MDAuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ROholi93nEdReHUIQvztdrEPQEBbJlmki6s5k3-tePs",
       "level": 1,
-      "inventory": [],
+      "inventory": [
+        {
+          "name": "Сакура Харуно",
+          "image": "https://images6.fanpop.com/image/photos/39600000/Sakura-haruno-sakura-39693389-640-640.jpg",
+          "price": 1,
+          "rank": "Генин",
+          "power": 1,
+          "description": "Сакура",
+          "id": 3,
+          "comments": [
+            {
+              "id": 1697032804071,
+              "body": "ахахахах",
+              "rating": 3,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": []
+        }
+      ],
       "favorites": [],
       "isAdmin": true,
       "points": 0,
@@ -745,7 +765,6 @@
             "Акатон"
           ],
           "correct": 0
-
         }
       ],
       "id": 3
