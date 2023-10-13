@@ -59,7 +59,7 @@ const BattleField = () => {
       </div>
       <p style={{ fontSize: "200px" }}>VS</p>
       <div>
-        <h1>Total Power {count}</h1>
+        <h1 style={{ fontSize: "40px" }}>Total Power {count}</h1>
         {cardsForBattle && (
           <>
             {cardsForBattle.map((card) => (
