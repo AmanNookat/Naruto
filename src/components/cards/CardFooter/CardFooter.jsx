@@ -16,6 +16,7 @@ import CardLike from "../CardLike/CardLike";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { toggleCardFavorite } from "../../../store/users/usersActions";
 import StarIcon from "@mui/icons-material/Star";
+import { unlockCard } from "../../../store/cards/cardsActions";
 
 const CardFooter = ({ card }) => {
   const dispatch = useDispatch();
@@ -92,7 +93,14 @@ const CardFooter = ({ card }) => {
               // justifyContent: "space-around",
             }}
           >
-            <span className="CardPrice">{card.price}$</span>
+            <span
+              onClick={() => {
+                dispatch(unlockCard({ cardId: card.id }));
+              }}
+              className="CardPrice"
+            >
+              {card.price}$
+            </span>
             <div
               style={{ padding: "5px" }}
               onClick={() => {
