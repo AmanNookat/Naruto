@@ -3,9 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { createCard, getCategories } from "../../../store/cards/cardsActions";
 import { NOTIFY_TYPES, notify } from "../../../helpers/functions";
+import "./CardCreate.css"
 
 const CardCreate = () => {
-  //   const { categories } = useSelector((state) => state.cards);
+    const { categories } = useSelector((state) => state.cards);
   const [card, setCard] = useState({
     name: "",
     image: "",
@@ -31,41 +32,44 @@ const CardCreate = () => {
   }
 
   return (
-    <div>
-      <h2>Добавить нового героя</h2>
-      <input
+    <div className="inp-form">
+      <h2 className="h2">Добавить нового героя</h2>
+      <input className="inp-name"
         type="text"
         placeholder="имя"
         onChange={(e) => setCard({ ...card, name: e.target.value })}
       />
-      <input
+      <input className="inp-name"
         type="text"
         placeholder="ссылка на фото"
         onChange={(e) => setCard({ ...card, image: e.target.value })}
       />
       {/* поставить вместо инпута для рангов select и option */}
-      <input
+      <input className="inp-name"
         type="text"
         placeholder="ранг"
         onChange={(e) => setCard({ ...card, rank: e.target.value })}
       />
-      <input
+      <input className="inp-name"
         type="number"
         placeholder="цена"
         onChange={(e) => setCard({ ...card, price: +e.target.value })}
       />
-      <input
-        type="number"
+      <input className="inp-name"
+        type="number" 
         placeholder="сила"
         onChange={(e) => setCard({ ...card, power: +e.target.value })}
       />
-      <textarea
+      <textarea className="text-name"
         cols="30"
         rows="10"
         placeholder="описание"
         onChange={(e) => setCard({ ...card, description: e.target.value })}
       ></textarea>
-      <button onClick={addCard}>Добавить героя</button>
+      <button className="btn-name"
+        onClick={addCard}>
+          Добавить героя
+      </button>
     </div>
   );
 };

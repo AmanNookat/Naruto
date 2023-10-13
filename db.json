@@ -108,6 +108,7 @@
       "id": 2
     },
     {
+
       "name": "erkin",
       "mail": "qwe",
       "password": "qwe",
@@ -116,7 +117,7 @@
       "inventory": [],
       "favorites": [],
       "isAdmin": true,
-      "points": 6,
+      "points": 0,
       "id": 3
     }
   ],
@@ -284,6 +285,15 @@
           "user": "aman"
         }
       ]
+    },
+    {
+      "name": "bdndndndndndn",
+      "image": "tyguhijsnv",
+      "price": 456789,
+      "rank": "trfdyguhijo",
+      "power": 456789,
+      "description": "rdtfgyuhikop",
+      "id": 8
     }
   ],
   "orders": [
