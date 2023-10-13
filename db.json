@@ -109,14 +109,14 @@
     },
     {
       "name": "erkin",
-      "mail": "a",
-      "password": "a",
-      "image": "a",
+      "mail": "qwe",
+      "password": "qwe",
+      "image": "qwe",
       "level": 1,
       "inventory": [],
       "favorites": [],
       "isAdmin": true,
-      "points": 20,
+      "points": 6,
       "id": 3
     }
   ],
