@@ -82,7 +82,14 @@ const CardFooter = ({ card }) => {
               alignItems: "center",
             }}
           >
-            <span className="CardPrice">{card.price}$</span>
+            <span
+              onClick={() => {
+                dispatch(unlockCard({ cardId: card.id }));
+              }}
+              className="CardPrice"
+            >
+              {card.price}$
+            </span>
             <button
               className="card--toCart"
               onClick={() => {
