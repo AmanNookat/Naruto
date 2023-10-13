@@ -18,6 +18,8 @@ import { toggleCardFavorite } from "../../../store/users/usersActions";
 import StarIcon from "@mui/icons-material/Star";
 import CardFooter from "../CardFooter/CardFooter";
 
+import "./CardInvent.css";
+
 const CardInvet = ({ card }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -60,30 +62,21 @@ const CardInvet = ({ card }) => {
   }, []);
 
   return (
-    <div>
-      <div
-        style={{
-          width: "auto",
-          display: "flex",
-          flexDirection: "column",
-          position: "relative",
-        }}
-      >
-        <div className="CardInside">
-          <img
-            src={card.image}
-            alt={card.name}
-            width="299px"
-            height="300px"
-            style={{ objectFit: "cover" }}
-            className="CardImage"
-          />
-        </div>
-        <p className="CardPower">{card.power}</p>
-        <div className="CardTextContainer">
+    <div
+      className="card--container"
+      style={{
+        ...cardColorChange(card.rank),
+      }}
+    >
+      <div className="card--image__container">
+        <img src={card.image} alt={card.name} className="CardImage" />
+        <div className="card--name">
           {" "}
-          <span className="CardName">{card.name}</span>
+          <span className="card--name">{card.name}</span>
         </div>
+      </div>
+      <div className="card--pover">
+        <p className="card--pover__text">{card.power}</p>
       </div>
     </div>
   );
