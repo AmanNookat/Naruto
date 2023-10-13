@@ -4,7 +4,7 @@ import znakLista from "./NavImages/znakLista.png";
 import "./Navbar.css";
 import { getOneUser } from "../../../store/users/usersSlice";
 import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
 const Navbar = () => {
