@@ -6,6 +6,7 @@ import { clearOneCardState } from "../../../store/cards/cardsSlice";
 import { checkAdmin, checkUserLogin } from "../../../helpers/functions";
 import CommentCreate from "../../comments/CommentCreate/CommentCreate";
 import CommentsList from "../../comments/CommentsList/CommentsList";
+import "./CardDetails.css";
 
 const CardDetails = () => {
   const { loading, oneCard } = useSelector((state) => state.cards);
@@ -28,47 +29,60 @@ const CardDetails = () => {
             <div
               style={{
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: "raw",
+                justifyContent: "space-evenly",
               }}
+              className="CardDetailsMain"
             >
-              <div>
-                <img
-                  src={oneCard.image}
-                  alt={oneCard.name}
-                  width="300"
-                  height="auto"
-                />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <div>
+                  <img
+                    src={oneCard.image}
+                    alt={oneCard.name}
+                    width="300"
+                    height="auto"
+                  />
+                </div>
+                <div className="CardDetailsDescr">
+                  <p>{oneCard.name}</p>
+                  <p>{oneCard.price}$</p>
+                  <p>{oneCard.power}</p>
+                  <p>{oneCard.rank}</p>
+                  <p>{oneCard.description}</p>
+                  <p>Rating: {oneCard.rating}</p>
+                  {checkAdmin() && (
+                    <div>
+                      <button onClick={() => navigate(`/card-edit/${id}`)}>
+                        Edit
+                      </button>
+                      <button
+                        onClick={() => {
+                          dispatch(deleteCard({ id }));
+                          navigate("/store");
+                        }}
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  )}
+                </div>
               </div>
-              <div>
-                <p>{oneCard.name}</p>
-                <p>{oneCard.price}$</p>
-                <p>{oneCard.power}</p>
-                <p>{oneCard.rank}</p>
-                <p>{oneCard.description}</p>
-                <p>Rating: {oneCard.rating}</p>
-                {checkAdmin() && (
-                  <div>
-                    <button onClick={() => navigate(`/card-edit/${id}`)}>
-                      Edit
-                    </button>
-                    <button
-                      onClick={() => {
-                        dispatch(deleteCard({ id }));
-                        navigate("/store");
-                      }}
-                    >
-                      Delete
-                    </button>
-                  </div>
+              <div className="CardDetailsComments">
+                {checkUserLogin() && <CommentCreate card={oneCard} />}
+
+                {oneCard.comments ? (
+                  <CommentsList comments={oneCard.comments} />
+                ) : (
+                  <h2>Комменты отсутсвуют</h2>
                 )}
               </div>
-              {checkUserLogin() && <CommentCreate card={oneCard} />}
-
-              {oneCard.comments ? (
-                <CommentsList comments={oneCard.comments} />
-              ) : (
-                <h2>Комменты отсутсвуют</h2>
-              )}
             </div>
           )}
         </>
