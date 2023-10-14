@@ -28,7 +28,6 @@ const BattleField = () => {
   //   const [count, setCount] = useState(0);
   //   const [count2, setCount2] = useState(0);
 
-
   const { id } = useParams();
   const dispatch = useDispatch();
 
@@ -94,17 +93,16 @@ const BattleField = () => {
         {oneLevel && (
           <>
             <h1 style={{ fontSize: "40px" }}>
-              Total Power {enemyPower} {/*count2*/}
+              Total HP {enemyPower} {/*count2*/}
             </h1>
             <CardInvet card={oneLevel.enemy} />
-
           </>
         )}
       </div>
       <p style={{ fontSize: "200px" }}>VS</p>
       <div>
         <h1 style={{ fontSize: "40px" }}>
-          Total Power {teamPower} {/*count*/}
+          Total HP {teamPower} {/*count*/}
         </h1>
         {/* {cardsForBattle && ( */}
         <>
