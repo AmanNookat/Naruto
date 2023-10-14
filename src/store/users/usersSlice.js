@@ -22,7 +22,9 @@ const usersSlice = createSlice({
     },
     getOneUser: (state) => {
       state.oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
-      state.inventory = state.oneUser.inventory;
+      if (state.oneUser) {
+        state.inventory = state.oneUser.inventory;
+      }
     },
   },
   extraReducers: (builder) => {
