@@ -41,7 +41,17 @@ const CardsMenu = () => {
   return (
     <div style={{ marginTop: "50px" }}>
       <p>Выбери карты для боя</p>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "wrap",
+          gap: "20px",
+          width: "30%",
+          overflow: "hidden",
+          border: "1px solid black",
+        }}
+      >
         {oneUser && (
           <>
             {inventory.map((card) => (

@@ -19,6 +19,8 @@ const BattleMenu = ({ setModal }) => {
   //     dispatch(getCardsForBattle());
   //   }, [checkCard]);
 
+  //   console.log(cardsForBattle);
+
   function goToBattle() {
     if (cardsForBattle.length) {
       navigate(`/battleField/${oneLevel.id}`);

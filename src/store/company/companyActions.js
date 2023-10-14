@@ -25,15 +25,16 @@ export const chooseCardForBattle = (card) => {
     notify("Карта убрана из слота", NOTIFY_TYPES.error);
   } else {
     battleCards.push(card);
-    notify("Карта готова к бою", NOTIFY_TYPES.success);
   }
 
   if (battleCards.length <= 4) {
     localStorage.setItem("NarutoBattle", JSON.stringify(battleCards));
-    return true;
+    return notify("Карта готова к бою", NOTIFY_TYPES.success);
   } else {
-    notify("В бою может участвовать максимум 4 карты", NOTIFY_TYPES.error);
-    return false;
+    return notify(
+      "В бою может участвовать максимум 4 карты",
+      NOTIFY_TYPES.error
+    );
   }
 };
 
