@@ -1,23 +1,26 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getLevels } from "../../store/company/companyActions";
+import { cleanBattleSlots } from "../../store/company/companyActions";
 import { useNavigate } from "react-router-dom";
 import {
-  cardsAssemble,
+  clearCardsForBattle,
   getCardsForBattle,
 } from "../../store/company/companySlice";
 import { NOTIFY_TYPES, notify } from "../../helpers/functions";
 
 const BattleMenu = ({ setModal }) => {
-  const { oneLevel, cardsForBattle, checkCard } = useSelector(
-    (state) => state.company
-  );
+  const { oneLevel, cardsForBattle } = useSelector((state) => state.company);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   //   useEffect(() => {
   //     dispatch(getCardsForBattle());
   //   }, [checkCard]);
+
+  useEffect(() => {
+    cleanBattleSlots();
+    dispatch(clearCardsForBattle());
+  }, [oneLevel]);
 
   function goToBattle() {
     if (cardsForBattle.length) {

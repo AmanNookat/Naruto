@@ -15,6 +15,7 @@ import { getTotalPower } from "../../helpers/functions";
 const BattleField = () => {
   const { oneLevel, cardsForBattle } = useSelector((state) => state.company);
   const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(0);
 
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -35,9 +36,21 @@ const BattleField = () => {
   }, [count]);
 
   useEffect(() => {
+    if (oneLevel) {
+      let totalPower = oneLevel.enemy.power;
+      if (count2 < totalPower) {
+        const timer = setTimeout(() => {
+          setCount2(count2 + 1);
+        }, 2000 / totalPower);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [count2, oneLevel]);
+
+  useEffect(() => {
     return () => {
       //   cleanBattleSlots();
-      //   dispatch(clearCardsForBattle());
+      dispatch(clearCardsForBattle());
     };
   }, []);
 
@@ -52,8 +65,10 @@ const BattleField = () => {
       <div>
         {oneLevel && (
           <>
-            <p>{oneLevel.enemy.name}</p>
-            <img src={oneLevel.enemy.image} alt="" width="100" height="100" />
+            <h1 style={{ fontSize: "40px" }}>Total Power {count2}</h1>
+            <CardInvet card={oneLevel.enemy} />
+            {/* <p>{oneLevel.enemy.name}</p>
+            <img src={oneLevel.enemy.image} alt="" width="100" height="100" /> */}
           </>
         )}
       </div>
