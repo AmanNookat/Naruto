@@ -8,21 +8,21 @@ const companySlice = createSlice({
     levels: [],
     loading: false,
     oneLevel: null,
-    checkCard: false,
+    // checkCard: false,
     cardsForBattle: [],
   },
   reducers: {
-    checkCardInSlot: (state, action) => {
-      let battleCards = JSON.parse(localStorage.getItem("NarutoBattle"));
-      const checkCard = battleCards.find(
-        (oneCard) => action.payload === oneCard.id
-      );
-      if (checkCard) {
-        state.checkCard = true;
-      } else {
-        state.checkCard = false;
-      }
-    },
+    // checkCardInSlot: (state, action) => {
+    //   let battleCards = JSON.parse(localStorage.getItem("NarutoBattle"));
+    //   const checkCard = battleCards.find(
+    //     (oneCard) => action.payload === oneCard.id
+    //   );
+    //   if (checkCard) {
+    //     state.checkCard = true;
+    //   } else {
+    //     state.checkCard = false;
+    //   }
+    // },
     getCardsForBattle: (state) => {
       let inventoryInLocalStorage =
         JSON.parse(localStorage.getItem("NarutoBattle")) || [];
