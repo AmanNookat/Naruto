@@ -20,49 +20,36 @@ const CardDetails = () => {
   }, []);
 
   return (
-    <>
+    <div className="card--details">
       {loading ? (
         <h2>Loading...</h2>
       ) : (
         <>
           {oneCard && (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "raw",
-                justifyContent: "space-evenly",
-              }}
-              className="CardDetailsMain"
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <div>
-                  <img
-                    src={oneCard.image}
-                    alt={oneCard.name}
-                    width="300"
-                    height="auto"
-                  />
+            <div className="card--details__main">
+              <div className="card--details__left">
+                <div className="card--details__img">
+                  <img src={oneCard.image} alt={oneCard.name} />
                 </div>
-                <div className="CardDetailsDescr">
-                  <p>{oneCard.name}</p>
-                  <p>{oneCard.price}$</p>
-                  <p>{oneCard.power}</p>
-                  <p>{oneCard.rank}</p>
-                  <p>{oneCard.description}</p>
-                  <p>Rating: {oneCard.rating}</p>
+                <div className="card--details__footer">
+                  <div className="card--descr">
+                    <p>Имя:{oneCard.name}</p>
+                    <p>Цена:{oneCard.price}$</p>
+                    <p>Сила:{oneCard.power}</p>
+                    <p>Ранг:{oneCard.rank}</p>
+                    {/* <p>Описание:{oneCard.description}</p> */}
+                    <p>Рейтинг: {oneCard.rating}</p>
+                  </div>
                   {checkAdmin() && (
-                    <div>
-                      <button onClick={() => navigate(`/card-edit/${id}`)}>
+                    <div className="card--details__btn">
+                      <button
+                        className="card--edit"
+                        onClick={() => navigate(`/card-edit/${id}`)}
+                      >
                         Edit
                       </button>
                       <button
+                        className="card--delete"
                         onClick={() => {
                           dispatch(deleteCard({ id }));
                           navigate("/store");
@@ -74,20 +61,21 @@ const CardDetails = () => {
                   )}
                 </div>
               </div>
-              <div className="CardDetailsComments">
-                {checkUserLogin() && <CommentCreate card={oneCard} />}
-
+              <div className="card--details__right">
                 {oneCard.comments ? (
-                  <CommentsList comments={oneCard.comments} />
+                  <div className="comments--details">
+                    <CommentsList comments={oneCard.comments} />
+                  </div>
                 ) : (
                   <h2>Комменты отсутсвуют</h2>
                 )}
+                {checkUserLogin() && <CommentCreate card={oneCard} />}
               </div>
             </div>
           )}
         </>
       )}
-    </>
+    </div>
   );
 };
 

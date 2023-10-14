@@ -28,6 +28,7 @@ const BattleField = () => {
   //   const [count, setCount] = useState(0);
   //   const [count2, setCount2] = useState(0);
 
+
   const { id } = useParams();
   const dispatch = useDispatch();
 
@@ -55,7 +56,7 @@ const BattleField = () => {
   useEffect(() => {
     return () => {
       //   cleanBattleSlots();
-      dispatch(clearCardsForBattle());
+      //   dispatch(clearCardsForBattle());
     };
   }, []);
 
@@ -96,6 +97,7 @@ const BattleField = () => {
               Total Power {enemyPower} {/*count2*/}
             </h1>
             <CardInvet card={oneLevel.enemy} />
+
           </>
         )}
       </div>
