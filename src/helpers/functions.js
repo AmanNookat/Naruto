@@ -95,10 +95,12 @@ export const cardColorChange = (category) => {
 
 export const getTotalPower = () => {
   let data = JSON.parse(localStorage.getItem("NarutoBattle"));
-  data = data.reduce((acc, currVal) => {
-    return acc + currVal.power;
-  }, 0);
-  return data;
+  if (data) {
+    data = data.reduce((acc, currVal) => {
+      return acc + currVal.power;
+    }, 0);
+    return data;
+  }
 };
 
 // -------------------------------- notify оставляйте в самом низу
