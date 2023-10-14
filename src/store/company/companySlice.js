@@ -38,23 +38,29 @@ const companySlice = createSlice({
         state.step = state.step + 1;
       }
 
-      if (updatedEnemyPower < 0) {
+      if (updatedEnemyPower <= 0) {
         state.enemyPower = state.enemyPower = 0;
       } else {
         state.enemyPower = updatedEnemyPower;
       }
+
+      console.log(state.enemyPower);
     },
     enemyAttackLogic: (state) => {
-      if (state.step % 2 === 1) {
+      if (state.step % 2 === 1 && state.enemyPower > 0) {
         const enemyAttack = Math.floor(
           Math.random() * state.cardsForBattle.length
         );
 
-        console.log(enemyAttack + "enemy");
         let updatedCardPower =
           state.oneCardPower[enemyAttack] - state.enemyPower;
 
-        if (updatedCardPower < 0) {
+        notify(
+          `${state.oneLevel.enemy.name} атаковал ${state.cardsForBattle[enemyAttack].name}`,
+          NOTIFY_TYPES.info
+        );
+
+        if (updatedCardPower <= 0) {
           state.cardsForBattle = state.cardsForBattle.filter((card, index) => {
             return index !== enemyAttack;
           });
