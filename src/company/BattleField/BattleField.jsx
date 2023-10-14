@@ -38,9 +38,9 @@ const BattleField = () => {
   useEffect(() => {
     if (oneLevel) {
       let totalPower = oneLevel.enemy.power;
-      if (count < totalPower) {
+      if (count2 < totalPower) {
         const timer = setTimeout(() => {
-          setCount2(count + 1);
+          setCount2(count2 + 1);
         }, 2000 / totalPower);
         return () => clearTimeout(timer);
       }
