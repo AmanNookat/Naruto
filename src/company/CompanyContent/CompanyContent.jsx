@@ -34,7 +34,7 @@ const CompanyContent = () => {
       >
         {oneLevel}
       </div>
-      <div>
+      <div style={{ position: "fixed", top: "0" }}>
         {modal && (
           <>
             <BattleMenu setModal={setModal} />

@@ -103,6 +103,14 @@ export const getTotalPower = () => {
   }
 };
 
+export const getTeamPowers = () => {
+  let data = JSON.parse(localStorage.getItem("NarutoBattle"));
+  if (data) {
+    data = data.map((card) => card.power);
+  }
+  return data;
+};
+
 // -------------------------------- notify оставляйте в самом низу
 
 export const NOTIFY_TYPES = {
