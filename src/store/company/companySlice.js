@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getLevels, getOneLevel } from "./companyActions";
 import { NOTIFY_TYPES, notify } from "../../helpers/functions";
+import { act } from "react-dom/test-utils";
 
 const companySlice = createSlice({
   name: "company",
@@ -8,21 +9,14 @@ const companySlice = createSlice({
     levels: [],
     loading: false,
     oneLevel: null,
-    // checkCard: false,
     cardsForBattle: [],
+    step: 0,
+    teamPower: 0,
+    enemyPower: 0,
+    oneCardPower: [],
+    cardStatusInBattle: true,
   },
   reducers: {
-    // checkCardInSlot: (state, action) => {
-    //   let battleCards = JSON.parse(localStorage.getItem("NarutoBattle"));
-    //   const checkCard = battleCards.find(
-    //     (oneCard) => action.payload === oneCard.id
-    //   );
-    //   if (checkCard) {
-    //     state.checkCard = true;
-    //   } else {
-    //     state.checkCard = false;
-    //   }
-    // },
     getCardsForBattle: (state) => {
       let inventoryInLocalStorage =
         JSON.parse(localStorage.getItem("NarutoBattle")) || [];
@@ -30,6 +24,48 @@ const companySlice = createSlice({
     },
     clearCardsForBattle: (state) => {
       state.cardsForBattle = [];
+    },
+    getPowersForBattle: (state, action) => {
+      state.teamPower = action.payload.ourTotal;
+      state.enemyPower = action.payload.enemyTotal;
+      state.oneCardPower = action.payload.powersArray;
+    },
+    attackLogic: (state, action) => {
+      let updatedEnemyPower;
+      if (state.step % 2 == 0) {
+        updatedEnemyPower =
+          state.enemyPower - state.oneCardPower[action.payload];
+        state.step = state.step + 1;
+      }
+
+      if (updatedEnemyPower < 0) {
+        state.enemyPower = state.enemyPower = 0;
+      } else {
+        state.enemyPower = updatedEnemyPower;
+      }
+    },
+    enemyAttackLogic: (state) => {
+      if (state.step % 2 === 1) {
+        const enemyAttack = Math.floor(
+          Math.random() * state.cardsForBattle.length
+        );
+
+        console.log(enemyAttack + "enemy");
+        let updatedCardPower =
+          state.oneCardPower[enemyAttack] - state.enemyPower;
+
+        if (updatedCardPower < 0) {
+          state.cardsForBattle = state.cardsForBattle.filter((card, index) => {
+            return index !== enemyAttack;
+          });
+          state.oneCardPower = state.oneCardPower.filter((card, index) => {
+            return index !== enemyAttack;
+          });
+        } else {
+          state.oneCardPower[enemyAttack] = updatedCardPower;
+        }
+        state.step = state.step + 1;
+      }
     },
   },
   extraReducers: (builder) => {
@@ -45,6 +81,12 @@ const companySlice = createSlice({
   },
 });
 
-export const { checkCardInSlot, getCardsForBattle, clearCardsForBattle } =
-  companySlice.actions;
+export const {
+  getPowersForBattle,
+  getCardsForBattle,
+  clearCardsForBattle,
+  attackLogic,
+  enemyAttackLogic,
+  //   zeroHPLogic,
+} = companySlice.actions;
 export default companySlice.reducer;

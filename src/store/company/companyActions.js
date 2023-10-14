@@ -29,7 +29,9 @@ export const chooseCardForBattle = (card) => {
 
   if (battleCards.length <= 4) {
     localStorage.setItem("NarutoBattle", JSON.stringify(battleCards));
-    return notify("Карта готова к бою", NOTIFY_TYPES.success);
+    if (!checkCard) {
+      return notify("Карта готова к бою", NOTIFY_TYPES.success);
+    }
   } else {
     return notify(
       "В бою может участвовать максимум 4 карты",

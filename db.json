@@ -172,7 +172,46 @@
           ]
         }
       ],
-      "favorites": [],
+      "favorites": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто",
+          "id": 1,
+          "comments": [
+            {
+              "id": 1697002020578,
+              "body": "Naruto",
+              "rating": 1,
+              "user": "aman"
+            },
+            {
+              "id": 1697085501698,
+              "body": "Наруто красавчик",
+              "rating": 5,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": [
+            {
+              "id": 1697008443434,
+              "user": "a"
+            },
+            {
+              "id": 1697088984199,
+              "user": "atai"
+            },
+            {
+              "id": 1697192738612,
+              "user": "aman"
+            }
+          ]
+        }
+      ],
       "isAdmin": true,
       "points": 98899017,
       "id": 1
@@ -312,7 +351,7 @@
           "user": "atai"
         },
         {
-          "id": 1697192738612,
+          "id": 1697291885099,
           "user": "aman"
         }
       ]

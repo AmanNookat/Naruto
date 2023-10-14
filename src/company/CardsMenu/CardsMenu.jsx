@@ -14,16 +14,16 @@ const CardsMenu = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ marginTop: "50px", height: "350px", width: "100%" }}>
       <p>Выбери карты для боя</p>
       <div
         style={{
           display: "flex",
           flexDirection: "column",
-          flexWrap: "wrap",
           gap: "20px",
-          width: "30%",
-          overflow: "hidden",
+          width: "300px",
+          height: "100%",
+          overflowY: "auto",
           border: "1px solid black",
         }}
       >

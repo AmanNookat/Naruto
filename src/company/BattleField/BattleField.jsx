@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  attackLogic,
   clearCardsForBattle,
+  enemyAttackLogic,
   getCardsForBattle,
+  getPowersForBattle,
+  zeroHPLogic,
 } from "../../store/company/companySlice";
 import {
   cleanBattleSlots,
@@ -10,12 +14,19 @@ import {
 } from "../../store/company/companyActions";
 import CardInvet from "../../components/cards/CardInvent/CardInvet";
 import { useNavigate, useParams } from "react-router-dom";
-import { getTotalPower } from "../../helpers/functions";
+import { getTeamPowers, getTotalPower } from "../../helpers/functions";
 
 const BattleField = () => {
-  const { oneLevel, cardsForBattle } = useSelector((state) => state.company);
-  const [count, setCount] = useState(0);
-  const [count2, setCount2] = useState(0);
+  const {
+    oneLevel,
+    cardsForBattle,
+    oneCardPower,
+    enemyPower,
+    teamPower,
+    step,
+  } = useSelector((state) => state.company);
+  //   const [count, setCount] = useState(0);
+  //   const [count2, setCount2] = useState(0);
 
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -26,26 +37,20 @@ const BattleField = () => {
   }, []);
 
   useEffect(() => {
-    let totalPower = getTotalPower();
-    if (count < totalPower) {
-      const timer = setTimeout(() => {
-        setCount(count + 1);
-      }, 2000 / totalPower);
-      return () => clearTimeout(timer);
-    }
-  }, [count]);
+    dispatch(enemyAttackLogic());
+  }, [step]);
 
   useEffect(() => {
     if (oneLevel) {
-      let totalPower = oneLevel.enemy.power;
-      if (count2 < totalPower) {
-        const timer = setTimeout(() => {
-          setCount2(count2 + 1);
-        }, 2000 / totalPower);
-        return () => clearTimeout(timer);
-      }
+      dispatch(
+        getPowersForBattle({
+          ourTotal: getTotalPower(),
+          enemyTotal: oneLevel.enemy.power,
+          powersArray: getTeamPowers(),
+        })
+      );
     }
-  }, [count2, oneLevel]);
+  }, [oneLevel]);
 
   useEffect(() => {
     return () => {
@@ -53,6 +58,28 @@ const BattleField = () => {
       dispatch(clearCardsForBattle());
     };
   }, []);
+
+  //   useEffect(() => {
+  //     let totalPower = getTotalPower();
+  //     if (count < totalPower) {
+  //       const timer = setTimeout(() => {
+  //         setCount(count + 1);
+  //       }, 2000 / totalPower);
+  //       return () => clearTimeout(timer);
+  //     }
+  //   }, [count]);
+
+  //   useEffect(() => {
+  //     if (oneLevel) {
+  //       let totalPower = oneLevel.enemy.power;
+  //       if (count2 < totalPower) {
+  //         const timer = setTimeout(() => {
+  //           setCount2(count2 + 1);
+  //         }, 2000 / totalPower);
+  //         return () => clearTimeout(timer);
+  //       }
+  //     }
+  //   }, [count2, oneLevel]);
 
   return (
     <div
@@ -65,23 +92,35 @@ const BattleField = () => {
       <div>
         {oneLevel && (
           <>
-            <h1 style={{ fontSize: "40px" }}>Total Power {count2}</h1>
+            <h1 style={{ fontSize: "40px" }}>
+              Total Power {enemyPower} {/*count2*/}
+            </h1>
             <CardInvet card={oneLevel.enemy} />
-            {/* <p>{oneLevel.enemy.name}</p>
-            <img src={oneLevel.enemy.image} alt="" width="100" height="100" /> */}
           </>
         )}
       </div>
       <p style={{ fontSize: "200px" }}>VS</p>
       <div>
-        <h1 style={{ fontSize: "40px" }}>Total Power {count}</h1>
-        {cardsForBattle && (
-          <>
-            {cardsForBattle.map((card) => (
-              <CardInvet key={`card${card.id}`} card={card} />
-            ))}
-          </>
-        )}
+        <h1 style={{ fontSize: "40px" }}>
+          Total Power {teamPower} {/*count*/}
+        </h1>
+        {/* {cardsForBattle && ( */}
+        <>
+          {cardsForBattle.map((card, index) => (
+            <div key={`card${card.id}`}>
+              <p>Сила карты {oneCardPower[index]}</p>
+              <CardInvet card={card} />
+              <button
+                onClick={() => {
+                  dispatch(attackLogic(index));
+                }}
+              >
+                Attack
+              </button>
+            </div>
+          ))}
+        </>
+        {/* )} */}
       </div>
     </div>
   );
