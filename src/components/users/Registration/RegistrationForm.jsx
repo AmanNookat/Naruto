@@ -70,7 +70,7 @@ const RegistrationForm = () => {
               value={user.name}
             />
             <input
-              type="text"
+              type="mail"
               placeholder="Mail"
               onChange={(e) => setUser({ ...user, mail: e.target.value })}
               value={user.mail}
@@ -82,7 +82,7 @@ const RegistrationForm = () => {
               value={user.image}
             />
             <input
-              type="text"
+              type="password"
               placeholder="Пароль"
               onChange={(e) => setUser({ ...user, password: e.target.value })}
               value={user.password}
