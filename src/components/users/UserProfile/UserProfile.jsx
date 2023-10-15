@@ -4,6 +4,7 @@ import { NavLink, useParams } from "react-router-dom";
 import FavoritesList from "../../favorites/FavoritesList";
 import CardInvet from "../../cards/CardInvent/CardInvet";
 import { getOneUser } from "../../../store/users/usersSlice";
+import "./UserProfile.css";
 
 const UserProfile = () => {
   //   const { id } = useParams();
@@ -21,6 +22,7 @@ const UserProfile = () => {
         justifyContent: "space-between",
         flexWrap: "wrap",
         width: "100%",
+        marginTop: "6%",
       }}
     >
       {loading ? (
