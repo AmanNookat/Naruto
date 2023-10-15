@@ -9,8 +9,30 @@
       "inventory": [],
       "favorites": [],
       "isAdmin": true,
-      "points": 0,
+      "points": 500,
       "id": 1
+    },
+    {
+      "name": "aman",
+      "mail": "a",
+      "password": "a",
+      "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
+      "level": 2,
+      "inventory": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
+          "price": 500,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто с техникой множественного теневого клонирования",
+          "id": 1
+        }
+      ],
+      "favorites": [],
+      "isAdmin": true,
+      "points": 0,
+      "id": 2
     }
   ],
   "cards": [

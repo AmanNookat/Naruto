@@ -15,6 +15,7 @@ const companySlice = createSlice({
     enemyPower: 0,
     oneCardPower: [],
     resultModal: null,
+    whoAttack: "",
     // cardStatusInBattle: true,
   },
   reducers: {
@@ -34,11 +35,13 @@ const companySlice = createSlice({
       state.oneCardPower = action.payload.powersArray;
     },
     attackLogic: (state, action) => {
+      const { index, cardId } = action.payload;
+      state.whoAttack = cardId;
+
       let updatedEnemyPower;
       if (state.step % 2 == 0) {
         state.step = state.step + 1;
-        updatedEnemyPower =
-          state.enemyPower - state.oneCardPower[action.payload];
+        updatedEnemyPower = state.enemyPower - state.oneCardPower[index];
       }
 
       if (updatedEnemyPower <= 0 || !updatedEnemyPower) {
