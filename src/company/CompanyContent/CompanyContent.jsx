@@ -5,6 +5,7 @@ import { getOneUser } from "../../store/users/usersSlice";
 import BattleMenu from "../BattleMenu/BattleMenu";
 import CardsMenu from "../CardsMenu/CardsMenu";
 import { cleanBattleSlots } from "../../store/company/companyActions";
+import CardsForBattle from "../CardsForBattle/CardsForBattle";
 
 const CompanyContent = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -38,6 +39,7 @@ const CompanyContent = () => {
         {modal && (
           <>
             <BattleMenu setModal={setModal} />
+            <CardsForBattle />
             <CardsMenu />
           </>
         )}
