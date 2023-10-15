@@ -5,7 +5,7 @@
       "mail": "a",
       "password": "a",
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
-      "level": 7,
+      "level": 8,
       "inventory": [
         {
           "name": "Наруто Узумаки",
@@ -213,7 +213,7 @@
         }
       ],
       "isAdmin": true,
-      "points": 98899017,
+      "points": 49449459,
       "id": 1
     },
     {
@@ -333,11 +333,55 @@
               "user": "aman"
             }
           ]
+        },
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто",
+          "id": 1,
+          "comments": [
+            {
+              "id": 1697002020578,
+              "body": "Naruto",
+              "rating": 1,
+              "user": "aman"
+            },
+            {
+              "id": 1697085501698,
+              "body": "Наруто красавчик",
+              "rating": 5,
+              "user": "aman"
+            },
+            {
+              "id": 1697309385830,
+              "body": "выаыв",
+              "rating": 2,
+              "user": "aman"
+            }
+          ],
+          "rating": "2.7",
+          "likes": [
+            {
+              "id": 1697008443434,
+              "user": "a"
+            },
+            {
+              "id": 1697088984199,
+              "user": "atai"
+            },
+            {
+              "id": 1697312514939,
+              "user": "aman"
+            }
+          ]
         }
       ],
       "favorites": [],
       "isAdmin": false,
-      "points": 0,
+      "points": 7,
       "id": 4
     }
   ],
@@ -381,7 +425,7 @@
           "user": "atai"
         },
         {
-          "id": 1697291885099,
+          "id": 1697312514939,
           "user": "aman"
         }
       ]
@@ -442,9 +486,9 @@
     {
       "name": "Ирука Умино",
       "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
-      "price": 10,
+      "price": "11",
       "rank": "Чунин",
-      "power": 10,
+      "power": "11",
       "description": "Ирука",
       "id": 4,
       "comments": [
@@ -456,12 +500,7 @@
         }
       ],
       "rating": "4.0",
-      "likes": [
-        {
-          "id": 1697085064074,
-          "user": "aman"
-        }
-      ]
+      "likes": []
     },
     {
       "name": "Какаши Хатаке",
@@ -949,7 +988,7 @@
     },
     {
       "enemy": {
-        "name": "Гаара (биджу)",
+        "name": "Гаара",
         "image": "https://i.ytimg.com/vi/5yncdfdsYUU/sddefault.jpg",
         "power": 69,
         "rank": "Джонин"
@@ -958,7 +997,7 @@
     },
     {
       "enemy": {
-        "name": "Орочимару (без рук)",
+        "name": "Орочимару",
         "image": "https://preview.redd.it/rlxya9i9tq561.png?auto=webp&s=3238d30134fab3c56d0d6f32d65ce218733334b9",
         "power": 100,
         "rank": "Джонин"
@@ -976,7 +1015,7 @@
     },
     {
       "enemy": {
-        "name": "Саске Учиха (печать 2)",
+        "name": "Саске Учиха",
         "image": "https://i.redd.it/kid-sasuke-curse-mark-2-vs-rampage-obito-v0-cz0vn7yj6sdb1.jpg?width=850&format=pjpg&auto=webp&s=6d486276006eeee39e0ad928e943cec1cf52b6a5",
         "power": 150,
         "rank": "Джонин"

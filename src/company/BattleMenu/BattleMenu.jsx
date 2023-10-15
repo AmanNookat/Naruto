@@ -13,10 +13,6 @@ const BattleMenu = ({ setModal }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  //   useEffect(() => {
-  //     dispatch(getCardsForBattle());
-  //   }, [checkCard]);
-
   useEffect(() => {
     cleanBattleSlots();
     dispatch(clearCardsForBattle());
