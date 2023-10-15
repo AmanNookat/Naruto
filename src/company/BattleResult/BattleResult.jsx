@@ -9,7 +9,9 @@ const BattleResult = ({ resultModal, cardsForBattle }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(userWin(id));
+    if (resultModal == 1) {
+      dispatch(userWin(id));
+    }
     dispatch(userLose(cardsForBattle));
   }, [resultModal]);
 

@@ -90,6 +90,15 @@ export const getTeamPowers = () => {
   return data;
 };
 
+export const processNumber = (number) => {
+  if (number >= 1000) {
+    number = (number / 1000).toFixed(0) + "k";
+  } else if (number >= 1000000) {
+    number = number / 1000000 + "m";
+  }
+  return number;
+};
+
 // export const battleResult = (cardsForBattle, enemyPower) => {
 //   if (cardsForBattle.length === 0) {
 //     notify("Поражение", NOTIFY_TYPES.error);

@@ -5,7 +5,7 @@
       "mail": "a",
       "password": "a",
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
-      "level": 8,
+      "level": 7,
       "inventory": [
         {
           "name": "Наруто Узумаки",
@@ -172,48 +172,9 @@
           ]
         }
       ],
-      "favorites": [
-        {
-          "name": "Наруто Узумаки",
-          "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
-          "price": 100,
-          "rank": "Генин",
-          "power": 20,
-          "description": "Наруто",
-          "id": 1,
-          "comments": [
-            {
-              "id": 1697002020578,
-              "body": "Naruto",
-              "rating": 1,
-              "user": "aman"
-            },
-            {
-              "id": 1697085501698,
-              "body": "Наруто красавчик",
-              "rating": 5,
-              "user": "aman"
-            }
-          ],
-          "rating": "3.0",
-          "likes": [
-            {
-              "id": 1697008443434,
-              "user": "a"
-            },
-            {
-              "id": 1697088984199,
-              "user": "atai"
-            },
-            {
-              "id": 1697192738612,
-              "user": "aman"
-            }
-          ]
-        }
-      ],
+      "favorites": [],
       "isAdmin": true,
-      "points": 49449459,
+      "points": 49449509,
       "id": 1
     },
     {
@@ -289,7 +250,7 @@
       "mail": "a",
       "password": "a",
       "image": "a",
-      "level": 3,
+      "level": 4,
       "inventory": [
         {
           "name": "Сакура Харуно",
@@ -423,10 +384,6 @@
         {
           "id": 1697088984199,
           "user": "atai"
-        },
-        {
-          "id": 1697312514939,
-          "user": "aman"
         }
       ]
     },
@@ -439,10 +396,6 @@
       "description": "Саске",
       "id": 2,
       "likes": [
-        {
-          "id": 1697191189118,
-          "user": "aman"
-        },
         {
           "id": 1697190376659,
           "user": "atai"
@@ -529,7 +482,7 @@
     {
       "name": "Цунаде",
       "image": "https://static.zerochan.net/Tsunade.full.2364148.jpg",
-      "price": 100000,
+      "price": "1000",
       "rank": "Каге",
       "power": 2500,
       "description": "106 сантиметров",
@@ -553,7 +506,7 @@
     {
       "name": "Мадара Учиха",
       "image": "https://pm1.aminoapps.com/6540/38f55b02fe7d2e38849515651b58940810ed37cf_hq.jpg",
-      "price": 999999,
+      "price": "10000",
       "rank": "Ооцуцуки",
       "power": 9999,
       "description": "Бог шиноби",

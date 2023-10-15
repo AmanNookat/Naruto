@@ -55,6 +55,7 @@ export const userWin = createAsyncThunk("company/userWin", async (levelId) => {
     if (levelId == oneUser.level) {
       oneUser.level = oneUser.level + 1;
       notify("+1 уровень");
+      console.log(oneUser);
       await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
       addToLocalStorage(oneUser);
     }
