@@ -170,15 +170,6 @@
               "user": "aman"
             }
           ]
-        },
-        {
-          "name": "тест",
-          "image": "ф",
-          "price": 1,
-          "rank": "Генин",
-          "power": 1,
-          "description": "1",
-          "id": 8
         }
       ],
       "favorites": [
@@ -221,10 +212,40 @@
               "user": "atai"
             }
           ]
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Саске",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697190376659,
+              "user": "atai"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697032793926,
+              "body": "круто",
+              "rating": 2,
+              "user": "aman"
+            },
+            {
+              "id": 1697192766881,
+              "body": "ыудшоащ",
+              "rating": 4,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0"
         }
       ],
       "isAdmin": true,
-      "points": 49449508,
+      "points": 49449273,
       "id": 1
     },
     {
@@ -394,6 +415,94 @@
       "isAdmin": false,
       "points": 0,
       "id": 4
+    },
+    {
+      "name": "asel",
+      "mail": "a",
+      "password": "a",
+      "image": "data:image/jpeg;base64,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",
+      "level": 2,
+      "inventory": [
+        {
+          "name": "Сакура Харуно",
+          "image": "https://images6.fanpop.com/image/photos/39600000/Sakura-haruno-sakura-39693389-640-640.jpg",
+          "price": 1,
+          "rank": "Генин",
+          "power": 1,
+          "description": "Сакура",
+          "id": 3,
+          "comments": [
+            {
+              "id": 1697032804071,
+              "body": "ахахахах",
+              "rating": 3,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0",
+          "likes": []
+        },
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": "11",
+          "rank": "Чунин",
+          "power": "11",
+          "description": "Ирука",
+          "id": 4,
+          "comments": [
+            {
+              "id": 1697032815845,
+              "body": "лох",
+              "rating": 4,
+              "user": "aman"
+            }
+          ],
+          "rating": "4.0",
+          "likes": []
+        }
+      ],
+      "favorites": [
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Саске",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697190376659,
+              "user": "atai"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697032793926,
+              "body": "круто",
+              "rating": 2,
+              "user": "aman"
+            },
+            {
+              "id": 1697192766881,
+              "body": "ыудшоащ",
+              "rating": 4,
+              "user": "aman"
+            },
+            {
+              "id": 1697384540652,
+              "body": "Саске красавчик",
+              "rating": 5,
+              "user": "asel"
+            }
+          ],
+          "rating": "3.7"
+        }
+      ],
+      "isAdmin": false,
+      "points": 1,
+      "id": 5
     }
   ],
   "cards": [
@@ -434,6 +543,10 @@
         {
           "id": 1697088984199,
           "user": "atai"
+        },
+        {
+          "id": 1697384524536,
+          "user": "asel"
         }
       ]
     },
@@ -463,9 +576,15 @@
           "body": "ыудшоащ",
           "rating": 4,
           "user": "aman"
+        },
+        {
+          "id": 1697384540652,
+          "body": "Саске красавчик",
+          "rating": 5,
+          "user": "asel"
         }
       ],
-      "rating": "3.0"
+      "rating": "3.7"
     },
     {
       "name": "Сакура Харуно",
@@ -484,7 +603,12 @@
         }
       ],
       "rating": "3.0",
-      "likes": []
+      "likes": [
+        {
+          "id": 1697384611538,
+          "user": "asel"
+        }
+      ]
     },
     {
       "name": "Ирука Умино",
@@ -636,6 +760,61 @@
         }
       ],
       "id": 2
+    },
+    {
+      "user": "asel",
+      "totalCost": 100,
+      "cards": [
+        {
+          "count": 1,
+          "totalPrice": 100,
+          "cardItem": {
+            "name": "Наруто Узумаки",
+            "image": "https://m.media-amazon.com/images/I/61oEgmPxA9L._AC_UF1000,1000_QL80_.jpg",
+            "price": 100,
+            "rank": "Генин",
+            "power": 20,
+            "description": "Наруто",
+            "id": 1,
+            "comments": [
+              {
+                "id": 1697002020578,
+                "body": "Naruto",
+                "rating": 1,
+                "user": "aman"
+              },
+              {
+                "id": 1697085501698,
+                "body": "Наруто красавчик",
+                "rating": 5,
+                "user": "aman"
+              },
+              {
+                "id": 1697309385830,
+                "body": "выаыв",
+                "rating": 2,
+                "user": "aman"
+              }
+            ],
+            "rating": "2.7",
+            "likes": [
+              {
+                "id": 1697008443434,
+                "user": "a"
+              },
+              {
+                "id": 1697088984199,
+                "user": "atai"
+              },
+              {
+                "id": 1697384524536,
+                "user": "asel"
+              }
+            ]
+          }
+        }
+      ],
+      "id": 3
     }
   ],
   "quizzes": [

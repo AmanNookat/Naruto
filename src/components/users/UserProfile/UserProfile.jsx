@@ -10,6 +10,8 @@ const UserProfile = () => {
   const { oneUser, loading, inventory } = useSelector((state) => state.users);
   const dispatch = useDispatch();
 
+  console.log(inventory);
+
   useEffect(() => {
     dispatch(getOneUser());
   }, []);

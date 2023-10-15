@@ -82,3 +82,14 @@ export const toggleCardFavorite = createAsyncThunk(
     return oneUser;
   }
 );
+
+export const deleteCardFromFavorite = createAsyncThunk(
+  "users/deleteCardFromFavorite",
+  async ({ cardId }) => {
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+    oneUser.favorites = oneUser.favorites.filter((card) => card.id != cardId);
+    addToLocalStorage(oneUser);
+    await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+    return oneUser;
+  }
+);
