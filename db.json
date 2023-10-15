@@ -517,6 +517,15 @@
           "user": "aman"
         }
       ]
+    },
+    {
+      "name": "Лашара",
+      "image": "1234",
+      "price": 32,
+      "rank": "Генин",
+      "power": 213,
+      "description": "вымаи",
+      "id": 8
     }
   ],
   "orders": [
