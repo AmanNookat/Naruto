@@ -48,30 +48,66 @@ export const getTotalPages = async (url) => {
   return totalPages;
 };
 
-// export const checkCardInCart = (cardId) => {
-//   const cart = getCartData();
-//   return cart.cards.find((card) => card.cardItem.id === cardId);
-// };
-
 export const checkCardInFavorites = (cardId) => {
   const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
-  return oneUser.favorites.find((card) => card.id === cardId);
+  if (oneUser) {
+    return oneUser.favorites.find((card) => card.id === cardId);
+  }
 };
 
 export const cardColorChange = (category) => {
   switch (category) {
     case "Генин":
       return {
-        backgroundColor: "red",
+        backgroundColor: "#006400",
       };
     case "Чунин":
       return {
-        backgroundColor: "blue",
+        backgroundColor: "#FFD700",
+      };
+    case "Джонин":
+      return {
+        backgroundColor: "#FF8C00",
+      };
+    case "Каге":
+      return {
+        backgroundColor: "#B22222",
+      };
+    case "Ооцуцуки":
+      return {
+        backgroundColor: "#FFFFFF",
       };
     default:
       return {};
   }
 };
+
+export const getTeamPowers = () => {
+  let data = JSON.parse(localStorage.getItem("NarutoBattle"));
+  if (data) {
+    data = data.map((card) => card.power);
+  }
+  return data;
+};
+
+export const processNumber = (number) => {
+  if (number >= 1000) {
+    number = (number / 1000).toFixed(0) + "k";
+  } else if (number >= 1000000) {
+    number = number / 1000000 + "m";
+  }
+  return number;
+};
+
+// export const battleResult = (cardsForBattle, enemyPower) => {
+//   if (cardsForBattle.length === 0) {
+//     notify("Поражение", NOTIFY_TYPES.error);
+//   }
+
+//   if (enemyPower === 0) {
+//     notify("Победа", NOTIFY_TYPES.success);
+//   }
+// };
 
 // -------------------------------- notify оставляйте в самом низу
 

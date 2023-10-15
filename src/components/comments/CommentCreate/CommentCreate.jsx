@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { NOTIFY_TYPES, getAuthUser, notify } from "../../../helpers/functions";
 import { createComment } from "../../../store/comments/commentsActions";
+import "./CommentCreate.css";
 
 const CommentCreate = ({ card }) => {
   const [comment, setComment] = useState({
@@ -36,6 +37,7 @@ const CommentCreate = ({ card }) => {
     <div>
       <div>
         <textarea
+          className="comment--creator"
           cols="30"
           rows="10"
           onChange={(e) =>
@@ -43,18 +45,22 @@ const CommentCreate = ({ card }) => {
           }
           value={comment.commentContent}
         ></textarea>
-        <select
-          onChange={(e) => setComment({ ...comment, rating: +e.target.value })}
-          value={comment.rating}
-        >
-          <option hidden>Оценка</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button onClick={addComment}>Отправить</button>
+        <div className="btns--block">
+          <select
+            onChange={(e) =>
+              setComment({ ...comment, rating: +e.target.value })
+            }
+            value={comment.rating}
+          >
+            <option hidden>Оценка</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <button onClick={addComment}>Отправить</button>
+        </div>
       </div>
     </div>
   );

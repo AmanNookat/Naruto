@@ -19,10 +19,10 @@ const Navbar = () => {
     setIsMenuOpen(false);
   }
 
-  useEffect(() => {
-    dispatch(getOneUser());
-    dispatch(getOneQuiz());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(getOneUser());
+  //   dispatch(getOneQuiz());
+  // }, []);
 
   return (
     <div className="nav">

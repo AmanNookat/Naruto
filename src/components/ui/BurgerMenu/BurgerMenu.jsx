@@ -7,7 +7,7 @@ import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
 import burgerBackground from "./images/burgerMenu.png";
 import "./BurgerMenu.css";
 const BurgerMenu = ({ closeBurgerMenu }) => {
-  const { oneUser } = useSelector((state) => state.users);
+  const { oneUser, inventory } = useSelector((state) => state.users);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -29,7 +29,7 @@ const BurgerMenu = ({ closeBurgerMenu }) => {
           <>
             <NavLink to="/quizzes">Викторины</NavLink>
             <NavLink to="/cart">Корзина</NavLink>
-
+            <NavLink to="/company">Компания</NavLink>
             {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
             {oneUser && (
               <>

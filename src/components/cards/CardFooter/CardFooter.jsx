@@ -6,6 +6,7 @@ import {
   checkCardInFavorites,
   checkUserLogin,
   getAuthUser,
+  processNumber,
 } from "../../../helpers/functions";
 import {
   checkCardInCart,
@@ -17,6 +18,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { toggleCardFavorite } from "../../../store/users/usersActions";
 import StarIcon from "@mui/icons-material/Star";
 import { unlockCard } from "../../../store/cards/cardsActions";
+import InfoIcon from "@mui/icons-material/Info";
 
 import "./CardFooter.css";
 
@@ -77,20 +79,24 @@ const CardFooter = ({ card }) => {
               {card.likes ? card.likes.length : 0}
             </span>
           </div>
+          <button
+            className="card--fav"
+            onClick={() => {
+              dispatch(toggleCardFavorite({ card }));
+            }}
+          >
+            {isFavCard ? (
+              <StarIcon fontSize="large" color="warning" />
+            ) : (
+              <StarIcon fontSize="large" />
+            )}
+          </button>
           <div
             style={{
               display: "flex",
               alignItems: "center",
             }}
           >
-            <span
-              onClick={() => {
-                dispatch(unlockCard({ cardId: card.id }));
-              }}
-              className="CardPrice"
-            >
-              {card.price}$
-            </span>
             <button
               className="card--toCart"
               onClick={() => {
@@ -113,19 +119,19 @@ const CardFooter = ({ card }) => {
               justifyContent: "center",
             }}
           ></div>
+          <InfoIcon
+            className="card--details"
+            fontSize="large"
+            onClick={() => navigate(`/store/${card.id}`)}
+          />
           <button
-            className="card--fav"
             onClick={() => {
-              dispatch(toggleCardFavorite({ card }));
+              dispatch(unlockCard({ cardId: card.id }));
             }}
+            className="CardPrice"
           >
-            {isFavCard ? (
-              <StarIcon fontSize="large" color="warning" />
-            ) : (
-              <StarIcon fontSize="large" />
-            )}
+            {processNumber(card.price)}
           </button>
-          <button onClick={() => navigate(`/store/${card.id}`)}>about</button>
         </div>
       )}
     </div>

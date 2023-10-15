@@ -7,6 +7,7 @@ import {
   getOneCard,
 } from "../../../store/cards/cardsActions";
 import { clearOneCardState } from "../../../store/cards/cardsSlice";
+import style from "./CardEdit.module.css";
 
 const CardEdit = () => {
   const { loading, oneCard, categories } = useSelector((state) => state.cards);
@@ -29,14 +30,14 @@ const CardEdit = () => {
   }, [oneCard]);
 
   return (
-    <div>
+    <>
       {loading ? (
         <h2>Loading...</h2>
       ) : (
         <>
           {card && (
-            <div>
-              <h1>Редактировать карту</h1>
+            <div className={style.cardEditForm}>
+              <h1>РЕДАКТИРОВАТЬ</h1>
               <input
                 type="text"
                 placeholder="имя"
@@ -49,25 +50,38 @@ const CardEdit = () => {
                 onChange={(e) => setCard({ ...card, image: e.target.value })}
                 value={card.image}
               />
-              {/* поставить вместо инпута для рангов select и option */}
-              <input
-                type="text"
-                placeholder="ранг"
+              <select
                 onChange={(e) => setCard({ ...card, rank: e.target.value })}
                 value={card.rank}
-              />
-              <input
-                type="number"
-                placeholder="цена"
-                onChange={(e) => setCard({ ...card, price: e.target.value })}
-                value={card.price}
-              />
-              <input
-                type="number"
-                placeholder="сила"
-                onChange={(e) => setCard({ ...card, power: e.target.value })}
-                value={card.power}
-              />
+              >
+                <option hidden>Выбрать ранг</option>
+                {categories.map((category) => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+              <div
+                style={{
+                  display: "flex",
+                  width: "90%",
+                  justifyContent: "space-between",
+                }}
+              >
+                <input
+                  type="number"
+                  placeholder="цена"
+                  onChange={(e) => setCard({ ...card, price: e.target.value })}
+                  value={card.price}
+                />
+                <input
+                  type="number"
+                  placeholder="сила"
+                  onChange={(e) => setCard({ ...card, power: e.target.value })}
+                  value={card.power}
+                />
+              </div>
+
               <textarea
                 cols="30"
                 rows="10"
@@ -89,7 +103,7 @@ const CardEdit = () => {
           )}
         </>
       )}
-    </div>
+    </>
   );
 };
 

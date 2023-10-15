@@ -11,13 +11,13 @@
 
 h2 {
   background-color: rgba(0, 0, 0, 0.1);
-  color: orange;
+  color: #ffac41;
 }
 
 .ThrowButton {
   padding: 8px 20px;
   background-color: black;
-  color: orange;
+  color: #ffac41;
   border: none;
   border-radius: 4px;
   cursor: pointer;
