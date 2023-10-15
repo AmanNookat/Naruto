@@ -20,10 +20,7 @@ const BattleResult = ({ resultModal, cardsForBattle }) => {
           {resultModal === 1 ? (
             <div>
               <h1>Победа</h1>
-              <p>
-                Поздравляю, вы стали на шаг ближе к становлению Хокаге (+1 к
-                уровню)
-              </p>
+              <p>Поздравляю с победой</p>
               <Link to="/company">Вернуться</Link>
             </div>
           ) : (

@@ -25,6 +25,8 @@ const companySlice = createSlice({
     },
     clearCardsForBattle: (state) => {
       state.cardsForBattle = [];
+      state.resultModal = null;
+      state.step = 0;
     },
     getPowersForBattle: (state, action) => {
       state.teamPower = action.payload.ourTotal;
@@ -34,12 +36,12 @@ const companySlice = createSlice({
     attackLogic: (state, action) => {
       let updatedEnemyPower;
       if (state.step % 2 == 0) {
+        state.step = state.step + 1;
         updatedEnemyPower =
           state.enemyPower - state.oneCardPower[action.payload];
-        state.step = state.step + 1;
       }
 
-      if (updatedEnemyPower <= 0) {
+      if (updatedEnemyPower <= 0 || !updatedEnemyPower) {
         state.enemyPower = state.enemyPower = 0;
         state.resultModal = 1;
         return;
@@ -54,7 +56,7 @@ const companySlice = createSlice({
         );
 
         let updatedCardPower =
-          state.oneCardPower[enemyAttack] - state.enemyPower;
+          state.oneCardPower[enemyAttack] - state.oneLevel.enemy.power;
 
         notify(
           `${state.oneLevel.enemy.name} атаковал ${state.cardsForBattle[enemyAttack].name}`,

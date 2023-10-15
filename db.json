@@ -289,7 +289,7 @@
       "mail": "a",
       "password": "a",
       "image": "a",
-      "level": 1,
+      "level": 3,
       "inventory": [
         {
           "name": "Сакура Харуно",
@@ -381,7 +381,7 @@
       ],
       "favorites": [],
       "isAdmin": false,
-      "points": 7,
+      "points": 0,
       "id": 4
     }
   ],
