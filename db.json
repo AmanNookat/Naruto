@@ -20,18 +20,18 @@
       "level": 2,
       "inventory": [
         {
-          "name": "Наруто Узумаки",
-          "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
-          "price": 500,
-          "rank": "Генин",
-          "power": 20,
-          "description": "Наруто с техникой множественного теневого клонирования",
-          "id": 1
+          "name": "Какаши Хатаке",
+          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
+          "price": 10000,
+          "rank": "Джонин",
+          "power": 150,
+          "description": "Какаши в первом сезоне",
+          "id": 5
         }
       ],
       "favorites": [],
       "isAdmin": true,
-      "points": 0,
+      "points": 9999862574,
       "id": 2
     }
   ],
@@ -155,7 +155,7 @@
     },
     {
       "name": "Ино Яманака",
-      "image": "https://images6.fanpop.com/image/photos/41700000/Ino-Yamanaka-pureheroine-41733181-480-640.jpg",
+      "image": "https://img.wattpad.com/6f51c5ac9f8629dea4d98b7cbfbc63fa378903dd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f724b3058417a7347523874716b773d3d2d3533363133363839362e313531336534393463643937666236363735383537313032313136332e6a7067?s=fit&w=720&h=720",
       "price": 400,
       "rank": "Генин",
       "power": 20,

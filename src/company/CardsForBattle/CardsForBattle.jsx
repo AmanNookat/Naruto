@@ -11,7 +11,6 @@ const CardsForBattle = () => {
     dispatch(getCardsForBattle());
   }, []);
 
-  console.log(cardsForBattle);
 
   return (
     <div>

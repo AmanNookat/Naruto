@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getLevels, getOneLevel } from "./companyActions";
 import { NOTIFY_TYPES, notify } from "../../helpers/functions";
-import { act } from "react-dom/test-utils";
 
 const companySlice = createSlice({
   name: "company",
@@ -16,7 +15,6 @@ const companySlice = createSlice({
     oneCardPower: [],
     resultModal: null,
     whoAttack: "",
-    // cardStatusInBattle: true,
   },
   reducers: {
     getCardsForBattle: (state) => {
@@ -105,6 +103,5 @@ export const {
   clearCardsForBattle,
   attackLogic,
   enemyAttackLogic,
-  //   zeroHPLogic,
 } = companySlice.actions;
 export default companySlice.reducer;
