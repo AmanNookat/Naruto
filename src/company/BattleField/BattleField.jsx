@@ -39,7 +39,13 @@ const BattleField = () => {
   }, []);
 
   useEffect(() => {
-    dispatch(enemyAttackLogic());
+    const timer = setTimeout(() => {
+      dispatch(enemyAttackLogic());
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, [step]);
 
   useEffect(() => {
