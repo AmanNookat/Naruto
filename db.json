@@ -170,15 +170,6 @@
               "user": "aman"
             }
           ]
-        },
-        {
-          "name": "тест",
-          "image": "ф",
-          "price": 1,
-          "rank": "Генин",
-          "power": 1,
-          "description": "1",
-          "id": 8
         }
       ],
       "favorites": [
@@ -221,10 +212,40 @@
               "user": "atai"
             }
           ]
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.etsystatic.com/42686093/r/il/8e1706/4951192106/il_fullxfull.4951192106_cus4.jpg",
+          "price": 100,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Саске",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697190376659,
+              "user": "atai"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697032793926,
+              "body": "круто",
+              "rating": 2,
+              "user": "aman"
+            },
+            {
+              "id": 1697192766881,
+              "body": "ыудшоащ",
+              "rating": 4,
+              "user": "aman"
+            }
+          ],
+          "rating": "3.0"
         }
       ],
       "isAdmin": true,
-      "points": 49449508,
+      "points": 49449273,
       "id": 1
     },
     {

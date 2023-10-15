@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
   createUser,
+  deleteCardFromFavorite,
   loginUser,
   savePoints,
   toggleCardFavorite,
@@ -26,6 +27,16 @@ const usersSlice = createSlice({
         state.inventory = state.oneUser.inventory;
       }
     },
+    deleteCardFromInventory: (state, action) => {
+      state.oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+      state.oneUser.inventory = state.oneUser.inventory.filter(
+        (card) => card.id != action.payload
+      );
+      state.inventory = state.inventory.filter(
+        (card) => card.id != action.payload
+      );
+      addToLocalStorage(state.oneUser);
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -48,9 +59,13 @@ const usersSlice = createSlice({
       })
       .addCase(toggleCardFavorite.fulfilled, (state, action) => {
         state.oneUser = action.payload;
+      })
+      .addCase(deleteCardFromFavorite.fulfilled, (state, action) => {
+        state.oneUser = action.payload;
       });
   },
 });
 
-export const { clearOneUserState, getOneUser } = usersSlice.actions;
+export const { clearOneUserState, getOneUser, deleteCardFromInventory } =
+  usersSlice.actions;
 export default usersSlice.reducer;

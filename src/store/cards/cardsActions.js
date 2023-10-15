@@ -9,6 +9,8 @@ import {
   notify,
 } from "../../helpers/functions";
 import { deleteCardFromCart } from "../cart/cartActions";
+import { deleteCardFromFavorite } from "../users/usersActions";
+import { deleteCardFromInventory } from "../users/usersSlice";
 
 export const createCard = createAsyncThunk(
   "cards/createCard",
@@ -58,7 +60,9 @@ export const deleteCard = createAsyncThunk(
   async ({ id }, { dispatch }) => {
     await axios.delete(`${CARDS_API}/${id}`);
     dispatch(getCards());
+    dispatch(deleteCardFromFavorite({ cardId: id }));
     deleteCardFromCart(id);
+    dispatch(deleteCardFromInventory(id));
   }
 );
 
