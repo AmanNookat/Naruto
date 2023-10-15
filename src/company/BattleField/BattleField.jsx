@@ -27,8 +27,6 @@ const BattleField = () => {
     resultModal,
   } = useSelector((state) => state.company);
   const [attack, setAttack] = useState(false);
-  //   const [count, setCount] = useState(0);
-  //   const [count2, setCount2] = useState(0);
 
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -65,28 +63,6 @@ const BattleField = () => {
       //   dispatch(clearCardsForBattle());
     };
   }, []);
-
-  //   useEffect(() => {
-  //     let totalPower = getTotalPower();
-  //     if (count < totalPower) {
-  //       const timer = setTimeout(() => {
-  //         setCount(count + 1);
-  //       }, 2000 / totalPower);
-  //       return () => clearTimeout(timer);
-  //     }
-  //   }, [count]);
-
-  //   useEffect(() => {
-  //     if (oneLevel) {
-  //       let totalPower = oneLevel.enemy.power;
-  //       if (count2 < totalPower) {
-  //         const timer = setTimeout(() => {
-  //           setCount2(count2 + 1);
-  //         }, 2000 / totalPower);
-  //         return () => clearTimeout(timer);
-  //       }
-  //     }
-  //   }, [count2, oneLevel]);
 
   return (
     <>

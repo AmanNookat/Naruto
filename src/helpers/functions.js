@@ -67,11 +67,11 @@ export const cardColorChange = (category) => {
       };
     case "Джонин":
       return {
-        backgroundColor: "#FF8C00",
+        backgroundColor: "#5700A0",
       };
     case "Каге":
       return {
-        backgroundColor: "#B22222",
+        backgroundColor: "#A00000",
       };
     case "Ооцуцуки":
       return {
