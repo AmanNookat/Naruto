@@ -84,7 +84,6 @@ export const toggleCardLike = createAsyncThunk(
   async ({ setIsLike, likes, cardId }, { dispatch }) => {
     const user = getAuthUser();
     let updatedLikesArr;
-    console.log(setIsLike);
     if (!likes) {
       updatedLikesArr = [];
     } else {
