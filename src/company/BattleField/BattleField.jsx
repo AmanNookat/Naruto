@@ -15,6 +15,7 @@ import CardInvet from "../../components/cards/CardInvent/CardInvet";
 import { useParams } from "react-router-dom";
 import { getTeamPowers } from "../../helpers/functions";
 import BattleResult from "../BattleResult/BattleResult";
+import AttackModal from "../AttackModal/AttackModal";
 
 const BattleField = () => {
   const {
@@ -25,13 +26,12 @@ const BattleField = () => {
     step,
     resultModal,
   } = useSelector((state) => state.company);
+  const [attack, setAttack] = useState(false);
   //   const [count, setCount] = useState(0);
   //   const [count2, setCount2] = useState(0);
 
   const { id } = useParams();
   const dispatch = useDispatch();
-
-  // console.log(cardsForBattle);
 
   useEffect(() => {
     dispatch(getOneLevel(id));
@@ -40,9 +40,6 @@ const BattleField = () => {
 
   useEffect(() => {
     dispatch(enemyAttackLogic());
-    // if (cardsForBattle.length === 0 || enemyPower === 0) {
-    // battleResult(cardsForBattle, enemyPower);
-    // }
   }, [step]);
 
   useEffect(() => {
@@ -95,6 +92,7 @@ const BattleField = () => {
           />
         )}
       </>
+      <>{attack && <AttackModal attack={attack} setAttack={setAttack} />}</>
       <div
         style={{
           display: "flex",
@@ -121,7 +119,8 @@ const BattleField = () => {
                 <CardInvet card={card} />
                 <button
                   onClick={() => {
-                    dispatch(attackLogic(index));
+                    setAttack(true);
+                    dispatch(attackLogic({ index, cardId: card.id }));
                   }}
                 >
                   Attack
