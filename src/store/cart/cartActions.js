@@ -76,5 +76,6 @@ export const createOrder = createAsyncThunk("cart/createOrder", async () => {
   const cart = getCartData();
   if (!cart.cards.length) return;
   await axios.post(ORDERS_API, cart);
+  notify("Заказ отправлен на рассмотрение");
   cleanCart();
 });
