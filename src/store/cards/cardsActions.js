@@ -8,6 +8,7 @@ import {
   getTotalPages,
   notify,
 } from "../../helpers/functions";
+import { deleteCardFromCart } from "../cart/cartActions";
 
 export const createCard = createAsyncThunk(
   "cards/createCard",
@@ -57,6 +58,7 @@ export const deleteCard = createAsyncThunk(
   async ({ id }, { dispatch }) => {
     await axios.delete(`${CARDS_API}/${id}`);
     dispatch(getCards());
+    deleteCardFromCart(id);
   }
 );
 
