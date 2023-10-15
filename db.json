@@ -5,7 +5,7 @@
       "mail": "a",
       "password": "a",
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
-      "level": 8,
+      "level": 7,
       "inventory": [
         {
           "name": "Наруто Узумаки",
@@ -213,7 +213,7 @@
         }
       ],
       "isAdmin": true,
-      "points": 49449459,
+      "points": 98899018,
       "id": 1
     },
     {
@@ -289,7 +289,7 @@
       "mail": "a",
       "password": "a",
       "image": "a",
-      "level": 3,
+      "level": 4,
       "inventory": [
         {
           "name": "Сакура Харуно",
@@ -381,7 +381,7 @@
       ],
       "favorites": [],
       "isAdmin": false,
-      "points": 0,
+      "points": 1,
       "id": 4
     }
   ],
