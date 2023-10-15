@@ -48,11 +48,6 @@ export const getTotalPages = async (url) => {
   return totalPages;
 };
 
-// export const checkCardInCart = (cardId) => {
-//   const cart = getCartData();
-//   return cart.cards.find((card) => card.cardItem.id === cardId);
-// };
-
 export const checkCardInFavorites = (cardId) => {
   const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
   if (oneUser) {
@@ -87,22 +82,6 @@ export const cardColorChange = (category) => {
   }
 };
 
-// export const countCartTotalCost = (cartCards) => {
-//   return cartCards.reduce((acc, currVal) => {
-//     return acc + currVal.totalPrice;
-//   }, 0);
-// };
-
-export const getTotalPower = () => {
-  let data = JSON.parse(localStorage.getItem("NarutoBattle"));
-  if (data) {
-    data = data.reduce((acc, currVal) => {
-      return acc + currVal.power;
-    }, 0);
-    return data;
-  }
-};
-
 export const getTeamPowers = () => {
   let data = JSON.parse(localStorage.getItem("NarutoBattle"));
   if (data) {
@@ -110,6 +89,16 @@ export const getTeamPowers = () => {
   }
   return data;
 };
+
+// export const battleResult = (cardsForBattle, enemyPower) => {
+//   if (cardsForBattle.length === 0) {
+//     notify("Поражение", NOTIFY_TYPES.error);
+//   }
+
+//   if (enemyPower === 0) {
+//     notify("Победа", NOTIFY_TYPES.success);
+//   }
+// };
 
 // -------------------------------- notify оставляйте в самом низу
 
