@@ -4,6 +4,7 @@ import { NavLink, useParams } from "react-router-dom";
 import FavoritesList from "../../favorites/FavoritesList";
 import CardInvet from "../../cards/CardInvent/CardInvet";
 import { getOneUser } from "../../../store/users/usersSlice";
+import "./UserProfile.css";
 
 const UserProfile = () => {
   //   const { id } = useParams();
@@ -16,74 +17,94 @@ const UserProfile = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        flexWrap: "wrap",
-        width: "100%",
-      }}
-    >
-      {loading ? (
-        <h2>Loading...</h2>
-      ) : (
-        <>
-          {oneUser && (
-            <>
-              <div
-                style={{
-                  width: "30rem",
-                  height: "auto",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
+    <div className="UserProfileMain">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+        }}
+        className="forWr"
+      >
+        {loading ? (
+          <h2>Loading...</h2>
+        ) : (
+          <>
+            {oneUser && (
+              <>
                 <div
                   style={{
-                    width: "100%",
-                    border: "1px solid black",
+                    width: "30rem",
+                    height: "auto",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                   }}
                 >
-                  <img
-                    src={oneUser.image}
-                    alt=""
-                    width="300"
-                    height="300"
+                  <div
                     style={{
-                      border: "3px solid black",
-                      borderRadius: "50%",
-                      objectFit: "cover",
+                      width: "100%",
+                      border: "1px solid black",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      marginTop: "10%",
                     }}
-                  />
-                  <p>{oneUser.name}</p>
-                  <p>{oneUser.points} 両</p>
-                  <p>{oneUser.level} уровень</p>
+                  >
+                    <img
+                      src={oneUser.image}
+                      alt=""
+                      width="300"
+                      height="300"
+                      style={{
+                        border: "3px solid black",
+                        borderRadius: "50%",
+                        objectFit: "cover",
+                      }}
+                    />
+                    <p>{oneUser.name}</p>
+                    <p>{oneUser.points} 両</p>
+                    <p>{oneUser.level} уровень</p>
+                  </div>
+                  <>
+                    <FavoritesList />
+                  </>
                 </div>
-                <>
-                  <FavoritesList />
-                </>
-              </div>
 
-              <div style={{ border: "1px solid black", width: "60rem" }}>
-                <h2 style={{ textAlign: "center" }}>Инвентарь</h2>
-                <div style={{ display: "flex", flexWrap: "wrap" }}>
-                  {inventory && (
-                    <>
-                      {inventory.map((card) => (
-                        <CardInvet key={card.id} card={card} />
-                      ))}
-                    </>
-                  )}
+                <div style={{ border: "1px solid black", width: "60rem" }}>
+                  <h2
+                    style={{
+                      textAlign: "center",
+                      backgroundColor: "rgba(0, 0, 0, 0.5)",
+                      color: "#ffac41",
+                      marginTop: "5%",
+                    }}
+                    className="NameInv"
+                  >
+                    Инвентарь
+                  </h2>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      justifyContent: "space-around",
+                      marginTop: "20px",
+                    }}
+                  >
+                    {inventory && (
+                      <>
+                        {inventory.map((card) => (
+                          <CardInvet key={card.id} card={card} />
+                        ))}
+                      </>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </>
-          )}
-        </>
-      )}
+              </>
+            )}
+          </>
+        )}
+      </div>
     </div>
   );
 };

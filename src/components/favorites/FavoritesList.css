@@ -1,0 +1,12 @@
+.CardNameFav {
+  font-family: "Yuji Hentaigana Akari", cursive;
+}
+
+.DeleteFavButt {
+  padding: 8px 20px;
+  background-color: black;
+  color: #ffac41;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

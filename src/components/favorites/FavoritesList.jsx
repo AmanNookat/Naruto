@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getOneUser } from "../../store/users/usersSlice";
 import { toggleCardFavorite } from "../../store/users/usersActions";
+import "./FavoritesList.css";
 
 const FavoritesList = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -15,14 +16,23 @@ const FavoritesList = () => {
         <>
           {oneUser.favorites.length ? (
             <>
-              <h2>Избранные</h2>
+              <h2
+                style={{
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  color: "#ffac41",
+                }}
+              >
+                Избранные
+              </h2>
               {oneUser.favorites.map((card) => (
                 <div key={card.id}>
-                  <p>{card.name}</p>
+                  <p className="CardNameFav">{card.name}</p>
                   <button
                     onClick={() => {
                       dispatch(toggleCardFavorite({ card }));
                     }}
+                    style={{ marginTop: "4px" }}
+                    className="DeleteFavButt"
                   >
                     убрать
                   </button>
