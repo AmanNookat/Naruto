@@ -15,6 +15,7 @@ const CommentItem = ({ comment }) => {
         <p>Рейтинг:{comment.rating}</p>
         {getAuthUser() === comment.user && (
           <button
+            className="commentDeleteBtn"
             onClick={() => {
               dispatch(deleteComment({ commentId: comment.id }));
             }}
