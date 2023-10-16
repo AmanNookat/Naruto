@@ -63,7 +63,7 @@ export const changeCountCardsInCart = (cardId, count) => {
 
 export const deleteCardFromCart = (cardId) => {
   const cart = getCartData();
-  cart.cards = cart.cards.filter((card) => card.cardItem.id !== cardId);
+  cart.cards = cart.cards.filter((card) => card.cardItem.id != cardId);
   cart.totalCost = countCartTotalCost(cart.cards);
   setCartData(cart);
 };
@@ -76,5 +76,6 @@ export const createOrder = createAsyncThunk("cart/createOrder", async () => {
   const cart = getCartData();
   if (!cart.cards.length) return;
   await axios.post(ORDERS_API, cart);
+  notify("Заказ отправлен на рассмотрение");
   cleanCart();
 });

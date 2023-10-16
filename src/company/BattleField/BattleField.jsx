@@ -1,38 +1,61 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  attackLogic,
   clearCardsForBattle,
+  enemyAttackLogic,
   getCardsForBattle,
+  getPowersForBattle,
 } from "../../store/company/companySlice";
 import {
   cleanBattleSlots,
   getOneLevel,
 } from "../../store/company/companyActions";
 import CardInvet from "../../components/cards/CardInvent/CardInvet";
-import { useNavigate, useParams } from "react-router-dom";
-import { getTotalPower } from "../../helpers/functions";
+import { useParams } from "react-router-dom";
+import { getTeamPowers } from "../../helpers/functions";
+import BattleResult from "../BattleResult/BattleResult";
+import AttackModal from "../AttackModal/AttackModal";
 
 const BattleField = () => {
-  const { oneLevel, cardsForBattle } = useSelector((state) => state.company);
-  const [count, setCount] = useState(0);
+  const {
+    oneLevel,
+    cardsForBattle,
+    oneCardPower,
+    enemyPower,
+    step,
+    resultModal,
+  } = useSelector((state) => state.company);
+  const [attack, setAttack] = useState(false);
 
   const { id } = useParams();
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getOneLevel(id));
-    dispatch(getCardsForBattle());
+    dispatch(getCardsForBattle(cardsForBattle, enemyPower));
   }, []);
 
   useEffect(() => {
-    let totalPower = getTotalPower();
-    if (count < totalPower) {
-      const timer = setTimeout(() => {
-        setCount(count + 1);
-      }, 2000 / totalPower);
-      return () => clearTimeout(timer);
+    const timer = setTimeout(() => {
+      dispatch(enemyAttackLogic());
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [step]);
+
+  useEffect(() => {
+    if (oneLevel) {
+      dispatch(
+        getPowersForBattle({
+          enemyTotal: oneLevel.enemy.power,
+          powersArray: getTeamPowers(),
+        })
+      );
     }
-  }, [count]);
+  }, [oneLevel]);
 
   useEffect(() => {
     return () => {
@@ -42,33 +65,54 @@ const BattleField = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-evenly",
-        alignItems: "center",
-      }}
-    >
-      <div>
-        {oneLevel && (
-          <>
-            <p>{oneLevel.enemy.name}</p>
-            <img src={oneLevel.enemy.image} alt="" width="100" height="100" />
-          </>
+    <>
+      <>
+        {resultModal && (
+          <BattleResult
+            resultModal={resultModal}
+            cardsForBattle={cardsForBattle}
+          />
         )}
-      </div>
-      <p style={{ fontSize: "200px" }}>VS</p>
-      <div>
-        <h1 style={{ fontSize: "40px" }}>Total Power {count}</h1>
-        {cardsForBattle && (
+      </>
+      <>{attack && <AttackModal attack={attack} setAttack={setAttack} />}</>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+        }}
+      >
+        <div>
+          {oneLevel && (
+            <>
+              <h1 style={{ fontSize: "25px" }}>HP/Power: {enemyPower}</h1>
+              <CardInvet card={oneLevel.enemy} />
+            </>
+          )}
+        </div>
+        <p style={{ fontSize: "200px" }}>VS</p>
+        <div>
           <>
-            {cardsForBattle.map((card) => (
-              <CardInvet key={`card${card.id}`} card={card} />
+            {cardsForBattle.map((card, index) => (
+              <div key={`card${card.id}`}>
+                <h1 style={{ fontSize: "25px" }}>
+                  HP/Power: {oneCardPower[index]}
+                </h1>
+                <CardInvet card={card} />
+                <button
+                  onClick={() => {
+                    setAttack(true);
+                    dispatch(attackLogic({ index, cardId: card.id }));
+                  }}
+                >
+                  Attack
+                </button>
+              </div>
             ))}
           </>
-        )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

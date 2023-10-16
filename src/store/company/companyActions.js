@@ -1,7 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { COMPANY_API } from "../../helpers/consts";
+import { COMPANY_API, USERS_API } from "../../helpers/consts";
 import axios from "axios";
-import { NOTIFY_TYPES, notify } from "../../helpers/functions";
+import {
+  NOTIFY_TYPES,
+  addToLocalStorage,
+  notify,
+} from "../../helpers/functions";
 
 export const getLevels = createAsyncThunk("company/getLevels", async () => {
   const { data } = await axios.get(COMPANY_API);
@@ -29,7 +33,9 @@ export const chooseCardForBattle = (card) => {
 
   if (battleCards.length <= 4) {
     localStorage.setItem("NarutoBattle", JSON.stringify(battleCards));
-    return notify("Карта готова к бою", NOTIFY_TYPES.success);
+    if (!checkCard) {
+      return notify("Карта готова к бою", NOTIFY_TYPES.success);
+    }
   } else {
     return notify(
       "В бою может участвовать максимум 4 карты",
@@ -41,3 +47,32 @@ export const chooseCardForBattle = (card) => {
 export const cleanBattleSlots = () => {
   localStorage.removeItem("NarutoBattle");
 };
+
+export const userWin = createAsyncThunk("company/userWin", async (levelId) => {
+  const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+
+  if (oneUser) {
+    if (levelId == oneUser.level) {
+      oneUser.level = oneUser.level + 1;
+      notify("+1 уровень");
+      await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+      addToLocalStorage(oneUser);
+    }
+  }
+});
+
+export const userLose = createAsyncThunk(
+  "company/userLose",
+  async (teamPower) => {
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+
+    if (oneUser) {
+      if (teamPower.length === 0) {
+        oneUser.points =
+          oneUser.points - Math.round(oneUser.points / 2).toFixed(0);
+        await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+        addToLocalStorage(oneUser);
+      }
+    }
+  }
+);
