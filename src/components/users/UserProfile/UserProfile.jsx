@@ -11,7 +11,6 @@ const UserProfile = () => {
   const { oneUser, loading, inventory } = useSelector((state) => state.users);
   const dispatch = useDispatch();
 
-
   useEffect(() => {
     dispatch(getOneUser());
   }, []);
@@ -39,6 +38,7 @@ const UserProfile = () => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
+                    backgroundColor: "white",
                   }}
                 >
                   <div
@@ -51,17 +51,27 @@ const UserProfile = () => {
                       marginTop: "10%",
                     }}
                   >
-                    <img
-                      src={oneUser.image}
-                      alt=""
-                      width="300"
-                      height="300"
+                    <div
                       style={{
+                        width: "300px",
+                        height: "300px",
+                        overflow: "hidden",
                         border: "3px solid black",
                         borderRadius: "50%",
                         objectFit: "cover",
                       }}
-                    />
+                    >
+                      <img
+                        src={oneUser.image}
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
+
                     <p>{oneUser.name}</p>
                     <p>{oneUser.points} 両</p>
                     <p>{oneUser.level} уровень</p>
@@ -71,7 +81,13 @@ const UserProfile = () => {
                   </>
                 </div>
 
-                <div style={{ border: "1px solid black", width: "60rem" }}>
+                <div
+                  style={{
+                    border: "1px solid black",
+                    width: "60rem",
+                  }}
+                  className="UserProfileRight"
+                >
                   <h2
                     style={{
                       textAlign: "center",
