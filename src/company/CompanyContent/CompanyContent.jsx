@@ -6,6 +6,7 @@ import BattleMenu from "../BattleMenu/BattleMenu";
 import CardsMenu from "../CardsMenu/CardsMenu";
 import { cleanBattleSlots } from "../../store/company/companyActions";
 import CardsForBattle from "../CardsForBattle/CardsForBattle";
+import style from "./CompanyContent.module.css";
 
 const CompanyContent = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -27,11 +28,22 @@ const CompanyContent = () => {
 
   return (
     <>
+      <h1
+        style={{
+          color: "white",
+          textAlign: "center",
+          marginTop: "50px",
+          fontSize: "40px",
+          letterSpacing: "5px",
+        }}
+      >
+        КАРТА БИТВ
+      </h1>
       <div
         onClick={() => {
           setModal(true);
         }}
-        style={{ marginTop: "5%", display: "flex" }}
+        className={style.companyContent}
       >
         {oneLevel}
       </div>

@@ -1,0 +1,23 @@
+.companyContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 15% 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.companyContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://criticalhits.com.br/wp-content/uploads/2021/11/d88l3ym-4ea9a020-570a-45e1-9b2e-48b56fd03523.jpg");
+  filter: brightness(50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
