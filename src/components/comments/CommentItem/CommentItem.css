@@ -11,3 +11,15 @@
 .one--comment p {
   color: white;
 }
+@media (max-width: 330px) {
+  .one--comment {
+    margin-left: 2%;
+    padding: 5px;
+  }
+  .commentDeleteBtn {
+    font-size: 8px;
+  }
+  .one--comment p {
+    font-size: 8px;
+  }
+}

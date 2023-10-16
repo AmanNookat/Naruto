@@ -20,7 +20,7 @@ const CardDetails = () => {
   }, []);
 
   return (
-    <div className="card--details">
+    <div className="card--details--page">
       {loading ? (
         <h2>Loading...</h2>
       ) : (
@@ -30,6 +30,7 @@ const CardDetails = () => {
               <div className="card--details__left">
                 <div className="card--details__img">
                   <img src={oneCard.image} alt={oneCard.name} />
+                  <p className="details--descr">{oneCard.description}</p>
                 </div>
                 <div className="card--details__footer">
                   <div className="card--descr">
@@ -37,7 +38,6 @@ const CardDetails = () => {
                     <p>Цена:{oneCard.price}$</p>
                     <p>Сила:{oneCard.power}</p>
                     <p>Ранг:{oneCard.rank}</p>
-                    {/* <p>Описание:{oneCard.description}</p> */}
                     <p>Рейтинг: {oneCard.rating}</p>
                   </div>
                   {checkAdmin() && (
@@ -49,7 +49,7 @@ const CardDetails = () => {
                         Edit
                       </button>
                       <button
-                        className="card--delete"
+                        className="card--deleteBtn"
                         onClick={() => {
                           dispatch(deleteCard({ id }));
                           navigate("/store");

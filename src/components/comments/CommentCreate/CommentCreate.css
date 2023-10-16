@@ -28,3 +28,31 @@
   cursor: pointer;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .comment--creator {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .btns--block {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .btns--block select {
+    width: 60px;
+    font-size: 10px;
+  }
+  .btns--block button {
+    padding: 2px;
+    width: 70px;
+    font-size: 8px;
+  }
+
+  .comment--creator {
+    height: 20px;
+  }
+}
