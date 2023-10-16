@@ -54,7 +54,7 @@ const PaymentForm = ({ setModal }) => {
       return notify("Правильно заполните все поля", NOTIFY_TYPES.error);
     }
 
-    dispatch(createOrder());
+    dispatch(createOrder({ userCardData: state }));
     setModal(false);
   };
 
