@@ -9,32 +9,26 @@ const FavoritesList = () => {
   const dispatch = useDispatch();
 
   return (
-    <div
-      style={{ width: "100%", border: "1px solid black", textAlign: "center" }}
-    >
+    <div className="favorites-list-container">
       {oneUser && (
         <>
           {oneUser.favorites.length ? (
             <>
-              <h2
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "#ffac41",
-                }}
-              >
-                Избранные
-              </h2>
+              <h2 className="favorites-list-header">Избранные</h2>
               {oneUser.favorites.map((card) => (
-                <div key={card.id}>
-                  <p className="CardNameFav">{card.name}</p>
+                <div key={card.id} className="favorites-list-item">
+                  <img
+                    src={card.image}
+                    alt="img"
+                    className="favorites-list-image"
+                  />
                   <button
                     onClick={() => {
                       dispatch(toggleCardFavorite({ card }));
                     }}
-                    style={{ marginTop: "4px" }}
-                    className="DeleteFavButt"
+                    className="favorites-list-button"
                   >
-                    убрать
+                    Убрать
                   </button>
                 </div>
               ))}

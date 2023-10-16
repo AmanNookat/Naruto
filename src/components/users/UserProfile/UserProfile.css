@@ -7,6 +7,10 @@
   font-family: "Yuji Hentaigana Akari", cursive;
 }
 
+.UserProfileRight {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 640px) {
   .forWr {
     display: flex;
