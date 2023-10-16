@@ -15,7 +15,7 @@ const StorePage = () => {
 
   return (
     <div className="StoreMain">
-      <h2
+      {/* <h2
         style={{
           textAlign: "center",
           margin: "0px 5% 2%",
@@ -25,10 +25,10 @@ const StorePage = () => {
         }}
       >
         МАГАЗИН
-      </h2>
+      </h2> */}
       <div
         style={{
-          backgroundColor: "#e5e5e5",
+          backgroundColor: "rgba(255, 255, 255, 0.5)",
           padding: "2% 10px",
           width: "80%",
           margin: "0 auto",
@@ -37,12 +37,82 @@ const StorePage = () => {
       >
         <div
           className="searchAndFilter"
-          style={{ display: "flex", justifyContent: "space-evenly" }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-around",
+          }}
         >
-          <CardsFilter />
-          <CardsPriceRangeFilter />
-          <CardsSortRating />
-          <CardSearch />
+          <div style={{ marginBottom: "10px" }}>
+            <p
+              style={{
+                textAlign: "center",
+                marginBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              Фильтрация
+            </p>
+            <CardsFilter />
+          </div>
+          <div style={{ marginBottom: "10px" }}>
+            <p
+              style={{
+                textAlign: "center",
+                marginBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              Поиск по цене
+            </p>
+            <CardsPriceRangeFilter />
+          </div>
+          <div style={{ marginBottom: "10px" }}>
+            <p
+              style={{
+                textAlign: "center",
+                marginBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              Сортировка по рейтингу
+            </p>
+            <CardsSortRating />
+          </div>
+          <div style={{ marginBottom: "10px" }}>
+            <p
+              style={{
+                textAlign: "center",
+                marginBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              Живой поиск
+            </p>
+            <CardSearch />
+          </div>
+          <div style={{ marginBottom: "10px" }}>
+            <p
+              style={{
+                textAlign: "center",
+                marginBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              Сброс фильтров
+            </p>
+            <button
+              onClick={() => {
+                dispatch(clearAllFilters());
+                dispatch(setSearchVal({ search: "" }));
+                dispatch(getCards());
+              }}
+              style={{ alignItems: "center" }}
+              className="ThrowButton"
+            >
+              Сбросить
+            </button>
+          </div>
         </div>
         <div
           style={{
@@ -51,19 +121,7 @@ const StorePage = () => {
             paddingRight: "4.3%",
             paddingTop: "0.5%",
           }}
-        >
-          <button
-            onClick={() => {
-              dispatch(clearAllFilters());
-              dispatch(setSearchVal({ search: "" }));
-              dispatch(getCards());
-            }}
-            style={{ alignItems: "center" }}
-            className="ThrowButton"
-          >
-            Сбросить фильтры
-          </button>
-        </div>
+        ></div>
       </div>
       <CardPagination />
       <CardsList />

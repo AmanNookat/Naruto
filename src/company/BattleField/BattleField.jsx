@@ -15,6 +15,7 @@ import CardInvet from "../../components/cards/CardInvent/CardInvet";
 import { useParams } from "react-router-dom";
 import { getTeamPowers } from "../../helpers/functions";
 import BattleResult from "../BattleResult/BattleResult";
+import AttackModal from "../AttackModal/AttackModal";
 
 const BattleField = () => {
   const {
@@ -25,13 +26,10 @@ const BattleField = () => {
     step,
     resultModal,
   } = useSelector((state) => state.company);
-  //   const [count, setCount] = useState(0);
-  //   const [count2, setCount2] = useState(0);
+  const [attack, setAttack] = useState(false);
 
   const { id } = useParams();
   const dispatch = useDispatch();
-
-  // console.log(cardsForBattle);
 
   useEffect(() => {
     dispatch(getOneLevel(id));
@@ -39,10 +37,13 @@ const BattleField = () => {
   }, []);
 
   useEffect(() => {
-    dispatch(enemyAttackLogic());
-    // if (cardsForBattle.length === 0 || enemyPower === 0) {
-    // battleResult(cardsForBattle, enemyPower);
-    // }
+    const timer = setTimeout(() => {
+      dispatch(enemyAttackLogic());
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, [step]);
 
   useEffect(() => {
@@ -63,28 +64,6 @@ const BattleField = () => {
     };
   }, []);
 
-  //   useEffect(() => {
-  //     let totalPower = getTotalPower();
-  //     if (count < totalPower) {
-  //       const timer = setTimeout(() => {
-  //         setCount(count + 1);
-  //       }, 2000 / totalPower);
-  //       return () => clearTimeout(timer);
-  //     }
-  //   }, [count]);
-
-  //   useEffect(() => {
-  //     if (oneLevel) {
-  //       let totalPower = oneLevel.enemy.power;
-  //       if (count2 < totalPower) {
-  //         const timer = setTimeout(() => {
-  //           setCount2(count2 + 1);
-  //         }, 2000 / totalPower);
-  //         return () => clearTimeout(timer);
-  //       }
-  //     }
-  //   }, [count2, oneLevel]);
-
   return (
     <>
       <>
@@ -95,6 +74,7 @@ const BattleField = () => {
           />
         )}
       </>
+      <>{attack && <AttackModal attack={attack} setAttack={setAttack} />}</>
       <div
         style={{
           display: "flex",
@@ -121,7 +101,8 @@ const BattleField = () => {
                 <CardInvet card={card} />
                 <button
                   onClick={() => {
-                    dispatch(attackLogic(index));
+                    setAttack(true);
+                    dispatch(attackLogic({ index, cardId: card.id }));
                   }}
                 >
                   Attack

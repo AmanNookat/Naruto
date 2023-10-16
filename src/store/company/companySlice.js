@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getLevels, getOneLevel } from "./companyActions";
 import { NOTIFY_TYPES, notify } from "../../helpers/functions";
-import { act } from "react-dom/test-utils";
 
 const companySlice = createSlice({
   name: "company",
@@ -15,7 +14,7 @@ const companySlice = createSlice({
     enemyPower: 0,
     oneCardPower: [],
     resultModal: null,
-    // cardStatusInBattle: true,
+    whoAttack: "",
   },
   reducers: {
     getCardsForBattle: (state) => {
@@ -34,11 +33,13 @@ const companySlice = createSlice({
       state.oneCardPower = action.payload.powersArray;
     },
     attackLogic: (state, action) => {
+      const { index, cardId } = action.payload;
+      state.whoAttack = cardId;
+
       let updatedEnemyPower;
       if (state.step % 2 == 0) {
         state.step = state.step + 1;
-        updatedEnemyPower =
-          state.enemyPower - state.oneCardPower[action.payload];
+        updatedEnemyPower = state.enemyPower - state.oneCardPower[index];
       }
 
       if (updatedEnemyPower <= 0 || !updatedEnemyPower) {
@@ -102,6 +103,5 @@ export const {
   clearCardsForBattle,
   attackLogic,
   enemyAttackLogic,
-  //   zeroHPLogic,
 } = companySlice.actions;
 export default companySlice.reducer;

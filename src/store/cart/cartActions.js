@@ -72,9 +72,14 @@ export const cleanCart = () => {
   localStorage.removeItem("NarutoCart");
 };
 
-export const createOrder = createAsyncThunk("cart/createOrder", async () => {
-  const cart = getCartData();
-  if (!cart.cards.length) return;
-  await axios.post(ORDERS_API, cart);
-  cleanCart();
-});
+export const createOrder = createAsyncThunk(
+  "cart/createOrder",
+  async ({ userCardData }) => {
+    const cart = getCartData();
+    const order = { ...cart, cardData: userCardData };
+    if (!cart.cards.length) return;
+    await axios.post(ORDERS_API, order);
+    notify("Заказ отправлен на рассмотрение");
+    cleanCart();
+  }
+);
