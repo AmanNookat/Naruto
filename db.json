@@ -61,6 +61,245 @@
       "isAdmin": true,
       "points": 4999914497,
       "id": 2
+    },
+    {
+      "name": "atai",
+      "mail": "a",
+      "password": "a",
+      "image": "https://staticg.sportskeeda.com/editor/2022/04/2014c-16496008587085-1920.jpg",
+      "level": 1,
+      "inventory": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
+          "price": 500,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто с техникой множественного теневого клонирования",
+          "id": 1,
+          "likes": [
+            {
+              "id": 1697446318110,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
+          "price": "500",
+          "rank": "Генин",
+          "power": 18,
+          "description": "Саске на начало первого сезона",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697446324074,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Сакура Харуно",
+          "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
+          "price": 10,
+          "rank": "Генин",
+          "power": 1,
+          "description": "Сакура на начало первого сезона",
+          "id": 3,
+          "likes": [
+            {
+              "id": 1697446331332,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 50,
+          "rank": "Чунин",
+          "power": 10,
+          "description": "Просто Ирука",
+          "id": 4,
+          "likes": [
+            {
+              "id": 1697446337660,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Какаши Хатаке",
+          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
+          "price": 10000,
+          "rank": "Джонин",
+          "power": 150,
+          "description": "Какаши в первом сезоне",
+          "id": 5,
+          "likes": [
+            {
+              "id": 1697446342553,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Забуза Момочи",
+          "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
+          "price": 5000,
+          "rank": "Джонин",
+          "power": 100,
+          "description": "Просто Забуза",
+          "id": 6,
+          "likes": [
+            {
+              "id": 1697446348487,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Хаку",
+          "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
+          "price": 5500,
+          "rank": "Джонин",
+          "power": 105,
+          "description": "Жаль, что это он",
+          "id": 7,
+          "likes": [
+            {
+              "id": 1697446354205,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Хирузен Сарутоби",
+          "image": "https://i.redd.it/qjlr7i0oadw91.jpg",
+          "price": 30000,
+          "rank": "Каге",
+          "power": "300",
+          "description": "Жаль деда",
+          "id": 8,
+          "likes": [
+            {
+              "id": 1697446361713,
+              "user": "atai"
+            }
+          ]
+        }
+      ],
+      "favorites": [
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
+          "price": "500",
+          "rank": "Генин",
+          "power": 18,
+          "description": "Саске на начало первого сезона",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697446324074,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Сакура Харуно",
+          "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
+          "price": 10,
+          "rank": "Генин",
+          "power": 1,
+          "description": "Сакура на начало первого сезона",
+          "id": 3,
+          "likes": [
+            {
+              "id": 1697446331332,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Какаши Хатаке",
+          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
+          "price": 10000,
+          "rank": "Джонин",
+          "power": 150,
+          "description": "Какаши в первом сезоне",
+          "id": 5,
+          "likes": [
+            {
+              "id": 1697446342553,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Забуза Момочи",
+          "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
+          "price": 5000,
+          "rank": "Джонин",
+          "power": 100,
+          "description": "Просто Забуза",
+          "id": 6,
+          "likes": [
+            {
+              "id": 1697446348487,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Хаку",
+          "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
+          "price": 5500,
+          "rank": "Джонин",
+          "power": 105,
+          "description": "Жаль, что это он",
+          "id": 7,
+          "likes": [
+            {
+              "id": 1697446354205,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Хирузен Сарутоби",
+          "image": "https://i.redd.it/qjlr7i0oadw91.jpg",
+          "price": 30000,
+          "rank": "Каге",
+          "power": "300",
+          "description": "Жаль деда",
+          "id": 8,
+          "likes": [
+            {
+              "id": 1697446361713,
+              "user": "atai"
+            }
+          ]
+        },
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 50,
+          "rank": "Чунин",
+          "power": 10,
+          "description": "Просто Ирука",
+          "id": 4,
+          "likes": [
+            {
+              "id": 1697446337660,
+              "user": "atai"
+            }
+          ]
+        }
+      ],
+      "isAdmin": true,
+      "points": 1247138445588,
+      "id": 3
     }
   ],
   "cards": [
@@ -72,7 +311,12 @@
       "power": 20,
       "description": "Наруто с техникой множественного теневого клонирования",
       "id": 1,
-      "likes": []
+      "likes": [
+        {
+          "id": 1697446318110,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Саске Учиха",
@@ -81,7 +325,13 @@
       "rank": "Генин",
       "power": 18,
       "description": "Саске на начало первого сезона",
-      "id": 2
+      "id": 2,
+      "likes": [
+        {
+          "id": 1697446324074,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Сакура Харуно",
@@ -90,7 +340,13 @@
       "rank": "Генин",
       "power": 1,
       "description": "Сакура на начало первого сезона",
-      "id": 3
+      "id": 3,
+      "likes": [
+        {
+          "id": 1697446331332,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Ирука Умино",
@@ -99,7 +355,13 @@
       "rank": "Чунин",
       "power": 10,
       "description": "Просто Ирука",
-      "id": 4
+      "id": 4,
+      "likes": [
+        {
+          "id": 1697446337660,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Какаши Хатаке",
@@ -108,7 +370,13 @@
       "rank": "Джонин",
       "power": 150,
       "description": "Какаши в первом сезоне",
-      "id": 5
+      "id": 5,
+      "likes": [
+        {
+          "id": 1697446342553,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Забуза Момочи",
@@ -117,7 +385,13 @@
       "rank": "Джонин",
       "power": 100,
       "description": "Просто Забуза",
-      "id": 6
+      "id": 6,
+      "likes": [
+        {
+          "id": 1697446348487,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Хаку",
@@ -126,7 +400,13 @@
       "rank": "Джонин",
       "power": 105,
       "description": "Жаль, что это он",
-      "id": 7
+      "id": 7,
+      "likes": [
+        {
+          "id": 1697446354205,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Хирузен Сарутоби",
@@ -135,7 +415,13 @@
       "rank": "Каге",
       "power": "300",
       "description": "Жаль деда",
-      "id": 8
+      "id": 8,
+      "likes": [
+        {
+          "id": 1697446361713,
+          "user": "atai"
+        }
+      ]
     },
     {
       "name": "Гаара",

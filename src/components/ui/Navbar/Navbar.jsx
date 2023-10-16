@@ -41,6 +41,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div>
           <BurgerMenu closeBurgerMenu={closeBurgerMenu} />
+          <div className="overlay" onClick={closeBurgerMenu}></div>
         </div>
       )}
     </div>
