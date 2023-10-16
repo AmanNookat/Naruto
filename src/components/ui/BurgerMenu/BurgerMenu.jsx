@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { getOneUser } from "../../../store/users/usersSlice";
 import { checkAdmin, checkUserLogin, logout } from "../../../helpers/functions";
 import { getOneQuiz } from "../../../store/quizzes/quizzesActions";
-import burgerBackground from "./images/burgerMenu.png";
+import burgerBackground from "./images/burgerback.png";
 import "./BurgerMenu.css";
 const BurgerMenu = ({ closeBurgerMenu }) => {
   const { oneUser, inventory } = useSelector((state) => state.users);
@@ -40,6 +40,7 @@ const BurgerMenu = ({ closeBurgerMenu }) => {
               </>
             )}
             <button
+              className="burgerBtn"
               onClick={() => {
                 logout();
                 navigate("/");

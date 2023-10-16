@@ -7,16 +7,16 @@
   z-index: -1000;
   position: relative;
 }
-/* .manga {
+.manga {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
-} */
+}
 
-/* .manga.animate {
+.manga.animate {
   opacity: 1;
   transform: translateY(0);
-} */
+}
 
 .home--odd {
   background-color: #ffac04;
