@@ -1,18 +1,31 @@
-/* .cart-page {
+.cart-page {
+  height: 100%;
+}
+
+.cart-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-} */
+  height: 100%;
+  background-image: url("https://moewalls.com/wp-content/uploads/2023/04/akatsuki-members-and-logo-thumb.jpg");
+  filter: brightness(50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
 
 .cart-container {
   background-color: #0e0e0e;
   color: #ffa500;
   padding: 20px;
   border-radius: 10px;
-  width: 40rem;
-  margin: 3% 1%;
-  border: 3px solid white;
+  max-width: 100%;
+  margin: 3% 1% 5%;
+  border: 3px solid #ffffff;
+  overflow-x: auto;
 }
 
 .cart-table {
@@ -24,14 +37,13 @@
 
 td {
   border: 1px solid white;
-  width: 50px;
   padding: 10px;
   text-align: center;
 }
 
 .cart-image img {
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -97,5 +109,25 @@ td {
 @media (min-width: 1025px) {
   .cart-container {
     max-width: 60%;
+  }
+}
+
+@media (min-width: 420px) {
+  .cart-container {
+    width: 90%;
+    margin: 3% auto;
+  }
+
+  .cart-table {
+    font-size: 18px;
+  }
+
+  .cart-input {
+    width: 60px;
+  }
+
+  .cart-button {
+    font-size: 16px;
+    padding: 8px 14px;
   }
 }
