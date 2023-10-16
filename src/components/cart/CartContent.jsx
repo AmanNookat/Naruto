@@ -7,8 +7,11 @@ import {
   createOrder,
   deleteCardFromCart,
 } from "../../store/cart/cartActions";
+import PaymentForm from "../ui/PaymentForm/PaymentForm";
+import { useState } from "react";
 
 const CartContent = () => {
+  const [modal, setModal] = useState(false);
   const { cart } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
@@ -89,7 +92,7 @@ const CartContent = () => {
                 <h2>Итого: {cart.totalCost}</h2>
                 <button
                   onClick={() => {
-                    dispatch(createOrder());
+                    setModal(true);
                   }}
                 >
                   Заказать
@@ -109,6 +112,7 @@ const CartContent = () => {
           </>
         )}
       </div>
+      {modal && <PaymentForm setModal={setModal} />}
     </div>
   );
 };

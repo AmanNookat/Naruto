@@ -66,13 +66,13 @@ const AuthorizationForm = () => {
               value={user.name}
             />
             <input
-              type="text"
+              type="mail"
               placeholder="Мail"
               onChange={(e) => setUser({ ...user, mail: e.target.value })}
               value={user.mail}
             />
             <input
-              type="text"
+              type="password"
               placeholder="Пароль"
               onChange={(e) => setUser({ ...user, password: e.target.value })}
               value={user.password}

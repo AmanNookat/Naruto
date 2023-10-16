@@ -8,21 +8,15 @@ const companySlice = createSlice({
     levels: [],
     loading: false,
     oneLevel: null,
-    // checkCard: false,
     cardsForBattle: [],
+    step: 0,
+    teamPower: 0,
+    enemyPower: 0,
+    oneCardPower: [],
+    resultModal: null,
+    whoAttack: "",
   },
   reducers: {
-    // checkCardInSlot: (state, action) => {
-    //   let battleCards = JSON.parse(localStorage.getItem("NarutoBattle"));
-    //   const checkCard = battleCards.find(
-    //     (oneCard) => action.payload === oneCard.id
-    //   );
-    //   if (checkCard) {
-    //     state.checkCard = true;
-    //   } else {
-    //     state.checkCard = false;
-    //   }
-    // },
     getCardsForBattle: (state) => {
       let inventoryInLocalStorage =
         JSON.parse(localStorage.getItem("NarutoBattle")) || [];
@@ -30,6 +24,64 @@ const companySlice = createSlice({
     },
     clearCardsForBattle: (state) => {
       state.cardsForBattle = [];
+      state.resultModal = null;
+      state.step = 0;
+    },
+    getPowersForBattle: (state, action) => {
+      state.teamPower = action.payload.ourTotal;
+      state.enemyPower = action.payload.enemyTotal;
+      state.oneCardPower = action.payload.powersArray;
+    },
+    attackLogic: (state, action) => {
+      const { index, cardId } = action.payload;
+      state.whoAttack = cardId;
+
+      let updatedEnemyPower;
+      if (state.step % 2 == 0) {
+        state.step = state.step + 1;
+        updatedEnemyPower = state.enemyPower - state.oneCardPower[index];
+      }
+
+      if (updatedEnemyPower <= 0 || !updatedEnemyPower) {
+        state.enemyPower = state.enemyPower = 0;
+        state.resultModal = 1;
+        return;
+      } else {
+        state.enemyPower = updatedEnemyPower;
+      }
+    },
+    enemyAttackLogic: (state) => {
+      if (state.step % 2 === 1 && state.enemyPower > 0) {
+        const enemyAttack = Math.floor(
+          Math.random() * state.cardsForBattle.length
+        );
+
+        let updatedCardPower =
+          state.oneCardPower[enemyAttack] - state.oneLevel.enemy.power;
+
+        notify(
+          `${state.oneLevel.enemy.name} атаковал ${state.cardsForBattle[enemyAttack].name}`,
+          NOTIFY_TYPES.info
+        );
+
+        if (updatedCardPower <= 0) {
+          state.cardsForBattle = state.cardsForBattle.filter((card, index) => {
+            return index !== enemyAttack;
+          });
+          state.oneCardPower = state.oneCardPower.filter((card, index) => {
+            return index !== enemyAttack;
+          });
+        } else {
+          state.oneCardPower[enemyAttack] = updatedCardPower;
+        }
+
+        if (state.oneCardPower.length === 0) {
+          state.resultModal = 2;
+          return;
+        }
+
+        state.step = state.step + 1;
+      }
     },
   },
   extraReducers: (builder) => {
@@ -45,6 +97,11 @@ const companySlice = createSlice({
   },
 });
 
-export const { checkCardInSlot, getCardsForBattle, clearCardsForBattle } =
-  companySlice.actions;
+export const {
+  getPowersForBattle,
+  getCardsForBattle,
+  clearCardsForBattle,
+  attackLogic,
+  enemyAttackLogic,
+} = companySlice.actions;
 export default companySlice.reducer;
