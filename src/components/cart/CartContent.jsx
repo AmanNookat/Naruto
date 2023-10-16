@@ -10,6 +10,8 @@ import {
 import PaymentForm from "../ui/PaymentForm/PaymentForm";
 import { useState } from "react";
 import "./CartContent.css";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import CardInvet from "../cards/CardInvent/CardInvet";
 
 const CartContent = () => {
   const [modal, setModal] = useState(false);
@@ -21,105 +23,122 @@ const CartContent = () => {
   }, []);
 
   return (
-    <div className="cart-container">
-      {cart && (
-        <>
-          {cart.cards.length ? (
-            <>
-              <table className="cart-table">
-                <thead>
-                  <tr>
-                    <th>Имя</th>
-                    <th>Изображение</th>
-                    <th>Редкость</th>
-                    <th>Цена (1 шт.)</th>
-                    <th>Кол-во</th>
-                    <th>Итого</th>
-                    <th>Удалить</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {cart.cards.map((card) => (
-                    <tr key={`cart${card.cardItem.id}`}>
-                      <td>{card.cardItem.name}</td>
-                      <td>
-                        <img
-                          className="cart-image"
-                          src={card.cardItem.image}
-                          alt={card.cardItem.name}
-                        />
-                      </td>
-                      <td>{card.cardItem.rarity}</td>
-                      <td>{card.cardItem.price}</td>
-                      <td>
-                        <input
-                          className="cart-input"
-                          type="number"
-                          value={card.count}
-                          onChange={(e) => {
-                            changeCountCardsInCart(
-                              card.cardItem.id,
-                              +e.target.value
-                            );
-                            dispatch(getCart());
-                          }}
-                        />
-                      </td>
-                      <td>{card.totalPrice}</td>
-                      <td>
-                        <button
-                          className="cart-button"
-                          onClick={() => {
-                            deleteCardFromCart(card.cardItem.id);
-                            dispatch(getCart());
-                          }}
-                        >
-                          Удалить
-                        </button>
-                      </td>
+    <div className="cart-page">
+      <div className="cart-container">
+        {cart && (
+          <>
+            {cart.cards.length ? (
+              <>
+                <table className="cart-table">
+                  <thead>
+                    <tr>
+                      <th>Изображение</th>
+                      <th>Цена (1 шт.)</th>
+                      <th>Кол-во</th>
+                      <th>Итого</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-              <h2 className="cart-total">Итого: {cart.totalCost}</h2>
+                  </thead>
+                  <tbody>
+                    {cart.cards.map((card) => (
+                      <tr key={`cart${card.cardItem.id}`}>
+                        <td className="cart-image">
+                          <img
+                            src={card.cardItem.image}
+                            alt={card.cardItem.name}
+                          />
+                          <p>{card.cardItem.name}</p>
+                        </td>
+                        <td style={{ fontSize: "25px" }}>
+                          {card.cardItem.price}
+                        </td>
+                        <td>
+                          <input
+                            className="cart-input"
+                            type="number"
+                            value={card.count}
+                            onChange={(e) => {
+                              changeCountCardsInCart(
+                                card.cardItem.id,
+                                +e.target.value
+                              );
+                              dispatch(getCart());
+                            }}
+                          />
+                        </td>
+                        <td style={{ fontSize: "25px" }}>{card.totalPrice}</td>
+                        <td>
+                          <button
+                            className="cart-button"
+                            onClick={() => {
+                              deleteCardFromCart(card.cardItem.id);
+                              dispatch(getCart());
+                            }}
+                          >
+                            <DeleteOutlineIcon />
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <h2
+                  style={{
+                    textAlign: "center",
+                    marginTop: "15px",
+                    fontSize: "30px",
+                  }}
+                >
+                  Итого: {cart.totalCost}
+                </h2>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "20px",
+                  }}
+                >
+                  <button
+                    className="cart-button"
+                    onClick={() => {
+                      setModal(true);
+                    }}
+                  >
+                    Заказать
+                  </button>
+                  <button
+                    className="cart-button"
+                    onClick={() => {
+                      cleanCart();
+                      dispatch(getCart());
+                    }}
+                  >
+                    Очистить корзину
+                  </button>
+                </div>
+              </>
+            ) : (
+              <span className="cart-empty-message">
+                <h2>Корзина пуста</h2>
+              </span>
+            )}
+          </>
+        )}
+        {modal && (
+          <div className="modal-overlay">
+            <div className="payment-form-container">
               <button
-                className="cart-button"
+                className="modal-close-button"
                 onClick={() => {
-                  setModal(true);
+                  setModal(false);
                 }}
               >
-                Заказать
+                &times;
               </button>
-              <button
-                className="cart-button"
-                onClick={() => {
-                  cleanCart();
-                  dispatch(getCart());
-                }}
-              >
-                Очистить корзину
-              </button>
-            </>
-          ) : (
-            <h2 className="cart-empty-message">Корзина пуста</h2>
-          )}
-        </>
-      )}
-      {modal && (
-        <div className="modal-overlay">
-          <div className="payment-form-container">
-            <button
-              className="modal-close-button"
-              onClick={() => {
-                setModal(false);
-              }}
-            >
-              &times;
-            </button>
-            <PaymentForm setModal={setModal} />
+              <PaymentForm setModal={setModal} />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

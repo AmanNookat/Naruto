@@ -1,25 +1,55 @@
-/* Общие стили для всех размеров экранов */
+.cart-page {
+  height: 100%;
+}
+
+.cart-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://moewalls.com/wp-content/uploads/2023/04/akatsuki-members-and-logo-thumb.jpg");
+  filter: brightness(50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
 
 .cart-container {
-  background-color: #000;
+  background-color: #0e0e0e;
   color: #ffa500;
   padding: 20px;
   border-radius: 10px;
   max-width: 100%;
+  margin: 3% 1% 5%;
+  border: 3px solid #ffffff;
+  overflow-x: auto;
 }
 
 .cart-table {
+  margin: auto;
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-.cart-image {
-  max-width: 100px;
+td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .cart-input {
-  width: 40px;
+  width: 45px;
   padding: 5px;
   border: 1px solid #ffa500;
   border-radius: 5px;
@@ -39,43 +69,9 @@
 
 .cart-empty-message {
   text-align: center;
+  font-size: 40px;
   margin: 20px;
 }
-
-.modal-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.payment-form-container {
-  background-color: #000;
-  color: #ffa500;
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.modal-close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ffa500;
-  color: #000;
-  border: none;
-  border-radius: 50%;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-/* Медиа-запрос для экранов шириной до 768 пикселей (мобильные устройства) */
 
 @media (max-width: 768px) {
   .cart-container {
@@ -104,18 +100,69 @@
   }
 }
 
-/* Медиа-запрос для экранов шириной от 769 пикселей до 1024 пикселей (планшеты) */
-
 @media (min-width: 769px) and (max-width: 1024px) {
   .cart-container {
     max-width: 80%;
   }
 }
 
-/* Медиа-запрос для экранов шириной более 1024 пикселей (настольные компьютеры) */
-
 @media (min-width: 1025px) {
   .cart-container {
     max-width: 60%;
+  }
+}
+
+@media (max-width: 380px) {
+  tbody {
+    width: 300px;
+  }
+}
+
+@media (min-width: 420px) {
+  .cart-container {
+    width: 90%;
+    margin: 3% auto;
+  }
+
+  .cart-table {
+    font-size: 18px;
+  }
+
+  .cart-input {
+    width: 60px;
+  }
+
+  .cart-button {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
+
+/* Для экранов шириной менее 380px и ниже */
+@media (max-width: 380px) {
+  .cart-table tbody {
+    display: block;
+    max-height: 250px; /* Ограничивает высоту tbody и включает вертикальную прокрутку */
+    max-width: 320px;
+    overflow-y: auto;
+  }
+
+  .cart-table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Добавляет отступ между строками */
+    border: none; /* Убирает границы между строками */
+  }
+
+  .cart-table td {
+    width: 100%; /* Распространяет содержимое ячеек на всю ширину экрана */
+    text-align: left;
+  }
+
+  .cart-image img {
+    max-width: 100%; /* Сделал изображения адаптивными по ширине */
+    height: auto; /* Сохраняет пропорции изображения */
+    object-fit: cover;
+    border-radius: 10px;
   }
 }

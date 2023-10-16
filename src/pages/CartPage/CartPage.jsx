@@ -3,9 +3,9 @@ import CartContent from "../../components/cart/CartContent";
 
 const CartPage = () => {
   return (
-    <div>
+    <>
       <CartContent />
-    </div>
+    </>
   );
 };
 
