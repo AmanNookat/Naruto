@@ -57,17 +57,7 @@
           "id": 5
         }
       ],
-      "favorites": [
-        {
-          "name": "й",
-          "image": "й",
-          "price": 1,
-          "rank": "Чунин",
-          "power": 1,
-          "description": "й",
-          "id": 41
-        }
-      ],
+      "favorites": [],
       "isAdmin": true,
       "points": 4999914497,
       "id": 2
