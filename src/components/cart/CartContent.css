@@ -42,8 +42,8 @@ td {
 }
 
 .cart-image img {
-  max-width: 100px;
-  height: auto;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -112,6 +112,12 @@ td {
   }
 }
 
+@media (max-width: 380px) {
+  tbody {
+    width: 300px;
+  }
+}
+
 @media (min-width: 420px) {
   .cart-container {
     width: 90%;
@@ -129,5 +135,34 @@ td {
   .cart-button {
     font-size: 16px;
     padding: 8px 14px;
+  }
+}
+
+/* Для экранов шириной менее 380px и ниже */
+@media (max-width: 380px) {
+  .cart-table tbody {
+    display: block;
+    max-height: 250px; /* Ограничивает высоту tbody и включает вертикальную прокрутку */
+    max-width: 320px;
+    overflow-y: auto;
+  }
+
+  .cart-table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Добавляет отступ между строками */
+    border: none; /* Убирает границы между строками */
+  }
+
+  .cart-table td {
+    width: 100%; /* Распространяет содержимое ячеек на всю ширину экрана */
+    text-align: left;
+  }
+
+  .cart-image img {
+    max-width: 100%; /* Сделал изображения адаптивными по ширине */
+    height: auto; /* Сохраняет пропорции изображения */
+    object-fit: cover;
+    border-radius: 10px;
   }
 }

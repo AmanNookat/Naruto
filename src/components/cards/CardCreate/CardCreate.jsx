@@ -42,7 +42,7 @@ const CardCreate = () => {
       />
       <input
         className="inp-name"
-        type="text"
+        type="image"
         placeholder="ссылка на фото"
         onChange={(e) => setCard({ ...card, image: e.target.value })}
       />
