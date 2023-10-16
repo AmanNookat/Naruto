@@ -26,7 +26,6 @@ export const chooseCardForBattle = (card) => {
 
   if (checkCard) {
     battleCards = battleCards.filter((oneCard) => oneCard.id !== card.id);
-    notify("Карта убрана из слота", NOTIFY_TYPES.error);
   } else {
     battleCards.push(card);
   }
@@ -34,7 +33,6 @@ export const chooseCardForBattle = (card) => {
   if (battleCards.length <= 4) {
     localStorage.setItem("NarutoBattle", JSON.stringify(battleCards));
     if (!checkCard) {
-      return notify("Карта готова к бою", NOTIFY_TYPES.success);
     }
   } else {
     return notify(

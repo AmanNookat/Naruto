@@ -15,7 +15,7 @@ export default function PaginationControlled() {
     dispatch(getCards());
   };
   return (
-    <Stack className="pagination">
+    <Stack sx={{ marginTop: "0" }} className="pagination">
       <Pagination
         className="paginationBody"
         count={totalPages}

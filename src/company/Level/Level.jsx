@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { getOneLevel } from "../../store/company/companyActions";
 import style from "./Level.module.css";
 
-const Level = ({ i }) => {
+const Level = ({ i, setModal }) => {
   const dispatch = useDispatch();
 
   return (
@@ -11,6 +11,7 @@ const Level = ({ i }) => {
       <div
         className={style.level}
         onClick={() => {
+          setModal(true);
           dispatch(getOneLevel(i));
         }}
       >

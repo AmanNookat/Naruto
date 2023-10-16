@@ -22,7 +22,7 @@ const CompanyContent = () => {
 
   if (oneUser) {
     for (let i = 1; i <= oneUser.level; i++) {
-      oneLevel.push(<Level key={i} i={i} />);
+      oneLevel.push(<Level key={i} i={i} setModal={setModal} />);
     }
   }
 
@@ -39,23 +39,16 @@ const CompanyContent = () => {
       >
         КАРТА БИТВ
       </h1>
-      <div
-        onClick={() => {
-          setModal(true);
-        }}
-        className={style.companyContent}
-      >
-        {oneLevel}
-      </div>
-      <div style={{ position: "fixed", top: "0" }}>
+      <div className={style.companyContent}>{oneLevel}</div>
+      <>
         {modal && (
-          <>
+          <div className={style.battleModal}>
             <BattleMenu setModal={setModal} />
             <CardsForBattle />
             <CardsMenu />
-          </>
+          </div>
         )}
-      </div>
+      </>
     </>
   );
 };
