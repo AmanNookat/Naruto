@@ -2,29 +2,33 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getOneUser } from "../../store/users/usersSlice";
 import { toggleCardFavorite } from "../../store/users/usersActions";
+import "./FavoritesList.css";
 
 const FavoritesList = () => {
   const { oneUser } = useSelector((state) => state.users);
   const dispatch = useDispatch();
 
   return (
-    <div
-      style={{ width: "100%", border: "1px solid black", textAlign: "center" }}
-    >
+    <div className="favorites-list-container">
       {oneUser && (
         <>
           {oneUser.favorites.length ? (
             <>
-              <h2>Избранные</h2>
+              <h2 className="favorites-list-header">Избранные</h2>
               {oneUser.favorites.map((card) => (
-                <div key={card.id}>
-                  <p>{card.name}</p>
+                <div key={card.id} className="favorites-list-item">
+                  <img
+                    src={card.image}
+                    alt="img"
+                    className="favorites-list-image"
+                  />
                   <button
                     onClick={() => {
                       dispatch(toggleCardFavorite({ card }));
                     }}
+                    className="favorites-list-button"
                   >
-                    убрать
+                    Убрать
                   </button>
                 </div>
               ))}
