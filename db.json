@@ -427,11 +427,201 @@
           "description": "Какаши в первом сезоне",
           "id": 5,
           "likes": []
+        },
+        {
+          "name": "Чоджи Акимичи",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd3dd763-e32a-4849-b547-1279d3554d27/de0jyzp-4a50200a-945b-43bf-af43-6948ea29a16d.jpg/v1/fill/w_1280,h_1397,q_75,strp/choji_akimichi_by_florsideral_de0jyzp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM5NyIsInBhdGgiOiJcL2ZcL2ZkM2RkNzYzLWUzMmEtNDg0OS1iNTQ3LTEyNzlkMzU1NGQyN1wvZGUwanl6cC00YTUwMjAwYS05NDViLTQzYmYtYWY0My02OTQ4ZWEyOWExNmQuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jpQnEZmehNM5bKSVk3e6t8vZTOo0e9vXoJx06vwJ3y8",
+          "price": 170,
+          "rank": "Генин",
+          "power": 17,
+          "description": "Жирный",
+          "id": 13,
+          "comments": [
+            {
+              "id": 1697528762033,
+              "body": "я тоже хочу поесть!",
+              "rating": 2,
+              "user": "s20"
+            },
+            {
+              "id": 1697530339364,
+              "body": "сильнее чем шикамару???",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "1.5"
+        },
+        {
+          "name": "Ино Яманака",
+          "image": "https://img.wattpad.com/6f51c5ac9f8629dea4d98b7cbfbc63fa378903dd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f724b3058417a7347523874716b773d3d2d3533363133363839362e313531336534393463643937666236363735383537313032313136332e6a7067?s=fit&w=720&h=720",
+          "price": 100,
+          "rank": "Генин",
+          "power": 10,
+          "description": "Свинина\n",
+          "id": 14,
+          "comments": [
+            {
+              "id": 1697528808071,
+              "body": "грудь больше чем у сакуры!!!!!",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530362678,
+              "body": "ничтожна слаба",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "3.0",
+          "likes": [
+            {
+              "id": 1697528820907,
+              "user": "s20"
+            },
+            {
+              "id": 1697530405718,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Киба Инузука",
+          "image": "https://i.pinimg.com/1200x/6b/fc/80/6bfc80cbff628c6e6ccc35aa7e28c409.jpg",
+          "price": 250,
+          "rank": "Генин",
+          "power": 25,
+          "description": "И Акамару",
+          "id": 15,
+          "comments": [
+            {
+              "id": 1697528840117,
+              "body": "у мен аллергия на псов!",
+              "rating": 3,
+              "user": "s20"
+            },
+            {
+              "id": 1697530387528,
+              "body": "такой себе персонаж",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "2.0"
+        },
+        {
+          "name": "Шино Абураме",
+          "image": "https://cdn.donmai.us/original/1c/6a/1c6ae55291881d8821a1dcb4561a8603.jpg",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "Сильный челик",
+          "id": 16,
+          "comments": [
+            {
+              "id": 1697528862386,
+              "body": "имба персонаж",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530420374,
+              "body": "недооцененный персонаж",
+              "rating": 4,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "4.5",
+          "likes": [
+            {
+              "id": 1697528869639,
+              "user": "s20"
+            },
+            {
+              "id": 1697530403914,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Рок Ли",
+          "image": "https://static.zerochan.net/Rock.Lee.full.3162595.jpg",
+          "price": 690,
+          "rank": "Чунин",
+          "power": 69,
+          "description": "Монстр",
+          "id": 18,
+          "comments": [
+            {
+              "id": 1697528950781,
+              "body": "самый охуеннный персонаж",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530513689,
+              "body": "любого уделает",
+              "rating": 4,
+              "user": "s20 fe(865)"
+            },
+            {
+              "id": 1697531181423,
+              "body": "пригодится",
+              "rating": 5,
+              "user": "iPhone 13 mini"
+            }
+          ],
+          "rating": "4.7",
+          "likes": [
+            {
+              "id": 1697528933339,
+              "user": "s20"
+            },
+            {
+              "id": 1697530621456,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Хината Хьюга",
+          "image": "https://cdn.donmai.us/original/6a/fe/6afebb03bae04f14849972b01dc8d2d9.jpg",
+          "price": 250,
+          "rank": "Генин",
+          "power": 25,
+          "description": "Хината",
+          "id": 17,
+          "comments": [
+            {
+              "id": 1697528889938,
+              "body": "хочу украсть ее глаза и вставить их себе",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530453955,
+              "body": "слаба",
+              "rating": 3,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "4.0",
+          "likes": [
+            {
+              "id": 1697528909895,
+              "user": "s20"
+            },
+            {
+              "id": 1697530619605,
+              "user": "s20 fe(865)"
+            }
+          ]
         }
       ],
       "favorites": [],
       "isAdmin": true,
-      "points": 156247298,
+      "points": 78122719,
       "id": 2
     },
     {
