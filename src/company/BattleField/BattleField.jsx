@@ -79,7 +79,6 @@ const BattleField = () => {
       <div className="battle--field__main">
         <h1 className="enemy--h1">HP/Power: {enemyPower}</h1>
         <div className="enemy--card">
-
           {oneLevel && (
             <>
               <CardInvet card={oneLevel.enemy} />
@@ -95,16 +94,16 @@ const BattleField = () => {
                   <h1 style={{ fontSize: "25px" }}>
                     HP/Power: {oneCardPower[index]}
                   </h1>
+                  <button
+                    onClick={() => {
+                      setAttack(true);
+                      dispatch(attackLogic({ index, cardId: card.id }));
+                    }}
+                  >
+                    Attack
+                  </button>
                 </div>
                 <CardInvet card={card} />
-                <button
-                  onClick={() => {
-                    setAttack(true);
-                    dispatch(attackLogic({ index, cardId: card.id }));
-                  }}
-                >
-                  Attack
-                </button>
               </div>
             ))}
           </>

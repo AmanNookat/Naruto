@@ -3,7 +3,7 @@ import CardCreate from "../../components/cards/CardCreate/CardCreate";
 
 const CreatePage = () => {
   return (
-    <div>
+    <div className="createPage">
       <CardCreate />
     </div>
   );

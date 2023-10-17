@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { userLose, userWin } from "../../store/company/companyActions";
+import style from "./BattleResult.module.css";
 
 const BattleResult = ({ resultModal, cardsForBattle }) => {
   const { id } = useParams();
@@ -16,20 +17,24 @@ const BattleResult = ({ resultModal, cardsForBattle }) => {
   }, [resultModal]);
 
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div style={{ backgroundColor: "white" }} className={style.battleResult}>
       {resultModal && (
         <>
           {resultModal === 1 ? (
-            <div style={{ color: "white" }}>
-              <h1>Победа</h1>
+            <div className={style.winModal}>
+              <h1>ПОБЕДА</h1>
               <p>Поздравляю с победой</p>
-              <Link to="/company">Вернуться</Link>
+              <Link className="returnLink" to="/company">
+                Вернуться
+              </Link>
             </div>
           ) : (
-            <div style={{ color: "white" }}>
-              <h1>Поражение</h1>
+            <div className={style.loseModal}>
+              <h1>ПОРАЖЕНИЕ</h1>
               <p>К сожалению вы потеряли половину своих очков</p>
-              <Link to="/company">Вернуться</Link>
+              <Link className="returnLink" to="/company">
+                Вернуться
+              </Link>
             </div>
           )}
         </>
