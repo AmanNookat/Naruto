@@ -38,3 +38,9 @@
   height: 90%;
   border-radius: 30px;
 }
+
+.enemyAndTeam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

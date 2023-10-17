@@ -31,7 +31,7 @@ const BattleMenu = ({ setModal }) => {
   return (
     <>
       {oneLevel && (
-        <div>
+        <div style={{ marginRight: "30px" }}>
           <h1 style={{ textAlign: "center", fontSize: "20px" }}>Враг</h1>
           <CardInvet card={oneLevel.enemy} />
           <div

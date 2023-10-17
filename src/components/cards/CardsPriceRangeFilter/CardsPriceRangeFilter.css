@@ -1,7 +1,7 @@
 /* CardsPriceRangeFilter.css */
 
 /* Стили для контейнера элементов */
-.cards-price-range-container {
+.cards--range-container {
   display: flex;
   align-items: center;
 }

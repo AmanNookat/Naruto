@@ -43,8 +43,10 @@ const CompanyContent = () => {
       <>
         {modal && (
           <div className={style.battleModal}>
-            <BattleMenu setModal={setModal} />
-            <CardsForBattle />
+            <div className={style.enemyAndTeam}>
+              <BattleMenu setModal={setModal} />
+              <CardsForBattle />
+            </div>
             <CardsMenu />
           </div>
         )}
