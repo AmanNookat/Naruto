@@ -14,3 +14,10 @@ export const getOneQuiz = createAsyncThunk(
     return data;
   }
 );
+
+export const createQuiz = createAsyncThunk(
+  "quizzes/createQuiz",
+  async ({ quiz }) => {
+    await axios.post(QUIZZES_API, quiz);
+  }
+);
