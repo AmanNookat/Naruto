@@ -20,13 +20,13 @@ const BattleResult = ({ resultModal, cardsForBattle }) => {
       {resultModal && (
         <>
           {resultModal === 1 ? (
-            <div>
+            <div style={{ color: "white" }}>
               <h1>Победа</h1>
               <p>Поздравляю с победой</p>
               <Link to="/company">Вернуться</Link>
             </div>
           ) : (
-            <div>
+            <div style={{ color: "white" }}>
               <h1>Поражение</h1>
               <p>К сожалению вы потеряли половину своих очков</p>
               <Link to="/company">Вернуться</Link>
