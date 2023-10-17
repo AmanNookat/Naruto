@@ -29,6 +29,7 @@ const BurgerMenu = ({ closeBurgerMenu }) => {
           <>
             <NavLink to="/quizzes">Викторины</NavLink>
             <NavLink to="/cart">Корзина</NavLink>
+            <NavLink to="/cases">Кейс</NavLink>
             <NavLink to="/company">Компания</NavLink>
             {checkAdmin() && <NavLink to="/card-create">Создать</NavLink>}
             {oneUser && (

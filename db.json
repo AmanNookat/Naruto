@@ -669,6 +669,801 @@
               "user": "s20 fe(865)"
             }
           ]
+        },
+        {
+          "name": "Гаара",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3298f201-dce9-4e61-821c-437babb8b0fa/d8hmrk-9f9eda80-b6c3-4305-bb68-4015aceee4a2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMyOThmMjAxLWRjZTktNGU2MS04MjFjLTQzN2JhYmI4YjBmYVwvZDhobXJrLTlmOWVkYTgwLWI2YzMtNDMwNS1iYjY4LTQwMTVhY2VlZTRhMi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.AAUVBvbnFTnTtN8o_X3zcjvUp-IMCYwbFT_Bb4Btu0w",
+          "price": 700,
+          "rank": "Чунин",
+          "power": 70,
+          "description": "Гаара без формы Шукаку",
+          "id": 9,
+          "comments": [
+            {
+              "id": 1697528586417,
+              "body": "крутой персонаж с крутыми способностями",
+              "rating": 4,
+              "user": "s20"
+            },
+            {
+              "id": 1697530185862,
+              "body": "я считаю что ему нужно еще силу прибавить",
+              "rating": 3,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "3.5",
+          "likes": [
+            {
+              "id": 1697528617886,
+              "user": "s20"
+            },
+            {
+              "id": 1697530400577,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Забуза Момочи",
+          "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
+          "price": 800,
+          "rank": "Джонин",
+          "power": 80,
+          "description": "Просто Забуза",
+          "id": 6,
+          "likes": [
+            {
+              "id": 1697528235551,
+              "user": "s20"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528473946,
+              "body": "его как-то быстро убили(((",
+              "rating": 2,
+              "user": "s20"
+            },
+            {
+              "id": 1697530136673,
+              "body": "сильный персонаж",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            },
+            {
+              "id": 1697531143441,
+              "body": "тоже беру",
+              "rating": 5,
+              "user": "iPhone 13 mini"
+            }
+          ],
+          "rating": "4.0"
+        },
+        {
+          "name": "Хаку",
+          "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
+          "price": 850,
+          "rank": "Джонин",
+          "power": 85,
+          "description": "Жаль, что это он",
+          "id": 7,
+          "likes": [
+            {
+              "id": 1697528234329,
+              "user": "s20"
+            },
+            {
+              "id": 1697529844377,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528507009,
+              "body": "был бы он женского пола то топ",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530063749,
+              "body": "Сильный персонаж и симпатичнее чем Сакура, но жаль что быстро слили",
+              "rating": 4,
+              "user": "s20 fe(865)"
+            },
+            {
+              "id": 1697531131975,
+              "body": "однозначно беру",
+              "rating": 5,
+              "user": "iPhone 13 mini"
+            }
+          ],
+          "rating": "4.7"
+        },
+        {
+          "name": "Хирузен Сарутоби",
+          "image": "https://i.redd.it/qjlr7i0oadw91.jpg",
+          "price": 3000,
+          "rank": "Каге",
+          "power": 300,
+          "description": "Жаль деда",
+          "id": 8,
+          "likes": [],
+          "comments": [
+            {
+              "id": 1697528556746,
+              "body": "скучный персонаж к тому же и крыса ебаная, хорош что его орочимару грохнул",
+              "rating": 1,
+              "user": "s20"
+            },
+            {
+              "id": 1697530156271,
+              "body": "пошел он нахуй да еще и не сильный персонаж",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "1.0"
+        },
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 50,
+          "rank": "Чунин",
+          "power": 15,
+          "description": "Просто Ирука",
+          "id": 4,
+          "likes": [
+            {
+              "id": 1697528229638,
+              "user": "s20"
+            },
+            {
+              "id": 1697529837273,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528425784,
+              "body": "отец всех отцов",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530077199,
+              "body": "слабак",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "3.0"
+        },
+        {
+          "name": "Канкуро",
+          "image": "https://i.pinimg.com/originals/f9/62/84/f9628488ce726d011ec6c47acdf7e64a.jpg",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "Просто Канкуро",
+          "id": 10,
+          "comments": [
+            {
+              "id": 1697528641325,
+              "body": "мало что знаю о нем, но прикольный",
+              "rating": 4,
+              "user": "s20"
+            },
+            {
+              "id": 1697530202177,
+              "body": "не интересный персонаж",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "2.5",
+          "likes": [
+            {
+              "id": 1697528675815,
+              "user": "s20"
+            }
+          ]
+        },
+        {
+          "name": "Темари",
+          "image": "https://64.media.tumblr.com/db51c7c824507c1079d01c5692f6052a/4d35c6b2e1bf5b83-68/s540x810/f1d033b73895d209d4826f0b31802946d3b4dd2f.png",
+          "price": 450,
+          "rank": "Чунин",
+          "power": 45,
+          "description": "Темари",
+          "id": 11,
+          "comments": [
+            {
+              "id": 1697528668798,
+              "body": "что в ней нашел шикамару?",
+              "rating": 3,
+              "user": "s20"
+            },
+            {
+              "id": 1697530299972,
+              "body": "пока не дотягивает до середины",
+              "rating": 4,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "3.5",
+          "likes": [
+            {
+              "id": 1697528677181,
+              "user": "s20"
+            }
+          ]
+        },
+        {
+          "name": "Шикамару Нара",
+          "image": "https://i.pinimg.com/1200x/02/20/e2/0220e2cd7c07e94c16577b1f4db63895.jpg",
+          "price": 150,
+          "rank": "Генин",
+          "power": 15,
+          "description": "Умный челик",
+          "id": 12,
+          "comments": [
+            {
+              "id": 1697528703171,
+              "body": "просто чел с крутыми способностями",
+              "rating": 4,
+              "user": "s20"
+            },
+            {
+              "id": 1697530318466,
+              "body": "слаб",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "2.5",
+          "likes": [
+            {
+              "id": 1697528819187,
+              "user": "s20"
+            },
+            {
+              "id": 1697530613849,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Орочимару",
+          "image": "https://i.pinimg.com/1200x/19/6f/cb/196fcb33f2382dac2ad9dab3ece10bcf.jpg",
+          "price": 2900,
+          "rank": "Каге",
+          "power": 290,
+          "description": "Скользкий тип",
+          "id": 21,
+          "comments": [
+            {
+              "id": 1697529039352,
+              "body": "тоже хочу такую способность",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530590333,
+              "body": "сильный санин всем советую",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            },
+            {
+              "id": 1697531221088,
+              "body": "мне нужен такой персонаж",
+              "rating": 5,
+              "user": "iPhone 13 mini"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529046644,
+              "user": "s20"
+            },
+            {
+              "id": 1697530632199,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Кабуто Якуши",
+          "image": "https://i.pinimg.com/550x/21/5b/eb/215bebbd7064f6c65aa8ff8ee583f34b.jpg",
+          "price": 850,
+          "rank": "Джонин",
+          "power": 85,
+          "description": "\nКрыса",
+          "id": 22,
+          "comments": [
+            {
+              "id": 1697529067627,
+              "body": "крыса крыса крыса",
+              "rating": 1,
+              "user": "s20"
+            }
+          ],
+          "rating": "1.0"
+        },
+        {
+          "name": "Неджи Хьюга",
+          "image": "https://m.media-amazon.com/images/I/71VQXxnoNSL._AC_UF894,1000_QL80_.jpg",
+          "price": 650,
+          "rank": "Чунин",
+          "power": 65,
+          "description": "Мощный",
+          "id": 19,
+          "comments": [
+            {
+              "id": 1697528975206,
+              "body": "крыса падла грохнул хинату",
+              "rating": 3,
+              "user": "s20"
+            },
+            {
+              "id": 1697530544303,
+              "body": "самый мощный из хьюга",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            },
+            {
+              "id": 1697531202832,
+              "body": "тоже возьму",
+              "rating": 3,
+              "user": "iPhone 13 mini"
+            }
+          ],
+          "rating": "3.7",
+          "likes": [
+            {
+              "id": 1697528983050,
+              "user": "s20"
+            },
+            {
+              "id": 1697530628865,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Досу",
+          "image": "https://i.pinimg.com/564x/f1/ef/e3/f1efe34e4ce142033a2064a1fa42ad2e.jpg",
+          "price": 300,
+          "rank": "Генин",
+          "power": 30,
+          "description": "Долбаеб",
+          "id": 23,
+          "comments": [
+            {
+              "id": 1697529096137,
+              "body": "хитрый хуй",
+              "rating": 1,
+              "user": "s20"
+            }
+          ],
+          "rating": "1.0"
+        },
+        {
+          "name": "Джирайя",
+          "image": "https://s1.zerochan.net/Jiraiya.600.2958636.jpg",
+          "price": 2950,
+          "rank": "Каге",
+          "power": 295,
+          "description": "Жаль старика",
+          "id": 24,
+          "comments": [
+            {
+              "id": 1697529126619,
+              "body": "поехавший",
+              "rating": 5,
+              "user": "s20"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529139271,
+              "user": "s20"
+            }
+          ]
+        },
+        {
+          "name": "Тентен",
+          "image": "https://i.quotev.com/xncag3foaaaa.jpg",
+          "price": 300,
+          "rank": "Генин",
+          "power": 30,
+          "description": "Хз",
+          "id": 20,
+          "comments": [
+            {
+              "id": 1697529003362,
+              "body": "не знаю что это за персонаж",
+              "rating": 2,
+              "user": "s20"
+            },
+            {
+              "id": 1697530569926,
+              "body": "слабый персонаж не советую",
+              "rating": 2,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "2.0"
+        },
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://steamuserimages-a.akamaihd.net/ugc/1624101032324031328/995D391BEED9859962B8B124596F6FD0BBD92701/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false",
+          "price": 800,
+          "rank": "Чунин",
+          "power": 80,
+          "description": "С красной чакрой",
+          "id": 25,
+          "comments": [
+            {
+              "id": 1697529162574,
+              "body": "агрессив",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530650479,
+              "body": "сильная карточка, беру!!!",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529171507,
+              "user": "s20"
+            },
+            {
+              "id": 1697530665635,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Цунаде Сенджу",
+          "image": "https://static.zerochan.net/Tsunade.full.2364148.jpg",
+          "price": 2800,
+          "rank": "Каге",
+          "power": 280,
+          "description": "Ля какая",
+          "id": 29,
+          "comments": [
+            {
+              "id": 1697529271268,
+              "body": "молодая бабуля",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530715852,
+              "body": "сильный персонаж, лучше чем сакура",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529281226,
+              "user": "s20"
+            },
+            {
+              "id": 1697530724264,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Майто Гай",
+          "image": "https://i.pinimg.com/564x/de/f9/c2/def9c29ad3998ff5388518d28b435e96.jpg",
+          "price": 1500,
+          "rank": "Джонин",
+          "power": 150,
+          "description": "Красавчик",
+          "id": 30,
+          "comments": [
+            {
+              "id": 1697529311508,
+              "body": "классный поехавший и самый охуенный, он приютил рока ли",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530740107,
+              "body": "персонаж красавчик",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529318116,
+              "user": "s20"
+            }
+          ]
+        },
+        {
+          "name": "Шукаку",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2e84cf2-973e-471a-bf7b-199f3ed13ac7/dezy8yh-b2adba42-11f6-47f8-97b7-b02fd3674251.jpg/v1/fill/w_1280,h_1600,q_75,strp/shukaku_digital_painting_by_pempken_dezy8yh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcL2IyZTg0Y2YyLTk3M2UtNDcxYS1iZjdiLTE5OWYzZWQxM2FjN1wvZGV6eTh5aC1iMmFkYmE0Mi0xMWY2LTQ3ZjgtOTdiNy1iMDJmZDM2NzQyNTEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.TIhzlGt7kow_stIjsgnG3lsaWeBjACNHGOXEzxVJIXU",
+          "price": 3500,
+          "rank": "Каге",
+          "power": 350,
+          "description": "Енот",
+          "id": 27,
+          "comments": [
+            {
+              "id": 1697529231899,
+              "body": "незнаю кто это но устрашает",
+              "rating": 5,
+              "user": "s20"
+            }
+          ],
+          "rating": "5.0"
+        },
+        {
+          "name": "Итачи Учиха",
+          "image": "https://kartinki.pics/uploads/posts/2021-07/1625690189_58-kartinkin-com-p-itachi-uchikha-art-krasivii-art-krasivo-65.jpg",
+          "price": 10000,
+          "rank": "Ооцуцуки",
+          "power": 999,
+          "description": "Бог",
+          "id": 31,
+          "comments": [
+            {
+              "id": 1697529348358,
+              "body": "САМЫЙ ОХУЕННЫЙ И САМЫЙ ПИЗДАТЫЙ ПЕРСОНАЖ, ПРГОСТО ИМБИЩЕ ВО ВСЕМ, МОЙ КРАШ",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530780911,
+              "body": "КРАШ КРАШ КРАШ САМЫЙ МОЩНЫЙ МОЩНЕЕ ВСЕХ БЕРУТ 10000000000000000000000000000000000000000 ТАКИХ КАРТОЧЕК",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            },
+            {
+              "id": 1697531247709,
+              "body": "однозначно беру с орочимару",
+              "rating": 5,
+              "user": "iPhone 13 mini"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529359669,
+              "user": "s20"
+            },
+            {
+              "id": 1697530748117,
+              "user": "s20 fe(865)"
+            },
+            {
+              "id": 1697531256496,
+              "user": "iPhone 13 mini"
+            }
+          ]
+        },
+        {
+          "name": "Кисаме Хошигаки",
+          "image": "https://i.pinimg.com/originals/ab/fc/49/abfc49ceafb2d11778b5305ec26e5f53.jpg",
+          "price": 4000,
+          "rank": "Каге",
+          "power": 400,
+          "description": "Безхвостый биджу",
+          "id": 32,
+          "comments": [
+            {
+              "id": 1697529383670,
+              "body": "просто прикольный меч",
+              "rating": 4,
+              "user": "s20"
+            },
+            {
+              "id": 1697530810906,
+              "body": "персонаж сильный пригодится для боини",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "4.5",
+          "likes": [
+            {
+              "id": 1697529395150,
+              "user": "s20"
+            }
+          ]
+        },
+        {
+          "name": "Гамабунта",
+          "image": "https://cdnb.artstation.com/p/assets/images/images/011/961/671/large/shawn-lim-gamabunta.jpg?1532337554",
+          "price": 2000,
+          "rank": "Джонин",
+          "power": 200,
+          "description": "Жаба",
+          "id": 28,
+          "comments": [
+            {
+              "id": 1697529249054,
+              "body": "жаба",
+              "rating": 5,
+              "user": "s20"
+            }
+          ],
+          "rating": "5.0"
+        },
+        {
+          "name": "Сакон и Укон",
+          "image": "https://pbs.twimg.com/media/Dy2ca3sUcAAXp_E.jpg",
+          "price": 500,
+          "rank": "Чунин",
+          "power": 50,
+          "description": "Близнецы",
+          "id": 33,
+          "comments": [
+            {
+              "id": 1697529413866,
+              "body": "ноу неймы",
+              "rating": 1,
+              "user": "s20"
+            }
+          ],
+          "rating": "1.0"
+        },
+        {
+          "name": "Кимимаро",
+          "image": "https://i.pinimg.com/originals/ee/9c/60/ee9c604c6234ab31ba457a4c490d6481.jpg",
+          "price": 1200,
+          "rank": "Джонин",
+          "power": 120,
+          "description": "Жесткий\n",
+          "id": 37,
+          "comments": [
+            {
+              "id": 1697529532537,
+              "body": "прикольный",
+              "rating": 2,
+              "user": "s20"
+            }
+          ],
+          "rating": "2.0"
+        },
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://media.tenor.com/KHabwGNQI1oAAAAd/naruto.gif",
+          "price": 1400,
+          "rank": "Джонин",
+          "power": 140,
+          "description": " хвост",
+          "id": 38,
+          "likes": [
+            {
+              "id": 1697529547305,
+              "user": "s20"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697529564071,
+              "body": "грозный котэ",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530862216,
+              "body": "мощь",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "5.0"
+        },
+        {
+          "name": "Кидомару",
+          "image": "https://marcoleonardi1991.files.wordpress.com/2007/10/1149591936.jpg",
+          "price": 510,
+          "rank": "Чунин",
+          "power": 51,
+          "description": "Паулек чаук",
+          "id": 34,
+          "comments": [
+            {
+              "id": 1697529436930,
+              "body": "хз кто это",
+              "rating": 1,
+              "user": "s20"
+            }
+          ],
+          "rating": "1.0"
+        },
+        {
+          "name": "Таюйя",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ff66b793-e284-4afb-b420-eca54f12138e/dcnzwlg-ece6927a-fc09-4955-b957-3f9e3869d0b8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZmNjZiNzkzLWUyODQtNGFmYi1iNDIwLWVjYTU0ZjEyMTM4ZVwvZGNuendsZy1lY2U2OTI3YS1mYzA5LTQ5NTUtYjk1Ny0zZjllMzg2OWQwYjguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fFw90e7Ztq5Gr7t8LEfy_InhLHQlhsAJRwi68VWwei0",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "Хз",
+          "id": 35,
+          "comments": [
+            {
+              "id": 1697529454020,
+              "body": "это кто нахуй",
+              "rating": 5,
+              "user": "s20"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529503584,
+              "user": "s20"
+            }
+          ]
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.pinimg.com/originals/8a/a6/ad/8aa6adc1478c0b4d9656e8686d71b3c4.gif",
+          "price": 1450,
+          "rank": "Джонин",
+          "power": 145,
+          "description": "Проклятая печать",
+          "id": 39,
+          "comments": [
+            {
+              "id": 1697529586531,
+              "body": "вот такой саске мое почтение",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530843738,
+              "body": "вот такого саске я беру, мне он нужен",
+              "rating": 5,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529641675,
+              "user": "s20"
+            },
+            {
+              "id": 1697530829712,
+              "user": "s20 fe(865)"
+            }
+          ]
+        },
+        {
+          "name": "Джиробо",
+          "image": "https://i.pinimg.com/736x/b0/21/ec/b021ec1e60d4555eda7eaa2b53d68c71.jpg",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "ахахахахах",
+          "id": 36,
+          "comments": [
+            {
+              "id": 1697529494855,
+              "body": "не джуга",
+              "rating": 3,
+              "user": "s20"
+            }
+          ],
+          "rating": "3.0"
         }
       ],
       "favorites": [
@@ -1284,7 +2079,7 @@
         }
       ],
       "isAdmin": true,
-      "points": 9752757,
+      "points": 9707170,
       "id": 2
     },
     {

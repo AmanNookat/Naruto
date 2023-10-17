@@ -130,3 +130,23 @@ export const unlockCard = createAsyncThunk(
     return oneUser;
   }
 );
+
+export const cardsRandomizer = createAsyncThunk(
+  "cards/cardsRandomizer",
+  async (_, { dispatch }) => {
+    const { data } = await axios.get(CARDS_API);
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+    oneUser.points = oneUser.points - 777;
+    const randomIndex = Math.floor(Math.random() * data.length);
+    const oneCard = data[randomIndex];
+    dispatch(unlockCard({ cardId: oneCard.id }));
+    await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+    addToLocalStorage(oneUser);
+    return oneCard;
+  }
+);
+
+export const getALlCards = createAsyncThunk("cards/getAllCards", async () => {
+  const { data } = await axios.get(CARDS_API);
+  return data;
+});
