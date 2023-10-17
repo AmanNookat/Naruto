@@ -387,11 +387,51 @@
       "mail": "a",
       "password": "a",
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
-      "level": 7,
-      "inventory": [],
+      "level": 8,
+      "inventory": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
+          "price": 200,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто с техникой множественного теневого клонирования",
+          "id": 1,
+          "likes": []
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
+          "price": 190,
+          "rank": "Генин",
+          "power": 19,
+          "description": "Саске на начало первого сезона",
+          "id": 2,
+          "likes": []
+        },
+        {
+          "name": "Сакура Харуно",
+          "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
+          "price": 10,
+          "rank": "Генин",
+          "power": 5,
+          "description": "Сакура на начало первого сезона",
+          "id": 3
+        },
+        {
+          "name": "Какаши Хатаке",
+          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
+          "price": 500,
+          "rank": "Джонин",
+          "power": 150,
+          "description": "Какаши в первом сезоне",
+          "id": 5,
+          "likes": []
+        }
+      ],
       "favorites": [],
       "isAdmin": true,
-      "points": 4999914462,
+      "points": 156247298,
       "id": 2
     },
     {
@@ -2951,7 +2991,7 @@
     {
       "enemy": {
         "name": "Итачи Учиха",
-        "image": "https://i.redd.it/kid-sasuke-curse-mark-2-vs-rampage-obito-v0-cz0vn7yj6sdb1.jpg?width=850&format=pjpg&auto=webp&s=6d486276006eeee39e0ad928e943cec1cf52b6a5",
+        "image": "https://diamondpaintkit.com/wp-content/uploads/2021/10/Itachi-Uchiha-Art-diamond-paintings.jpg",
         "power": 10000000,
         "rank": "Ооцуцуки"
       },
