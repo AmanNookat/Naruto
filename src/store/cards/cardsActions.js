@@ -8,7 +8,12 @@ import {
   getTotalPages,
   notify,
 } from "../../helpers/functions";
-import { deleteCardFromCart } from "../cart/cartActions";
+import {
+  cleanCart,
+  deleteCardFromCart,
+  getCartData,
+  setCartData,
+} from "../cart/cartActions";
 import { deleteCardFromFavorite } from "../users/usersActions";
 import { deleteCardFromInventory } from "../users/usersSlice";
 
@@ -51,6 +56,19 @@ export const editCard = createAsyncThunk(
   "cards/editCard",
   async ({ card }, { dispatch }) => {
     await axios.patch(`${CARDS_API}/${card.id}`, card);
+
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+
+    oneUser.favorites = oneUser.favorites.map((oneCard) =>
+      oneCard.id == card.id ? card : oneCard
+    );
+    oneUser.inventory = oneUser.inventory.map((oneCard) =>
+      oneCard.id == card.id ? card : oneCard
+    );
+    cleanCart();
+    await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+    addToLocalStorage(oneUser);
+
     dispatch(getCards());
   }
 );

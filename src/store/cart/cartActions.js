@@ -22,7 +22,7 @@ export const setCartData = (cartObj) => {
 
 export const checkCardInCart = (cardId) => {
   const cart = getCartData();
-  return cart.cards.find((card) => card.cardItem.id === cardId);
+  return cart.cards.find((card) => card.cardItem.id == cardId);
 };
 
 export const countCartTotalCost = (cartCards) => {
