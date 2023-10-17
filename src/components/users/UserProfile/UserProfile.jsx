@@ -33,18 +33,20 @@ const UserProfile = () => {
               <>
                 <div
                   style={{
-                    width: "30rem",
+                    width: "35rem",
                     height: "auto",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    backgroundColor: "white",
+                    // backgroundColor: "#ffffff80",
+                    backgroundColor: "rgba(255, 255, 255, 0.6)",
+                    borderRadius: "5px",
+                    margin: "10px",
                   }}
                 >
                   <div
                     style={{
                       width: "100%",
-                      border: "1px solid black",
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "center",
@@ -84,7 +86,9 @@ const UserProfile = () => {
                 <div
                   style={{
                     border: "1px solid black",
-                    width: "60rem",
+                    width: "53rem",
+                    margin: "15px 30px 0 0",
+                    borderRadius: "30px",
                   }}
                   className="UserProfileRight"
                 >
@@ -93,7 +97,7 @@ const UserProfile = () => {
                       textAlign: "center",
                       backgroundColor: "rgba(0, 0, 0, 0.5)",
                       color: "#ffac41",
-                      marginTop: "5%",
+                      margin: "5% 0",
                     }}
                     className="NameInv"
                   >
@@ -103,8 +107,8 @@ const UserProfile = () => {
                     style={{
                       display: "flex",
                       flexWrap: "wrap",
-                      justifyContent: "space-around",
-                      marginTop: "20px",
+                      gap: "10px",
+                      marginLeft: "30px",
                     }}
                   >
                     {inventory && (
