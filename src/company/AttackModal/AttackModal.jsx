@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { attackAnimation } from "../../assets/attackAnimation";
+import "./AttackModal.css";
 
 const AttackModal = ({ setAttack, attack }) => {
   const { whoAttack } = useSelector((state) => state.company);
@@ -16,10 +17,8 @@ const AttackModal = ({ setAttack, attack }) => {
   }, [attack]);
 
   return (
-    <div style={{ width: "100px", height: "100px" }}>
-      {whoAttack && (
-        <img src={attackAnimation(whoAttack)} alt="" width="100" height="100" />
-      )}
+    <div className="attack--container">
+      {whoAttack && <img src={attackAnimation(whoAttack)} alt="" />}
     </div>
   );
 };

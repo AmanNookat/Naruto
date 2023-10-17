@@ -17,6 +17,8 @@ import { getTeamPowers } from "../../helpers/functions";
 import BattleResult from "../BattleResult/BattleResult";
 import AttackModal from "../AttackModal/AttackModal";
 
+import "./BattleField.css";
+
 const BattleField = () => {
   const {
     oneLevel,
@@ -65,7 +67,7 @@ const BattleField = () => {
   }, []);
 
   return (
-    <>
+    <div className="battle--field">
       <>
         {resultModal && (
           <BattleResult
@@ -74,30 +76,28 @@ const BattleField = () => {
           />
         )}
       </>
-      <>{attack && <AttackModal attack={attack} setAttack={setAttack} />}</>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-        }}
-      >
-        <div>
+      <div>
+        {attack && <AttackModal attack={attack} setAttack={setAttack} />}
+      </div>
+      <div className="battle--field__main">
+        <h1 className="enemy--h1">HP/Power: {enemyPower}</h1>
+        <div className="enemy--card">
           {oneLevel && (
             <>
-              <h1 style={{ fontSize: "25px" }}>HP/Power: {enemyPower}</h1>
               <CardInvet card={oneLevel.enemy} />
             </>
           )}
         </div>
-        <p style={{ fontSize: "200px" }}>VS</p>
-        <div>
+        <p className="versus">VS</p>
+        <div className="players--cont">
           <>
             {cardsForBattle.map((card, index) => (
               <div key={`card${card.id}`}>
-                <h1 style={{ fontSize: "25px" }}>
-                  HP/Power: {oneCardPower[index]}
-                </h1>
+                <div className="players--HP">
+                  <h1 style={{ fontSize: "25px" }}>
+                    HP/Power: {oneCardPower[index]}
+                  </h1>
+                </div>
                 <CardInvet card={card} />
                 <button
                   onClick={() => {
@@ -112,7 +112,7 @@ const BattleField = () => {
           </>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
