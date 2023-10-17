@@ -23,6 +23,7 @@ const QuizList = () => {
         <>
           {checkAdmin() && (
             <button
+              style={{ marginLeft: "100px" }}
               onClick={() => {
                 navigate("/quiz-create");
               }}
@@ -30,7 +31,6 @@ const QuizList = () => {
               Create
             </button>
           )}
-
           <div className={style.quizList}>
             {quizzes.map((quiz) => (
               <QuizCard key={`quiz${quiz.id}`} quiz={quiz} />

@@ -4,18 +4,10 @@ import { useNavigate } from "react-router-dom";
 import {
   cardColorChange,
   checkCardInFavorites,
-  checkUserLogin,
   getAuthUser,
 } from "../../../helpers/functions";
-import {
-  checkCardInCart,
-  toggleCardToCart,
-} from "../../../store/cart/cartActions";
-import { getCart } from "../../../store/cart/cartSlice";
-import CardLike from "../CardLike/CardLike";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { checkCardInCart } from "../../../store/cart/cartActions";
 import "./CardItem.css";
-import StarIcon from "@mui/icons-material/Star";
 import CardFooter from "../CardFooter/CardFooter";
 import CardInvet from "../CardInvent/CardInvet";
 

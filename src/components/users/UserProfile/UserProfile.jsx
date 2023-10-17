@@ -38,7 +38,6 @@ const UserProfile = () => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    // backgroundColor: "#ffffff80",
                     backgroundColor: "rgba(255, 255, 255, 0.6)",
                     borderRadius: "5px",
                     margin: "10px",

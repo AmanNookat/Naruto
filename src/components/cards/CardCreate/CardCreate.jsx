@@ -46,12 +46,7 @@ const CardCreate = () => {
         placeholder="ссылка на фото"
         onChange={(e) => setCard({ ...card, image: e.target.value })}
       />
-      {/* <input
-        className="inp-name"
-        type="text"
-        placeholder="ранг"
-        onChange={(e) => setCard({ ...card, rank: e.target.value })}
-      /> */}
+
       <select onChange={(e) => setCard({ ...card, rank: e.target.value })}>
         <option hidden>Выбери ранг</option>
         {categories.map((category) => (
