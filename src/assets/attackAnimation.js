@@ -37,33 +37,49 @@ export const attackAnimation = (id) => {
     case 18:
       return "https://qph.cf2.quoracdn.net/main-qimg-5d88b202bba15c683365dfc140f82825";
     case 19:
-      return "";
+      return "https://media.tenor.com/ta7T8AgYcpUAAAAd/neji.gif";
     case 20:
-      return "";
+      return "https://33.media.tumblr.com/a6bdc3acac321fd62f231ad12e5a2785/tumblr_nsfwtdyUmg1u6y1njo1_500.gif";
     case 21:
-      return "";
+      return "https://media.tenor.com/e0ybi2Ry8SkAAAAC/orochimaru-naruto.gif";
     case 22:
-      return "";
+      return "https://media.tenor.com/Kwi3raso90gAAAAC/anime-kabuto-yakushi.gif";
     case 23:
-      return "";
+      return "https://img.wattpad.com/cf85311cef78061883b98e72ccc023d611e7c510/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f787673675551397055767a7162513d3d2d3839353234363438332e313631366263306161633638366562613736333135333937313438352e676966";
     case 24:
-      return "";
+      return "https://giffiles.alphacoders.com/209/209679.gif";
     case 25:
-      return "";
+      return "https://media.tenor.com/hxdxVpRwlqIAAAAC/naruto-orange-chakra.gif";
     case 26:
-      return "";
+      return "https://i.gifer.com/79dC.gif";
     case 27:
-      return "";
+      return "https://media.tenor.com/GRYmBPeLYeYAAAAM/shukaku-naruto.gif";
     case 28:
-      return "";
+      return "https://i.imgur.com/Kp1kag5.gif";
     case 29:
-      return "";
+      return "https://media.tenor.com/UD-MnF7UBZ0AAAAC/tsunade-kick.gif";
     case 30:
-      return "";
+      return "https://64.media.tumblr.com/29b8a8f04d3cb9be9a3b816f6553a181/tumblr_nke519U4xl1sgvo81o1_500.gif";
     case 31:
-      return "";
+      return "https://media2.giphy.com/media/CchzkJJ6UrQmQ/giphy.gif?cid=6c09b952g195nes0ytetmkr2pszhcqzdophvksgj88atkjag&ep=v1_gifs_search&rid=giphy.gif&ct=g";
     case 32:
-      return "";
+      return "https://i.gifer.com/BpGC.gif";
+    case 33:
+      return "https://media.tenor.com/Bl2kGSr_WhoAAAAd/sakon-e-ukon-quarteto-do-som.gif";
+    case 34:
+      return "https://pa1.aminoapps.com/8158/0a265d45d2ece8bcac8308ad58c037bbac8dba4cr1-500-283_hq.gif";
+    case 35:
+      return "https://i.pinimg.com/originals/13/91/48/139148ba4cc6e306ebd56996c797110d.gif";
+    case 36:
+      return "https://qph.cf2.quoracdn.net/main-qimg-512dc16982057bfb6c3fa50e38d6c09f";
+    case 37:
+      return "https://media.tenor.com/G1zF3E97m0cAAAAC/kimimaro.gif";
+    case 38:
+      return "https://static.wikia.nocookie.net/d488fddd-84e0-4682-b172-74a2d4671f91/scale-to-width/370";
+    case 39:
+      return "https://i.makeagif.com/media/4-20-2021/ur_hWJ.gif";
+    case 40:
+      return "https://media1.giphy.com/media/arbHBoiUWUgmc/giphy.gif";
     default:
       return "";
   }
