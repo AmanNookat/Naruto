@@ -3,7 +3,7 @@ import QuizList from "../../components/quiz/QuizList";
 
 const QuizzesPage = () => {
   return (
-    <div>
+    <div className="quizzesPageA">
       <QuizList />
     </div>
   );

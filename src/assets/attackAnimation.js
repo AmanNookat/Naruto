@@ -26,6 +26,44 @@ export const attackAnimation = (id) => {
       return "https://i.pinimg.com/originals/82/f8/49/82f849e657f977fdebe2002f6a6f27df.gif";
     case 13:
       return "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f1702e3-6e68-45e4-95e1-bc652931e681/ddod98j-10c35077-43d7-4702-b14c-96e6a0e22d16.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMTcwMmUzLTZlNjgtNDVlNC05NWUxLWJjNjUyOTMxZTY4MVwvZGRvZDk4ai0xMGMzNTA3Ny00M2Q3LTQ3MDItYjE0Yy05NmU2YTBlMjJkMTYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7nwFjTlZ0M1l7Yo2oqaKJ5VPs1hZLQwWE68LQYlmjYY";
+    case 14:
+      return "https://i.pinimg.com/originals/3f/47/9f/3f479f9248669280cc773a4504ae9fd9.gif";
+    case 15:
+      return "https://qph.cf2.quoracdn.net/main-qimg-0a91b5831251c79f8a33b8b403b7e8e1";
+    case 16:
+      return "https://media.tenor.com/FGcLOxieBtEAAAAC/shino-naruto.gif";
+    case 17:
+      return "https://qph.cf2.quoracdn.net/main-qimg-81a78557375f92a10c29fbaf23a72180";
+    case 18:
+      return "https://qph.cf2.quoracdn.net/main-qimg-5d88b202bba15c683365dfc140f82825";
+    case 19:
+      return "";
+    case 20:
+      return "";
+    case 21:
+      return "";
+    case 22:
+      return "";
+    case 23:
+      return "";
+    case 24:
+      return "";
+    case 25:
+      return "";
+    case 26:
+      return "";
+    case 27:
+      return "";
+    case 28:
+      return "";
+    case 29:
+      return "";
+    case 30:
+      return "";
+    case 31:
+      return "";
+    case 32:
+      return "";
     default:
       return "";
   }
