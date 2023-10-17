@@ -11,20 +11,40 @@ const CardsForBattle = () => {
     dispatch(getCardsForBattle());
   }, []);
 
-
   return (
     <div>
-      <h1>Ваша команда</h1>
-      <div style={{ display: "flex" }}>
+      <h1 style={{ textAlign: "center", fontSize: "20px" }}>Ваша команда</h1>
+      <div
+        style={{
+          display: "flex",
+          padding: "10px",
+          flexDirection: "column",
+          border: "3px solid black",
+          borderRadius: "10px",
+        }}
+      >
         {cardsForBattle.map((card) => (
           <div key={card.id}>
-            <img
-              src={card.image}
-              alt=""
-              width="100"
-              height="100"
-              style={{ objectFit: "cover", borderRadius: "50%" }}
-            />
+            <div
+              style={{
+                width: "100px",
+                height: "100px",
+                margin: "3px",
+                border: "1px solid black",
+                borderRadius: "50%",
+              }}
+            >
+              <img
+                src={card.image}
+                alt=""
+                width="100"
+                height="100"
+                style={{
+                  objectFit: "cover",
+                  borderRadius: "50%",
+                }}
+              />
+            </div>
           </div>
         ))}
       </div>

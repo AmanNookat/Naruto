@@ -7,6 +7,8 @@ import {
   getCardsForBattle,
 } from "../../store/company/companySlice";
 import { NOTIFY_TYPES, notify } from "../../helpers/functions";
+import CardInvet from "../../components/cards/CardInvent/CardInvet";
+import { Button } from "@mui/material";
 
 const BattleMenu = ({ setModal }) => {
   const { oneLevel, cardsForBattle } = useSelector((state) => state.company);
@@ -29,19 +31,30 @@ const BattleMenu = ({ setModal }) => {
   return (
     <>
       {oneLevel && (
-        <>
-          <button
-            onClick={() => {
-              setModal(false);
+        <div style={{ marginRight: "30px" }}>
+          <h1 style={{ textAlign: "center", fontSize: "20px" }}>Враг</h1>
+          <CardInvet card={oneLevel.enemy} />
+          <div
+            style={{
+              marginTop: "20px",
+              display: "flex",
+              justifyContent: "space-around",
             }}
           >
-            Закрыть модалку
-          </button>
-          <p>{oneLevel.enemy.name}</p>
-          <img src={oneLevel.enemy.image} alt="" width="100" height="100" />
-          <p>{oneLevel.enemy.power}</p>
-          <button onClick={goToBattle}>В БОЙ</button>
-        </>
+            <Button
+              onClick={() => {
+                setModal(false);
+              }}
+              variant="contained"
+              color="error"
+            >
+              Вернуться
+            </Button>
+            <Button onClick={goToBattle} variant="contained" color="success">
+              В бой
+            </Button>
+          </div>
+        </div>
       )}
     </>
   );

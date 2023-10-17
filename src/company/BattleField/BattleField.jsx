@@ -2,20 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   attackLogic,
-  clearCardsForBattle,
   enemyAttackLogic,
   getCardsForBattle,
   getPowersForBattle,
 } from "../../store/company/companySlice";
-import {
-  cleanBattleSlots,
-  getOneLevel,
-} from "../../store/company/companyActions";
+import { getOneLevel } from "../../store/company/companyActions";
 import CardInvet from "../../components/cards/CardInvent/CardInvet";
 import { useParams } from "react-router-dom";
 import { getTeamPowers } from "../../helpers/functions";
 import BattleResult from "../BattleResult/BattleResult";
 import AttackModal from "../AttackModal/AttackModal";
+import style from "./BattleField.module.css";
 
 const BattleField = () => {
   const {
@@ -57,12 +54,12 @@ const BattleField = () => {
     }
   }, [oneLevel]);
 
-  useEffect(() => {
-    return () => {
-      //   cleanBattleSlots();
-      //   dispatch(clearCardsForBattle());
-    };
-  }, []);
+  // useEffect(() => {
+  //   return () => {
+  //     //   cleanBattleSlots();
+  //     //   dispatch(clearCardsForBattle());
+  //   };
+  // }, []);
 
   return (
     <>
@@ -80,6 +77,7 @@ const BattleField = () => {
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
+          backgroundColor: "white",
         }}
       >
         <div>

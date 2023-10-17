@@ -53,7 +53,7 @@ const RegistrationForm = () => {
   }
 
   return (
-    <div>
+    <>
       {loading ? (
         <h2>Loading...</h2>
       ) : (
@@ -91,7 +91,7 @@ const RegistrationForm = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

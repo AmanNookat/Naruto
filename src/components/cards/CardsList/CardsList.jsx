@@ -14,7 +14,7 @@ const CardsList = () => {
   return (
     <>
       {loading ? (
-        <h2>Loading...</h2>
+        <h2 style={{ height: "100vh" }}>Loading...</h2>
       ) : (
         <div
           style={{
@@ -26,7 +26,6 @@ const CardsList = () => {
             margin: "50px auto",
           }}
         >
-          {/* для фильтрации, пагинации и т.д. */}
           {cards.map((card) => (
             <CardItem key={card.id} card={card} />
           ))}

@@ -1,28 +1,16 @@
 {
   "users": [
     {
-      "name": "aman",
-      "mail": "aman@gmail.com",
-      "password": "qwerty",
-      "image": "https://pbs.twimg.com/media/EXy_sG5WsAAxw-U.jpg",
-      "level": 1,
-      "inventory": [],
-      "favorites": [],
-      "isAdmin": true,
-      "points": 500,
-      "id": 1
-    },
-    {
-      "name": "aman",
+      "name": "XxxZzzNarutoPro100HokageNinjaProject",
       "mail": "a",
       "password": "a",
-      "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
-      "level": 8,
+      "image": "https://pbs.twimg.com/media/EXy_sG5WsAAxw-U.jpg",
+      "level": 2,
       "inventory": [
         {
           "name": "Наруто Узумаки",
           "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
-          "price": 500,
+          "price": 200,
           "rank": "Генин",
           "power": 20,
           "description": "Наруто с техникой множественного теневого клонирования",
@@ -32,34 +20,378 @@
         {
           "name": "Саске Учиха",
           "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
-          "price": "500",
+          "price": 190,
           "rank": "Генин",
-          "power": 18,
+          "power": 19,
           "description": "Саске на начало первого сезона",
-          "id": 2
+          "id": 2,
+          "likes": []
         },
         {
           "name": "Сакура Харуно",
           "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
           "price": 10,
           "rank": "Генин",
-          "power": 1,
+          "power": 5,
           "description": "Сакура на начало первого сезона",
           "id": 3
         },
         {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 50,
+          "rank": "Чунин",
+          "power": 15,
+          "description": "Просто Ирука",
+          "id": 4,
+          "likes": []
+        },
+        {
           "name": "Какаши Хатаке",
           "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
-          "price": 10000,
+          "price": 500,
           "rank": "Джонин",
           "power": 150,
           "description": "Какаши в первом сезоне",
-          "id": 5
+          "id": 5,
+          "likes": []
+        },
+        {
+          "name": "Забуза Момочи",
+          "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
+          "price": 800,
+          "rank": "Джонин",
+          "power": 80,
+          "description": "Просто Забуза",
+          "id": 6,
+          "likes": []
+        },
+        {
+          "name": "Хаку",
+          "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
+          "price": 850,
+          "rank": "Джонин",
+          "power": 85,
+          "description": "Жаль, что это он",
+          "id": 7,
+          "likes": [],
+          "comments": [],
+          "rating": "4.0"
+        },
+        {
+          "name": "Хирузен Сарутоби",
+          "image": "https://i.redd.it/qjlr7i0oadw91.jpg",
+          "price": 3000,
+          "rank": "Каге",
+          "power": 300,
+          "description": "Жаль деда",
+          "id": 8,
+          "likes": []
+        },
+        {
+          "name": "Гаара",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3298f201-dce9-4e61-821c-437babb8b0fa/d8hmrk-9f9eda80-b6c3-4305-bb68-4015aceee4a2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMyOThmMjAxLWRjZTktNGU2MS04MjFjLTQzN2JhYmI4YjBmYVwvZDhobXJrLTlmOWVkYTgwLWI2YzMtNDMwNS1iYjY4LTQwMTVhY2VlZTRhMi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.AAUVBvbnFTnTtN8o_X3zcjvUp-IMCYwbFT_Bb4Btu0w",
+          "price": 700,
+          "rank": "Чунин",
+          "power": 70,
+          "description": "Гаара без формы Шукаку",
+          "id": 9
+        },
+        {
+          "name": "Канкуро",
+          "image": "https://i.pinimg.com/originals/f9/62/84/f9628488ce726d011ec6c47acdf7e64a.jpg",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "Просто Канкуро",
+          "id": 10
+        },
+        {
+          "name": "Темари",
+          "image": "https://64.media.tumblr.com/db51c7c824507c1079d01c5692f6052a/4d35c6b2e1bf5b83-68/s540x810/f1d033b73895d209d4826f0b31802946d3b4dd2f.png",
+          "price": 450,
+          "rank": "Чунин",
+          "power": 45,
+          "description": "Темари",
+          "id": 11
+        },
+        {
+          "name": "Шикамару Нара",
+          "image": "https://i.pinimg.com/1200x/02/20/e2/0220e2cd7c07e94c16577b1f4db63895.jpg",
+          "price": 150,
+          "rank": "Генин",
+          "power": 15,
+          "description": "Умный челик",
+          "id": 12
+        },
+        {
+          "name": "Чоджи Акимичи",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd3dd763-e32a-4849-b547-1279d3554d27/de0jyzp-4a50200a-945b-43bf-af43-6948ea29a16d.jpg/v1/fill/w_1280,h_1397,q_75,strp/choji_akimichi_by_florsideral_de0jyzp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM5NyIsInBhdGgiOiJcL2ZcL2ZkM2RkNzYzLWUzMmEtNDg0OS1iNTQ3LTEyNzlkMzU1NGQyN1wvZGUwanl6cC00YTUwMjAwYS05NDViLTQzYmYtYWY0My02OTQ4ZWEyOWExNmQuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jpQnEZmehNM5bKSVk3e6t8vZTOo0e9vXoJx06vwJ3y8",
+          "price": 170,
+          "rank": "Генин",
+          "power": 17,
+          "description": "Жирный",
+          "id": 13
+        },
+        {
+          "name": "Ино Яманака",
+          "image": "https://img.wattpad.com/6f51c5ac9f8629dea4d98b7cbfbc63fa378903dd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f724b3058417a7347523874716b773d3d2d3533363133363839362e313531336534393463643937666236363735383537313032313136332e6a7067?s=fit&w=720&h=720",
+          "price": 100,
+          "rank": "Генин",
+          "power": 10,
+          "description": "Свинина\n",
+          "id": 14
+        },
+        {
+          "name": "Киба Инузука",
+          "image": "https://i.pinimg.com/1200x/6b/fc/80/6bfc80cbff628c6e6ccc35aa7e28c409.jpg",
+          "price": 250,
+          "rank": "Генин",
+          "power": 25,
+          "description": "И Акамару",
+          "id": 15
+        },
+        {
+          "name": "Шино Абураме",
+          "image": "https://cdn.donmai.us/original/1c/6a/1c6ae55291881d8821a1dcb4561a8603.jpg",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "Сильный челик",
+          "id": 16
+        },
+        {
+          "name": "Хината Хьюга",
+          "image": "https://cdn.donmai.us/original/6a/fe/6afebb03bae04f14849972b01dc8d2d9.jpg",
+          "price": 250,
+          "rank": "Генин",
+          "power": 25,
+          "description": "Хината",
+          "id": 17
+        },
+        {
+          "name": "Рок Ли",
+          "image": "https://static.zerochan.net/Rock.Lee.full.3162595.jpg",
+          "price": 690,
+          "rank": "Чунин",
+          "power": 69,
+          "description": "Монстр",
+          "id": 18
+        },
+        {
+          "name": "Неджи Хьюга",
+          "image": "https://m.media-amazon.com/images/I/71VQXxnoNSL._AC_UF894,1000_QL80_.jpg",
+          "price": 650,
+          "rank": "Чунин",
+          "power": 65,
+          "description": "Мощный",
+          "id": 19
+        },
+        {
+          "name": "Тентен",
+          "image": "https://i.quotev.com/xncag3foaaaa.jpg",
+          "price": 300,
+          "rank": "Генин",
+          "power": 30,
+          "description": "Хз",
+          "id": 20
+        },
+        {
+          "name": "Орочимару",
+          "image": "https://i.pinimg.com/1200x/19/6f/cb/196fcb33f2382dac2ad9dab3ece10bcf.jpg",
+          "price": 2900,
+          "rank": "Каге",
+          "power": 290,
+          "description": "Скользкий тип",
+          "id": 21
+        },
+        {
+          "name": "Кабуто Якуши",
+          "image": "https://i.pinimg.com/550x/21/5b/eb/215bebbd7064f6c65aa8ff8ee583f34b.jpg",
+          "price": 850,
+          "rank": "Джонин",
+          "power": 85,
+          "description": "\nКрыса",
+          "id": 22
+        },
+        {
+          "name": "Досу",
+          "image": "https://i.pinimg.com/564x/f1/ef/e3/f1efe34e4ce142033a2064a1fa42ad2e.jpg",
+          "price": 300,
+          "rank": "Генин",
+          "power": 30,
+          "description": "Долбаеб",
+          "id": 23
+        },
+        {
+          "name": "Джирайя",
+          "image": "https://s1.zerochan.net/Jiraiya.600.2958636.jpg",
+          "price": 2950,
+          "rank": "Каге",
+          "power": 295,
+          "description": "Жаль старика",
+          "id": 24
+        },
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://steamuserimages-a.akamaihd.net/ugc/1624101032324031328/995D391BEED9859962B8B124596F6FD0BBD92701/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false",
+          "price": 800,
+          "rank": "Чунин",
+          "power": 80,
+          "description": "С красной чакрой",
+          "id": 25
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://a-static.besthdwallpaper.com/sasuke-uchiha-chidori-blade-wallpaper-1920x1440-69037_25.jpg",
+          "price": 690,
+          "rank": "Чунин",
+          "power": 69,
+          "description": "С чидори",
+          "id": 26
+        },
+        {
+          "name": "Шукаку",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2e84cf2-973e-471a-bf7b-199f3ed13ac7/dezy8yh-b2adba42-11f6-47f8-97b7-b02fd3674251.jpg/v1/fill/w_1280,h_1600,q_75,strp/shukaku_digital_painting_by_pempken_dezy8yh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcL2IyZTg0Y2YyLTk3M2UtNDcxYS1iZjdiLTE5OWYzZWQxM2FjN1wvZGV6eTh5aC1iMmFkYmE0Mi0xMWY2LTQ3ZjgtOTdiNy1iMDJmZDM2NzQyNTEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.TIhzlGt7kow_stIjsgnG3lsaWeBjACNHGOXEzxVJIXU",
+          "price": 3500,
+          "rank": "Каге",
+          "power": 350,
+          "description": "Енот",
+          "id": 27
+        },
+        {
+          "name": "Гамабунта",
+          "image": "https://cdnb.artstation.com/p/assets/images/images/011/961/671/large/shawn-lim-gamabunta.jpg?1532337554",
+          "price": 2000,
+          "rank": "Джонин",
+          "power": 200,
+          "description": "Жаба",
+          "id": 28
+        },
+        {
+          "name": "Цунаде Сенджу",
+          "image": "https://static.zerochan.net/Tsunade.full.2364148.jpg",
+          "price": 2800,
+          "rank": "Каге",
+          "power": 280,
+          "description": "Ля какая",
+          "id": 29
+        },
+        {
+          "name": "Майто Гай",
+          "image": "https://i.pinimg.com/564x/de/f9/c2/def9c29ad3998ff5388518d28b435e96.jpg",
+          "price": 1500,
+          "rank": "Джонин",
+          "power": 150,
+          "description": "Красавчик",
+          "id": 30
+        },
+        {
+          "name": "Итачи Учиха",
+          "image": "https://kartinki.pics/uploads/posts/2021-07/1625690189_58-kartinkin-com-p-itachi-uchikha-art-krasivii-art-krasivo-65.jpg",
+          "price": 10000,
+          "rank": "Ооцуцуки",
+          "power": 999,
+          "description": "Бог",
+          "id": 31
+        },
+        {
+          "name": "Кисаме Хошигаки",
+          "image": "https://i.pinimg.com/originals/ab/fc/49/abfc49ceafb2d11778b5305ec26e5f53.jpg",
+          "price": 4000,
+          "rank": "Каге",
+          "power": 400,
+          "description": "Безхвостый биджу",
+          "id": 32
+        },
+        {
+          "name": "Сакон и Укон",
+          "image": "https://pbs.twimg.com/media/Dy2ca3sUcAAXp_E.jpg",
+          "price": 500,
+          "rank": "Чунин",
+          "power": 50,
+          "description": "Близнецы",
+          "id": 33
+        },
+        {
+          "name": "Кидомару",
+          "image": "https://marcoleonardi1991.files.wordpress.com/2007/10/1149591936.jpg",
+          "price": 510,
+          "rank": "Чунин",
+          "power": 51,
+          "description": "Паулек чаук",
+          "id": 34
+        },
+        {
+          "name": "Таюйя",
+          "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ff66b793-e284-4afb-b420-eca54f12138e/dcnzwlg-ece6927a-fc09-4955-b957-3f9e3869d0b8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZmNjZiNzkzLWUyODQtNGFmYi1iNDIwLWVjYTU0ZjEyMTM4ZVwvZGNuendsZy1lY2U2OTI3YS1mYzA5LTQ5NTUtYjk1Ny0zZjllMzg2OWQwYjguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fFw90e7Ztq5Gr7t8LEfy_InhLHQlhsAJRwi68VWwei0",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "Хз",
+          "id": 35
+        },
+        {
+          "name": "Джиробо",
+          "image": "https://i.pinimg.com/736x/b0/21/ec/b021ec1e60d4555eda7eaa2b53d68c71.jpg",
+          "price": 400,
+          "rank": "Чунин",
+          "power": 40,
+          "description": "ахахахахах",
+          "id": 36
+        },
+        {
+          "name": "Кимимаро",
+          "image": "https://i.pinimg.com/originals/ee/9c/60/ee9c604c6234ab31ba457a4c490d6481.jpg",
+          "price": 1200,
+          "rank": "Джонин",
+          "power": 120,
+          "description": "Жесткий\n",
+          "id": 37
+        },
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://media.tenor.com/KHabwGNQI1oAAAAd/naruto.gif",
+          "price": 1400,
+          "rank": "Джонин",
+          "power": 140,
+          "description": " хвост",
+          "id": 38
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.pinimg.com/originals/8a/a6/ad/8aa6adc1478c0b4d9656e8686d71b3c4.gif",
+          "price": 1450,
+          "rank": "Джонин",
+          "power": 145,
+          "description": "Проклятая печать",
+          "id": 39
+        },
+        {
+          "name": "Бог",
+          "image": "https://media.tenor.com/C36aJZNAzgMAAAAC/teuchi-%D1%82%D0%B5%D1%83%D1%87%D0%B8.gif",
+          "price": 100000,
+          "rank": "Ооцуцуки",
+          "power": 0,
+          "description": "1",
+          "id": 40
         }
       ],
       "favorites": [],
       "isAdmin": true,
-      "points": 4999914497,
+      "points": 999851740,
+      "id": 1
+    },
+    {
+      "name": "aman",
+      "mail": "a",
+      "password": "a",
+      "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/18-hatake-kakashi-nguyen-hai.jpg",
+      "level": 7,
+      "inventory": [],
+      "favorites": [],
+      "isAdmin": true,
+      "points": 4999914462,
       "id": 2
     },
     {
@@ -68,235 +400,8 @@
       "password": "a",
       "image": "https://staticg.sportskeeda.com/editor/2022/04/2014c-16496008587085-1920.jpg",
       "level": 1,
-      "inventory": [
-        {
-          "name": "Наруто Узумаки",
-          "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
-          "price": 500,
-          "rank": "Генин",
-          "power": 20,
-          "description": "Наруто с техникой множественного теневого клонирования",
-          "id": 1,
-          "likes": [
-            {
-              "id": 1697446318110,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Саске Учиха",
-          "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
-          "price": "500",
-          "rank": "Генин",
-          "power": 18,
-          "description": "Саске на начало первого сезона",
-          "id": 2,
-          "likes": [
-            {
-              "id": 1697446324074,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Сакура Харуно",
-          "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
-          "price": 10,
-          "rank": "Генин",
-          "power": 1,
-          "description": "Сакура на начало первого сезона",
-          "id": 3,
-          "likes": [
-            {
-              "id": 1697446331332,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Ирука Умино",
-          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
-          "price": 50,
-          "rank": "Чунин",
-          "power": 10,
-          "description": "Просто Ирука",
-          "id": 4,
-          "likes": [
-            {
-              "id": 1697446337660,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Какаши Хатаке",
-          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
-          "price": 10000,
-          "rank": "Джонин",
-          "power": 150,
-          "description": "Какаши в первом сезоне",
-          "id": 5,
-          "likes": [
-            {
-              "id": 1697446342553,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Забуза Момочи",
-          "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
-          "price": 5000,
-          "rank": "Джонин",
-          "power": 100,
-          "description": "Просто Забуза",
-          "id": 6,
-          "likes": [
-            {
-              "id": 1697446348487,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Хаку",
-          "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
-          "price": 5500,
-          "rank": "Джонин",
-          "power": 105,
-          "description": "Жаль, что это он",
-          "id": 7,
-          "likes": [
-            {
-              "id": 1697446354205,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Хирузен Сарутоби",
-          "image": "https://i.redd.it/qjlr7i0oadw91.jpg",
-          "price": 30000,
-          "rank": "Каге",
-          "power": "300",
-          "description": "Жаль деда",
-          "id": 8,
-          "likes": [
-            {
-              "id": 1697446361713,
-              "user": "atai"
-            }
-          ]
-        }
-      ],
-      "favorites": [
-        {
-          "name": "Саске Учиха",
-          "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
-          "price": "500",
-          "rank": "Генин",
-          "power": 18,
-          "description": "Саске на начало первого сезона",
-          "id": 2,
-          "likes": [
-            {
-              "id": 1697446324074,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Сакура Харуно",
-          "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
-          "price": 10,
-          "rank": "Генин",
-          "power": 1,
-          "description": "Сакура на начало первого сезона",
-          "id": 3,
-          "likes": [
-            {
-              "id": 1697446331332,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Какаши Хатаке",
-          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
-          "price": 10000,
-          "rank": "Джонин",
-          "power": 150,
-          "description": "Какаши в первом сезоне",
-          "id": 5,
-          "likes": [
-            {
-              "id": 1697446342553,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Забуза Момочи",
-          "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
-          "price": 5000,
-          "rank": "Джонин",
-          "power": 100,
-          "description": "Просто Забуза",
-          "id": 6,
-          "likes": [
-            {
-              "id": 1697446348487,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Хаку",
-          "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
-          "price": 5500,
-          "rank": "Джонин",
-          "power": 105,
-          "description": "Жаль, что это он",
-          "id": 7,
-          "likes": [
-            {
-              "id": 1697446354205,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Хирузен Сарутоби",
-          "image": "https://i.redd.it/qjlr7i0oadw91.jpg",
-          "price": 30000,
-          "rank": "Каге",
-          "power": "300",
-          "description": "Жаль деда",
-          "id": 8,
-          "likes": [
-            {
-              "id": 1697446361713,
-              "user": "atai"
-            }
-          ]
-        },
-        {
-          "name": "Ирука Умино",
-          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
-          "price": 50,
-          "rank": "Чунин",
-          "power": 10,
-          "description": "Просто Ирука",
-          "id": 4,
-          "likes": [
-            {
-              "id": 1697446337660,
-              "user": "atai"
-            }
-          ]
-        }
-      ],
+      "inventory": [],
+      "favorites": [],
       "isAdmin": true,
       "points": 1247138445588,
       "id": 3
@@ -306,33 +411,29 @@
     {
       "name": "Наруто Узумаки",
       "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
-      "price": 500,
+      "price": 200,
       "rank": "Генин",
       "power": 20,
       "description": "Наруто с техникой множественного теневого клонирования",
       "id": 1,
-      "likes": [
-        {
-          "id": 1697446318110,
-          "user": "atai"
-        }
-      ]
+      "likes": []
     },
     {
       "name": "Саске Учиха",
       "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
-      "price": "500",
+      "price": 190,
       "rank": "Генин",
-      "power": 18,
+      "power": 19,
       "description": "Саске на начало первого сезона",
-      "id": 2
+      "id": 2,
+      "likes": []
     },
     {
       "name": "Сакура Харуно",
       "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
       "price": 10,
       "rank": "Генин",
-      "power": 1,
+      "power": 5,
       "description": "Сакура на начало первого сезона",
       "id": 3
     },
@@ -341,80 +442,57 @@
       "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
       "price": 50,
       "rank": "Чунин",
-      "power": 10,
+      "power": 15,
       "description": "Просто Ирука",
       "id": 4,
-      "likes": [
-        {
-          "id": 1697446337660,
-          "user": "atai"
-        }
-      ]
+      "likes": []
     },
     {
       "name": "Какаши Хатаке",
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
-      "price": 10000,
+      "price": 500,
       "rank": "Джонин",
       "power": 150,
       "description": "Какаши в первом сезоне",
       "id": 5,
-      "likes": [
-        {
-          "id": 1697446342553,
-          "user": "atai"
-        }
-      ]
+      "likes": []
     },
     {
       "name": "Забуза Момочи",
       "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
-      "price": 5000,
+      "price": 800,
       "rank": "Джонин",
-      "power": 100,
+      "power": 80,
       "description": "Просто Забуза",
       "id": 6,
-      "likes": [
-        {
-          "id": 1697446348487,
-          "user": "atai"
-        }
-      ]
+      "likes": []
     },
     {
       "name": "Хаку",
       "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
-      "price": 5500,
+      "price": 850,
       "rank": "Джонин",
-      "power": 105,
+      "power": 85,
       "description": "Жаль, что это он",
       "id": 7,
-      "likes": [
-        {
-          "id": 1697446354205,
-          "user": "atai"
-        }
-      ]
+      "likes": [],
+      "comments": [],
+      "rating": "4.0"
     },
     {
       "name": "Хирузен Сарутоби",
       "image": "https://i.redd.it/qjlr7i0oadw91.jpg",
-      "price": 30000,
+      "price": 3000,
       "rank": "Каге",
-      "power": "300",
+      "power": 300,
       "description": "Жаль деда",
       "id": 8,
-      "likes": [
-        {
-          "id": 1697446361713,
-          "user": "atai"
-        }
-      ]
+      "likes": []
     },
     {
       "name": "Гаара",
       "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3298f201-dce9-4e61-821c-437babb8b0fa/d8hmrk-9f9eda80-b6c3-4305-bb68-4015aceee4a2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMyOThmMjAxLWRjZTktNGU2MS04MjFjLTQzN2JhYmI4YjBmYVwvZDhobXJrLTlmOWVkYTgwLWI2YzMtNDMwNS1iYjY4LTQwMTVhY2VlZTRhMi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.AAUVBvbnFTnTtN8o_X3zcjvUp-IMCYwbFT_Bb4Btu0w",
-      "price": 2000,
+      "price": 700,
       "rank": "Чунин",
       "power": 70,
       "description": "Гаара без формы Шукаку",
@@ -423,7 +501,7 @@
     {
       "name": "Канкуро",
       "image": "https://i.pinimg.com/originals/f9/62/84/f9628488ce726d011ec6c47acdf7e64a.jpg",
-      "price": 900,
+      "price": 400,
       "rank": "Чунин",
       "power": 40,
       "description": "Просто Канкуро",
@@ -432,52 +510,52 @@
     {
       "name": "Темари",
       "image": "https://64.media.tumblr.com/db51c7c824507c1079d01c5692f6052a/4d35c6b2e1bf5b83-68/s540x810/f1d033b73895d209d4826f0b31802946d3b4dd2f.png",
-      "price": 1000,
+      "price": 450,
       "rank": "Чунин",
-      "power": 50,
+      "power": 45,
       "description": "Темари",
       "id": 11
     },
     {
       "name": "Шикамару Нара",
       "image": "https://i.pinimg.com/1200x/02/20/e2/0220e2cd7c07e94c16577b1f4db63895.jpg",
-      "price": 500,
+      "price": 150,
       "rank": "Генин",
-      "power": 20,
+      "power": 15,
       "description": "Умный челик",
       "id": 12
     },
     {
       "name": "Чоджи Акимичи",
       "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd3dd763-e32a-4849-b547-1279d3554d27/de0jyzp-4a50200a-945b-43bf-af43-6948ea29a16d.jpg/v1/fill/w_1280,h_1397,q_75,strp/choji_akimichi_by_florsideral_de0jyzp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM5NyIsInBhdGgiOiJcL2ZcL2ZkM2RkNzYzLWUzMmEtNDg0OS1iNTQ3LTEyNzlkMzU1NGQyN1wvZGUwanl6cC00YTUwMjAwYS05NDViLTQzYmYtYWY0My02OTQ4ZWEyOWExNmQuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jpQnEZmehNM5bKSVk3e6t8vZTOo0e9vXoJx06vwJ3y8",
-      "price": 500,
+      "price": 170,
       "rank": "Генин",
-      "power": 20,
+      "power": 17,
       "description": "Жирный",
       "id": 13
     },
     {
       "name": "Ино Яманака",
       "image": "https://img.wattpad.com/6f51c5ac9f8629dea4d98b7cbfbc63fa378903dd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f724b3058417a7347523874716b773d3d2d3533363133363839362e313531336534393463643937666236363735383537313032313136332e6a7067?s=fit&w=720&h=720",
-      "price": 400,
+      "price": 100,
       "rank": "Генин",
-      "power": 20,
+      "power": 10,
       "description": "Свинина\n",
       "id": 14
     },
     {
       "name": "Киба Инузука",
       "image": "https://i.pinimg.com/1200x/6b/fc/80/6bfc80cbff628c6e6ccc35aa7e28c409.jpg",
-      "price": 600,
+      "price": 250,
       "rank": "Генин",
-      "power": 30,
+      "power": 25,
       "description": "И Акамару",
       "id": 15
     },
     {
       "name": "Шино Абураме",
       "image": "https://cdn.donmai.us/original/1c/6a/1c6ae55291881d8821a1dcb4561a8603.jpg",
-      "price": 900,
+      "price": 400,
       "rank": "Чунин",
       "power": 40,
       "description": "Сильный челик",
@@ -486,25 +564,25 @@
     {
       "name": "Хината Хьюга",
       "image": "https://cdn.donmai.us/original/6a/fe/6afebb03bae04f14849972b01dc8d2d9.jpg",
-      "price": 600,
+      "price": 250,
       "rank": "Генин",
-      "power": 30,
+      "power": 25,
       "description": "Хината",
       "id": 17
     },
     {
       "name": "Рок Ли",
       "image": "https://static.zerochan.net/Rock.Lee.full.3162595.jpg",
-      "price": 1900,
+      "price": 690,
       "rank": "Чунин",
-      "power": "69",
+      "power": 69,
       "description": "Монстр",
       "id": 18
     },
     {
       "name": "Неджи Хьюга",
       "image": "https://m.media-amazon.com/images/I/71VQXxnoNSL._AC_UF894,1000_QL80_.jpg",
-      "price": 1800,
+      "price": 650,
       "rank": "Чунин",
       "power": 65,
       "description": "Мощный",
@@ -513,189 +591,189 @@
     {
       "name": "Тентен",
       "image": "https://i.quotev.com/xncag3foaaaa.jpg",
-      "price": 600,
+      "price": 300,
       "rank": "Генин",
-      "power": 35,
+      "power": 30,
       "description": "Хз",
       "id": 20
     },
     {
       "name": "Орочимару",
       "image": "https://i.pinimg.com/1200x/19/6f/cb/196fcb33f2382dac2ad9dab3ece10bcf.jpg",
-      "price": "27000",
+      "price": 2900,
       "rank": "Каге",
-      "power": "270",
+      "power": 290,
       "description": "Скользкий тип",
       "id": 21
     },
     {
       "name": "Кабуто Якуши",
       "image": "https://i.pinimg.com/550x/21/5b/eb/215bebbd7064f6c65aa8ff8ee583f34b.jpg",
-      "price": "9000",
+      "price": 850,
       "rank": "Джонин",
-      "power": "140",
+      "power": 85,
       "description": "\nКрыса",
       "id": 22
     },
     {
       "name": "Досу",
       "image": "https://i.pinimg.com/564x/f1/ef/e3/f1efe34e4ce142033a2064a1fa42ad2e.jpg",
-      "price": 650,
+      "price": 300,
       "rank": "Генин",
-      "power": 25,
+      "power": 30,
       "description": "Долбаеб",
       "id": 23
     },
     {
       "name": "Джирайя",
       "image": "https://s1.zerochan.net/Jiraiya.600.2958636.jpg",
-      "price": 28000,
+      "price": 2950,
       "rank": "Каге",
-      "power": 280,
+      "power": 295,
       "description": "Жаль старика",
       "id": 24
     },
     {
       "name": "Наруто Узумаки",
       "image": "https://steamuserimages-a.akamaihd.net/ugc/1624101032324031328/995D391BEED9859962B8B124596F6FD0BBD92701/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false",
-      "price": 1,
+      "price": 800,
       "rank": "Чунин",
-      "power": 1,
+      "power": 80,
       "description": "С красной чакрой",
       "id": 25
     },
     {
       "name": "Саске Учиха",
       "image": "https://a-static.besthdwallpaper.com/sasuke-uchiha-chidori-blade-wallpaper-1920x1440-69037_25.jpg",
-      "price": 1,
+      "price": 690,
       "rank": "Чунин",
-      "power": 1,
+      "power": 69,
       "description": "С чидори",
       "id": 26
     },
     {
       "name": "Шукаку",
       "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2e84cf2-973e-471a-bf7b-199f3ed13ac7/dezy8yh-b2adba42-11f6-47f8-97b7-b02fd3674251.jpg/v1/fill/w_1280,h_1600,q_75,strp/shukaku_digital_painting_by_pempken_dezy8yh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcL2IyZTg0Y2YyLTk3M2UtNDcxYS1iZjdiLTE5OWYzZWQxM2FjN1wvZGV6eTh5aC1iMmFkYmE0Mi0xMWY2LTQ3ZjgtOTdiNy1iMDJmZDM2NzQyNTEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.TIhzlGt7kow_stIjsgnG3lsaWeBjACNHGOXEzxVJIXU",
-      "price": 1,
+      "price": 3500,
       "rank": "Каге",
-      "power": 1,
+      "power": 350,
       "description": "Енот",
       "id": 27
     },
     {
       "name": "Гамабунта",
       "image": "https://cdnb.artstation.com/p/assets/images/images/011/961/671/large/shawn-lim-gamabunta.jpg?1532337554",
-      "price": 1,
+      "price": 2000,
       "rank": "Джонин",
-      "power": 1,
+      "power": 200,
       "description": "Жаба",
       "id": 28
     },
     {
       "name": "Цунаде Сенджу",
       "image": "https://static.zerochan.net/Tsunade.full.2364148.jpg",
-      "price": 1,
+      "price": 2800,
       "rank": "Каге",
-      "power": 1,
+      "power": 280,
       "description": "Ля какая",
       "id": 29
     },
     {
       "name": "Майто Гай",
       "image": "https://i.pinimg.com/564x/de/f9/c2/def9c29ad3998ff5388518d28b435e96.jpg",
-      "price": 1,
+      "price": 1500,
       "rank": "Джонин",
-      "power": 1,
+      "power": 150,
       "description": "Красавчик",
       "id": 30
     },
     {
       "name": "Итачи Учиха",
       "image": "https://kartinki.pics/uploads/posts/2021-07/1625690189_58-kartinkin-com-p-itachi-uchikha-art-krasivii-art-krasivo-65.jpg",
-      "price": 1,
+      "price": 10000,
       "rank": "Ооцуцуки",
-      "power": 1,
+      "power": 999,
       "description": "Бог",
       "id": 31
     },
     {
       "name": "Кисаме Хошигаки",
       "image": "https://i.pinimg.com/originals/ab/fc/49/abfc49ceafb2d11778b5305ec26e5f53.jpg",
-      "price": 1,
+      "price": 4000,
       "rank": "Каге",
-      "power": 1,
+      "power": 400,
       "description": "Безхвостый биджу",
       "id": 32
     },
     {
       "name": "Сакон и Укон",
       "image": "https://pbs.twimg.com/media/Dy2ca3sUcAAXp_E.jpg",
-      "price": 1,
+      "price": 500,
       "rank": "Чунин",
-      "power": 1,
+      "power": 50,
       "description": "Близнецы",
       "id": 33
     },
     {
       "name": "Кидомару",
       "image": "https://marcoleonardi1991.files.wordpress.com/2007/10/1149591936.jpg",
-      "price": 1,
+      "price": 510,
       "rank": "Чунин",
-      "power": 1,
+      "power": 51,
       "description": "Паулек чаук",
       "id": 34
     },
     {
       "name": "Таюйя",
       "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ff66b793-e284-4afb-b420-eca54f12138e/dcnzwlg-ece6927a-fc09-4955-b957-3f9e3869d0b8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZmNjZiNzkzLWUyODQtNGFmYi1iNDIwLWVjYTU0ZjEyMTM4ZVwvZGNuendsZy1lY2U2OTI3YS1mYzA5LTQ5NTUtYjk1Ny0zZjllMzg2OWQwYjguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fFw90e7Ztq5Gr7t8LEfy_InhLHQlhsAJRwi68VWwei0",
-      "price": 1,
+      "price": 400,
       "rank": "Чунин",
-      "power": 1,
+      "power": 40,
       "description": "Хз",
       "id": 35
     },
     {
       "name": "Джиробо",
       "image": "https://i.pinimg.com/736x/b0/21/ec/b021ec1e60d4555eda7eaa2b53d68c71.jpg",
-      "price": 1,
+      "price": 400,
       "rank": "Чунин",
-      "power": 1,
+      "power": 40,
       "description": "ахахахахах",
       "id": 36
     },
     {
       "name": "Кимимаро",
       "image": "https://i.pinimg.com/originals/ee/9c/60/ee9c604c6234ab31ba457a4c490d6481.jpg",
-      "price": 1,
+      "price": 1200,
       "rank": "Джонин",
-      "power": 1,
+      "power": 120,
       "description": "Жесткий\n",
       "id": 37
     },
     {
       "name": "Наруто Узумаки",
       "image": "https://media.tenor.com/KHabwGNQI1oAAAAd/naruto.gif",
-      "price": 1,
+      "price": 1400,
       "rank": "Джонин",
-      "power": 1,
+      "power": 140,
       "description": " хвост",
       "id": 38
     },
     {
       "name": "Саске Учиха",
       "image": "https://i.pinimg.com/originals/8a/a6/ad/8aa6adc1478c0b4d9656e8686d71b3c4.gif",
-      "price": 1,
+      "price": 1450,
       "rank": "Джонин",
-      "power": 1,
+      "power": 145,
       "description": "Проклятая печать",
       "id": 39
     },
     {
       "name": "Бог",
       "image": "https://media.tenor.com/C36aJZNAzgMAAAAC/teuchi-%D1%82%D0%B5%D1%83%D1%87%D0%B8.gif",
-      "price": 1,
+      "price": 100000,
       "rank": "Ооцуцуки",
-      "power": 1,
+      "power": 0,
       "description": "1",
       "id": 40
     }
@@ -708,7 +786,12 @@
       "questions": [
         {
           "title": "В каком году вышла манга 'Наруто'?",
-          "variants": ["1999", "1998", "1997", "1996"],
+          "variants": [
+            "1999",
+            "1998",
+            "1997",
+            "1996"
+          ],
           "correct": 0
         }
       ],
@@ -720,102 +803,162 @@
       "questions": [
         {
           "title": "Аниме 'Наруто' вышло в эфир в ноябре 2002 года",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Изначально 'Наруто' должен был быть историей про поиск ингредиентов для рамена",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "Джирайя, Цунаде и Орочимару - отсылка на классическую японскую литературу",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "Стиль битвы клана Хьюга основан на реальном стиле единоборств",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "Настоящее имя джинчурики 8-хвостого - Би",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Сакура и Паккун используют один и тот же шампунь",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "Хатаке Сакумо был убит шиноби деревни Песка",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Шимура Данзо был Хокаге",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Кагуя была женой императора Тендзи",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Битва за мост Канаби произошла на 3 Мировой войне шиноби",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "Майто Дай умер генином",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "Рок Ли был парнем Сакуры",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Джирайя и Орочимару - реинкарнации Ашуры и Индры",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "За время действия сюжета умерло больше 150ти персонажей",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "В общей сложности в аниме 'Наруто' 700 серий",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Кагуя - представитель древнейшего клана Конохи",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "План Мадары был внушен ему Черным Зецу",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         },
         {
           "title": "Все хвостатые основаны на мифических животных",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Саске был назван в честь своего прадеда",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 1
         },
         {
           "title": "Хатаке - это клан",
-          "variants": ["ПРАВДА", "ЛОЖЬ"],
+          "variants": [
+            "ПРАВДА",
+            "ЛОЖЬ"
+          ],
           "correct": 0
         }
       ],
@@ -827,67 +970,132 @@
       "questions": [
         {
           "title": "Стихия огня",
-          "variants": ["Футон", "Катон", "Райтон", "Готон"],
+          "variants": [
+            "Футон",
+            "Катон",
+            "Райтон",
+            "Готон"
+          ],
           "correct": 1
         },
         {
           "title": "Стихия воды",
-          "variants": ["Интон", "Суитон", "Мизутон", "Киритон"],
+          "variants": [
+            "Интон",
+            "Суитон",
+            "Мизутон",
+            "Киритон"
+          ],
           "correct": 1
         },
         {
           "title": "Стихия земли",
-          "variants": ["Дотон", "Шотон", "Такетон", "Даратон"],
+          "variants": [
+            "Дотон",
+            "Шотон",
+            "Такетон",
+            "Даратон"
+          ],
           "correct": 0
         },
         {
           "title": "Стихия молнии",
-          "variants": ["Райтон", "Инадзутон", "Киритон", "Дзинтон"],
+          "variants": [
+            "Райтон",
+            "Инадзутон",
+            "Киритон",
+            "Дзинтон"
+          ],
           "correct": 0
         },
         {
           "title": "Стихия ветра",
-          "variants": ["Фуутон", "Макитон", "Футон", "Хакатон"],
+          "variants": [
+            "Фуутон",
+            "Макитон",
+            "Футон",
+            "Хакатон"
+          ],
           "correct": 2
         },
         {
           "title": "Стихия дерева",
-          "variants": ["Хашитон", "Ханатон", "Рокутон", "Мокутон"],
+          "variants": [
+            "Хашитон",
+            "Ханатон",
+            "Рокутон",
+            "Мокутон"
+          ],
           "correct": 3
         },
         {
           "title": "Стихия льда",
-          "variants": ["Интон", "Хакутон", "Хьётон", "Юкитон"],
+          "variants": [
+            "Интон",
+            "Хакутон",
+            "Хьётон",
+            "Юкитон"
+          ],
           "correct": 2
         },
         {
           "title": "Стихия кипения",
-          "variants": ["Футтон", "Фуутон", "Ширатон", "Кацутон"],
+          "variants": [
+            "Футтон",
+            "Фуутон",
+            "Ширатон",
+            "Кацутон"
+          ],
           "correct": 0
         },
         {
           "title": "Стихия лавы",
-          "variants": ["Каратон", "Магутон", "Мератон", "Йотон"],
+          "variants": [
+            "Каратон",
+            "Магутон",
+            "Мератон",
+            "Йотон"
+          ],
           "correct": 3
         },
         {
           "title": "Стихия шторма",
-          "variants": ["Хелутон", "Кайтон", "Куцутон", "Рантон"],
+          "variants": [
+            "Хелутон",
+            "Кайтон",
+            "Куцутон",
+            "Рантон"
+          ],
           "correct": 3
         },
         {
           "title": "Стихия пыли",
-          "variants": ["Джинтон", "Хутон", "Шатон", "Уцутон"],
+          "variants": [
+            "Джинтон",
+            "Хутон",
+            "Шатон",
+            "Уцутон"
+          ],
           "correct": 0
         },
         {
           "title": "Стихия взрыва",
-          "variants": ["Бакутон", "Кацутон", "Шаттон", "Татон"],
+          "variants": [
+            "Бакутон",
+            "Кацутон",
+            "Шаттон",
+            "Татон"
+          ],
           "correct": 0
         },
         {
           "title": "Стихия жара",
-          "variants": ["Шакутон", "Хайтон", "Мератон", "Акатон"],
+          "variants": [
+            "Шакутон",
+            "Хайтон",
+            "Мератон",
+            "Акатон"
+          ],
           "correct": 0
         }
       ],
@@ -1529,6 +1737,15 @@
         "rank": "Джонин"
       },
       "id": 7
+    },
+    {
+      "enemy": {
+        "name": "Итачи Учиха",
+        "image": "https://i.redd.it/kid-sasuke-curse-mark-2-vs-rampage-obito-v0-cz0vn7yj6sdb1.jpg?width=850&format=pjpg&auto=webp&s=6d486276006eeee39e0ad928e943cec1cf52b6a5",
+        "power": 10000000,
+        "rank": "Ооцуцуки"
+      },
+      "id": 8
     }
   ]
 }
