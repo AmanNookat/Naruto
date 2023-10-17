@@ -7,9 +7,7 @@ const RegisterPage = () => {
   return (
     <div className="register">
       <img src={registerBack} alt="" />
-      <div className="regFormMain">
-        <RegistrationForm />
-      </div>
+      <RegistrationForm />
     </div>
   );
 };

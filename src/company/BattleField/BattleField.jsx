@@ -2,20 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   attackLogic,
-  clearCardsForBattle,
   enemyAttackLogic,
   getCardsForBattle,
   getPowersForBattle,
 } from "../../store/company/companySlice";
-import {
-  cleanBattleSlots,
-  getOneLevel,
-} from "../../store/company/companyActions";
+import { getOneLevel } from "../../store/company/companyActions";
 import CardInvet from "../../components/cards/CardInvent/CardInvet";
 import { useParams } from "react-router-dom";
 import { getTeamPowers } from "../../helpers/functions";
 import BattleResult from "../BattleResult/BattleResult";
 import AttackModal from "../AttackModal/AttackModal";
+import style from "./BattleField.module.css";
 
 import "./BattleField.css";
 
@@ -59,12 +56,12 @@ const BattleField = () => {
     }
   }, [oneLevel]);
 
-  useEffect(() => {
-    return () => {
-      //   cleanBattleSlots();
-      //   dispatch(clearCardsForBattle());
-    };
-  }, []);
+  // useEffect(() => {
+  //   return () => {
+  //     //   cleanBattleSlots();
+  //     //   dispatch(clearCardsForBattle());
+  //   };
+  // }, []);
 
   return (
     <div className="battle--field">
@@ -82,6 +79,7 @@ const BattleField = () => {
       <div className="battle--field__main">
         <h1 className="enemy--h1">HP/Power: {enemyPower}</h1>
         <div className="enemy--card">
+
           {oneLevel && (
             <>
               <CardInvet card={oneLevel.enemy} />

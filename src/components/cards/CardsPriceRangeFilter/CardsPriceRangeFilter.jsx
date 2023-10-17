@@ -27,6 +27,7 @@ const CardsPriceRangeFilter = () => {
       <input
         type="number"
         placeholder="Минимальная цена"
+        style={{ width: "20%" }}
         onChange={(e) =>
           setPriceRangeVal({ ...priceRangeVal, minPrice: +e.target.value })
         }
@@ -35,6 +36,7 @@ const CardsPriceRangeFilter = () => {
       <span>--</span>
       <input
         type="number"
+        style={{ width: "20%" }}
         placeholder="Максимальная цена"
         onChange={(e) =>
           setPriceRangeVal({ ...priceRangeVal, maxPrice: +e.target.value })

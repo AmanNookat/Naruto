@@ -16,7 +16,7 @@ const BattleResult = ({ resultModal, cardsForBattle }) => {
   }, [resultModal]);
 
   return (
-    <div>
+    <div style={{ backgroundColor: "white" }}>
       {resultModal && (
         <>
           {resultModal === 1 ? (

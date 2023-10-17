@@ -3,6 +3,8 @@ import CardInvet from "../../components/cards/CardInvent/CardInvet";
 import { useDispatch, useSelector } from "react-redux";
 import { chooseCardForBattle } from "../../store/company/companyActions";
 import { getCardsForBattle } from "../../store/company/companySlice";
+import style from "./CardsMenu.module.css";
+
 const CardsMenu = () => {
   const { inventory, oneUser } = useSelector((state) => state.users);
   const dispatch = useDispatch();
@@ -14,23 +16,16 @@ const CardsMenu = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: "50px", height: "350px", width: "100%" }}>
-      <p>Выбери карты для боя</p>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "20px",
-          width: "300px",
-          height: "100%",
-          overflowY: "auto",
-          border: "1px solid black",
-        }}
-      >
+    <div style={{ height: "85%", width: "auto" }}>
+      <p style={{ fontSize: "20px", fontWeight: "700", textAlign: "center" }}>
+        Выбери карты для боя
+      </p>
+      <div className={style.cardsMenu}>
         {oneUser && (
           <>
             {inventory.map((card) => (
               <div
+                style={{ margin: "10px", cursor: "pointer" }}
                 key={card.id}
                 onClick={() => {
                   chooseCardForBattle(card);

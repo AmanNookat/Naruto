@@ -2,10 +2,10 @@
 
 /* не удаляйте body */
 body {
-  background-image: url("https://s1.picswalls.com/wallpapers/2015/09/27/awesome-naruto-wallpaper_104040113_274.jpg");
+  /* background-image: url("https://moewalls.com/wp-content/uploads/2023/04/akatsuki-members-and-logo-thumb.jpg"); */
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
   background-color: black;
 }
 

@@ -49,7 +49,7 @@ const CartContent = () => {
                           <p>{card.cardItem.name}</p>
                         </td>
                         <td style={{ fontSize: "25px" }}>
-                          {card.cardItem.price}
+                          {card.cardItem.price}両
                         </td>
                         <td>
                           <input
@@ -65,7 +65,9 @@ const CartContent = () => {
                             }}
                           />
                         </td>
-                        <td style={{ fontSize: "25px" }}>{card.totalPrice}</td>
+                        <td style={{ fontSize: "25px" }}>
+                          {card.totalPrice}両
+                        </td>
                         <td>
                           <button
                             className="cart-button"

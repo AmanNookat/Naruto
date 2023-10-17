@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { attackAnimation } from "../../assets/attackAnimation";
 import "./AttackModal.css";
 
+
 const AttackModal = ({ setAttack, attack }) => {
   const { whoAttack } = useSelector((state) => state.company);
   console.log(whoAttack);
@@ -19,6 +20,7 @@ const AttackModal = ({ setAttack, attack }) => {
   return (
     <div className="attack--container">
       {whoAttack && <img src={attackAnimation(whoAttack)} alt="" />}
+
     </div>
   );
 };

@@ -6,6 +6,7 @@ import BattleMenu from "../BattleMenu/BattleMenu";
 import CardsMenu from "../CardsMenu/CardsMenu";
 import { cleanBattleSlots } from "../../store/company/companyActions";
 import CardsForBattle from "../CardsForBattle/CardsForBattle";
+import style from "./CompanyContent.module.css";
 
 const CompanyContent = () => {
   const { oneUser } = useSelector((state) => state.users);
@@ -21,29 +22,35 @@ const CompanyContent = () => {
 
   if (oneUser) {
     for (let i = 1; i <= oneUser.level; i++) {
-      oneLevel.push(<Level key={i} i={i} />);
+      oneLevel.push(<Level key={i} i={i} setModal={setModal} />);
     }
   }
 
   return (
     <>
-      <div
-        onClick={() => {
-          setModal(true);
+      <h1
+        style={{
+          color: "white",
+          textAlign: "center",
+          marginTop: "50px",
+          fontSize: "40px",
+          letterSpacing: "5px",
         }}
-        style={{ marginTop: "5%", display: "flex" }}
       >
-        {oneLevel}
-      </div>
-      <div style={{ position: "fixed", top: "0" }}>
+        КАРТА БИТВ
+      </h1>
+      <div className={style.companyContent}>{oneLevel}</div>
+      <>
         {modal && (
-          <>
-            <BattleMenu setModal={setModal} />
-            <CardsForBattle />
+          <div className={style.battleModal}>
+            <div className={style.enemyAndTeam}>
+              <BattleMenu setModal={setModal} />
+              <CardsForBattle />
+            </div>
             <CardsMenu />
-          </>
+          </div>
         )}
-      </div>
+      </>
     </>
   );
 };

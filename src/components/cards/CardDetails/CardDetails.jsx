@@ -35,7 +35,7 @@ const CardDetails = () => {
                 <div className="card--details__footer">
                   <div className="card--descr">
                     <p>Имя:{oneCard.name}</p>
-                    <p>Цена:{oneCard.price}$</p>
+                    <p>Цена:{oneCard.price}両</p>
                     <p>Сила:{oneCard.power}</p>
                     <p>Ранг:{oneCard.rank}</p>
                     <p>Рейтинг: {oneCard.rating}</p>

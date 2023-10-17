@@ -1,25 +1,33 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getOneLevel } from "../../store/company/companyActions";
+import style from "./Level.module.css";
 
-const Level = ({ i }) => {
+const Level = ({ i, setModal }) => {
   const dispatch = useDispatch();
 
   return (
     <>
       <div
-        style={{
-          border: "1px solid black",
-          padding: "20px",
-          // width: "100px",
-          // color: "white",
-        }}
+        className={style.level}
         onClick={() => {
+          setModal(true);
           dispatch(getOneLevel(i));
         }}
       >
-        Level {i}
+        <p>{i}</p>
+        <p>lvl</p>
       </div>
+      <span
+        style={{
+          fontSize: "30px",
+          marginRight: "10px",
+          color: "white",
+          opacity: "90%",
+        }}
+      >
+        ------{">"}
+      </span>
     </>
   );
 };
