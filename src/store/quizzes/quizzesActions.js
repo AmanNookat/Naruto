@@ -21,3 +21,11 @@ export const createQuiz = createAsyncThunk(
     await axios.post(QUIZZES_API, quiz);
   }
 );
+
+export const deleteQuiz = createAsyncThunk(
+  "quizzes/deleteQuiz",
+  async ({ id }, { dispatch }) => {
+    await axios.delete(`${QUIZZES_API}/${id}`);
+    dispatch(getQuizzes());
+  }
+);
