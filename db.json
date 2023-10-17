@@ -617,11 +617,63 @@
               "user": "s20 fe(865)"
             }
           ]
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://a-static.besthdwallpaper.com/sasuke-uchiha-chidori-blade-wallpaper-1920x1440-69037_25.jpg",
+          "price": 690,
+          "rank": "Чунин",
+          "power": 69,
+          "description": "С чидори",
+          "id": 26,
+          "comments": [
+            {
+              "id": 1697529192159,
+              "body": "крысападлаубил итачи",
+              "rating": 2,
+              "user": "s20"
+            },
+            {
+              "id": 1697530679935,
+              "body": "пока не дотягивает",
+              "rating": 3,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "2.5"
+        },
+        {
+          "name": "Бог",
+          "image": "https://media.tenor.com/C36aJZNAzgMAAAAC/teuchi-%D1%82%D0%B5%D1%83%D1%87%D0%B8.gif",
+          "price": 100000,
+          "rank": "Ооцуцуки",
+          "power": 0,
+          "description": "1",
+          "id": 40,
+          "comments": [
+            {
+              "id": 1697529628738,
+              "body": "хочу рамен",
+              "rating": 5,
+              "user": "s20"
+            }
+          ],
+          "rating": "5.0",
+          "likes": [
+            {
+              "id": 1697529640453,
+              "user": "s20"
+            },
+            {
+              "id": 1697530827915,
+              "user": "s20 fe(865)"
+            }
+          ]
         }
       ],
       "favorites": [],
       "isAdmin": true,
-      "points": 78122719,
+      "points": 39011014,
       "id": 2
     },
     {
