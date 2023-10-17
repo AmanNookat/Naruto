@@ -671,9 +671,44 @@
           ]
         }
       ],
-      "favorites": [],
+      "favorites": [
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 50,
+          "rank": "Чунин",
+          "power": 15,
+          "description": "Просто Ирука",
+          "id": 4,
+          "likes": [
+            {
+              "id": 1697528229638,
+              "user": "s20"
+            },
+            {
+              "id": 1697529837273,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528425784,
+              "body": "отец всех отцов",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530077199,
+              "body": "слабак",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "3.0"
+        }
+      ],
       "isAdmin": true,
-      "points": 39011014,
+      "points": 9752753,
       "id": 2
     },
     {
@@ -981,6 +1016,49 @@
       "isAdmin": false,
       "points": 0,
       "id": 6
+    },
+    {
+      "name": "y",
+      "mail": "y",
+      "password": "y",
+      "image": "y",
+      "level": 1,
+      "inventory": [
+        {
+          "name": "Сакура Харуно",
+          "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
+          "price": 10,
+          "rank": "Генин",
+          "power": 5,
+          "description": "Сакура на начало первого сезона",
+          "id": 3,
+          "likes": [
+            {
+              "id": 1697528228455,
+              "user": "s20"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528407254,
+              "body": "сакура бесполезный персонаж у которой даже грудь нулевого размера",
+              "rating": 1,
+              "user": "s20"
+            },
+            {
+              "id": 1697530017376,
+              "body": "Начальный уровень всегда будет слабоват так как начальный и я солидарен с верхним комментарием",
+              "rating": 2,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "1.5"
+        }
+      ],
+      "favorites": [],
+      "isAdmin": false,
+      "points": 0,
+      "id": 7
     }
   ],
   "cards": [

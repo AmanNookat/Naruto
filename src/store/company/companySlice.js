@@ -56,8 +56,9 @@ const companySlice = createSlice({
           Math.random() * state.cardsForBattle.length
         );
 
+        console.log(state.enemyPower);
         let updatedCardPower =
-          state.oneCardPower[enemyAttack] - state.oneLevel.enemy.power;
+          state.oneCardPower[enemyAttack] - state.enemyPower;
 
         notify(
           `${state.oneLevel.enemy.name} атаковал ${state.cardsForBattle[enemyAttack].name}`,
