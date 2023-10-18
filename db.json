@@ -1484,6 +1484,15 @@
             }
           ],
           "rating": "3.0"
+        },
+        {
+          "name": "1ывраыиывло",
+          "image": "data:image/jpeg;base64,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",
+          "price": 1,
+          "rank": "Генин",
+          "power": 1,
+          "description": "смапро",
+          "id": 41
         }
       ],
       "favorites": [
@@ -2025,7 +2034,7 @@
         }
       ],
       "isAdmin": true,
-      "points": 4850088,
+      "points": 4850087,
       "id": 2
     },
     {
@@ -2727,6 +2736,121 @@
       "isAdmin": false,
       "points": 0,
       "id": 10
+    },
+    {
+      "name": "madara",
+      "mail": "madara@gmail.com",
+      "password": "12345678",
+      "image": "https://static.wikia.nocookie.net/naruto/images/0/0c/Madara_img2.png/revision/latest?cb=20210227095726&path-prefix=ru",
+      "level": 1,
+      "inventory": [],
+      "favorites": [
+        {
+          "name": "Наруто Узумаки",
+          "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
+          "price": 200,
+          "rank": "Генин",
+          "power": 20,
+          "description": "Наруто с техникой множественного теневого клонирования",
+          "id": 1,
+          "likes": [
+            {
+              "id": 1697528225670,
+              "user": "s20"
+            },
+            {
+              "id": 1697581162779,
+              "user": "omin"
+            },
+            {
+              "id": 1697617659050,
+              "user": "madara"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528311473,
+              "body": "имба персонаж",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697529885414,
+              "body": "Начальный уровень всегда будет слабоват так как начальный",
+              "rating": 4,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "4.5"
+        },
+        {
+          "name": "Ирука Умино",
+          "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+          "price": 50,
+          "rank": "Чунин",
+          "power": 15,
+          "description": "Просто Ирука",
+          "id": 4,
+          "likes": [
+            {
+              "id": 1697528229638,
+              "user": "s20"
+            },
+            {
+              "id": 1697529837273,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528425784,
+              "body": "отец всех отцов",
+              "rating": 5,
+              "user": "s20"
+            },
+            {
+              "id": 1697530077199,
+              "body": "слабак",
+              "rating": 1,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "3.0"
+        },
+        {
+          "name": "Саске Учиха",
+          "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
+          "price": 190,
+          "rank": "Генин",
+          "power": 19,
+          "description": "Саске на начало первого сезона",
+          "id": 2,
+          "likes": [
+            {
+              "id": 1697528227049,
+              "user": "s20"
+            }
+          ],
+          "comments": [
+            {
+              "id": 1697528732694,
+              "body": "саске крыса падла убил итачи",
+              "rating": 3,
+              "user": "s20"
+            },
+            {
+              "id": 1697530117326,
+              "body": "пока слабоват",
+              "rating": 2,
+              "user": "s20 fe(865)"
+            }
+          ],
+          "rating": "2.5"
+        }
+      ],
+      "isAdmin": false,
+      "points": 0,
+      "id": 11
     }
   ],
   "cards": [
@@ -2746,6 +2870,10 @@
         {
           "id": 1697581162779,
           "user": "omin"
+        },
+        {
+          "id": 1697617659050,
+          "user": "madara"
         }
       ],
       "comments": [
@@ -2806,6 +2934,10 @@
         {
           "id": 1697528228455,
           "user": "s20"
+        },
+        {
+          "id": 1697617660611,
+          "user": "madara"
         }
       ],
       "comments": [
@@ -3904,123 +4036,6 @@
   ],
   "orders": [
     {
-      "user": "erkin",
-      "totalCost": 1000,
-      "cards": [
-        {
-          "count": 1,
-          "totalPrice": 500,
-          "cardItem": {
-            "name": "Саске Учиха",
-            "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
-            "price": "500",
-            "rank": "Генин",
-            "power": 18,
-            "description": "Саске на начало первого сезона",
-            "id": 2
-          }
-        },
-        {
-          "count": 1,
-          "totalPrice": 500,
-          "cardItem": {
-            "name": "Наруто Узумаки",
-            "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
-            "price": 500,
-            "rank": "Генин",
-            "power": 20,
-            "description": "Наруто с техникой множественного теневого клонирования",
-            "id": 1,
-            "likes": [
-              {
-                "id": 1697446318110,
-                "user": "atai"
-              }
-            ]
-          }
-        }
-      ],
-      "cardData": {
-        "number": "4890494351587277",
-        "expiry": "0126",
-        "cvc": "403",
-        "name": "ErKIN SHARSHENBAEV",
-        "focus": "cvc"
-      },
-      "id": 1
-    },
-    {
-      "user": "erkin",
-      "totalCost": 20500,
-      "cards": [
-        {
-          "count": 1,
-          "totalPrice": 5500,
-          "cardItem": {
-            "name": "Хаку",
-            "image": "https://i.pinimg.com/564x/5e/18/0b/5e180b20f9dd94f56276e7654e20e2de.jpg",
-            "price": 5500,
-            "rank": "Джонин",
-            "power": 105,
-            "description": "Жаль, что это он",
-            "id": 7,
-            "likes": [
-              {
-                "id": 1697446354205,
-                "user": "atai"
-              }
-            ]
-          }
-        },
-        {
-          "count": 1,
-          "totalPrice": 5000,
-          "cardItem": {
-            "name": "Забуза Момочи",
-            "image": "https://i.pinimg.com/originals/c3/74/0d/c3740d50408450257de2068bd5455088.jpg",
-            "price": 5000,
-            "rank": "Джонин",
-            "power": 100,
-            "description": "Просто Забуза",
-            "id": 6,
-            "likes": [
-              {
-                "id": 1697446348487,
-                "user": "atai"
-              }
-            ]
-          }
-        },
-        {
-          "count": 1,
-          "totalPrice": 10000,
-          "cardItem": {
-            "name": "Какаши Хатаке",
-            "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/19-hatake-kakashi-nguyen-hai.jpg",
-            "price": 10000,
-            "rank": "Джонин",
-            "power": 150,
-            "description": "Какаши в первом сезоне",
-            "id": 5,
-            "likes": [
-              {
-                "id": 1697446342553,
-                "user": "atai"
-              }
-            ]
-          }
-        }
-      ],
-      "cardData": {
-        "number": "4215890118759916",
-        "expiry": "0926",
-        "cvc": "613",
-        "name": "ErKIN SHARSHENBAEV",
-        "focus": "cvc"
-      },
-      "id": 2
-    },
-    {
       "user": "omin",
       "totalCost": 450,
       "cards": [
@@ -4177,6 +4192,172 @@
         "focus": "cvc"
       },
       "id": 3
+    },
+    {
+      "user": "madara",
+      "totalCost": 450,
+      "cards": [
+        {
+          "count": 1,
+          "totalPrice": 200,
+          "cardItem": {
+            "name": "Наруто Узумаки",
+            "image": "https://i.pinimg.com/550x/69/1e/09/691e09ece84be80542322b77a636dd99.jpg",
+            "price": 200,
+            "rank": "Генин",
+            "power": 20,
+            "description": "Наруто с техникой множественного теневого клонирования",
+            "id": 1,
+            "likes": [
+              {
+                "id": 1697528225670,
+                "user": "s20"
+              },
+              {
+                "id": 1697581162779,
+                "user": "omin"
+              },
+              {
+                "id": 1697617659050,
+                "user": "madara"
+              }
+            ],
+            "comments": [
+              {
+                "id": 1697528311473,
+                "body": "имба персонаж",
+                "rating": 5,
+                "user": "s20"
+              },
+              {
+                "id": 1697529885414,
+                "body": "Начальный уровень всегда будет слабоват так как начальный",
+                "rating": 4,
+                "user": "s20 fe(865)"
+              }
+            ],
+            "rating": "4.5"
+          }
+        },
+        {
+          "count": 1,
+          "totalPrice": 190,
+          "cardItem": {
+            "name": "Саске Учиха",
+            "image": "https://i.pinimg.com/736x/9b/1f/0d/9b1f0d5670999950a08e7fb920006e22.jpg",
+            "price": 190,
+            "rank": "Генин",
+            "power": 19,
+            "description": "Саске на начало первого сезона",
+            "id": 2,
+            "likes": [
+              {
+                "id": 1697528227049,
+                "user": "s20"
+              }
+            ],
+            "comments": [
+              {
+                "id": 1697528732694,
+                "body": "саске крыса падла убил итачи",
+                "rating": 3,
+                "user": "s20"
+              },
+              {
+                "id": 1697530117326,
+                "body": "пока слабоват",
+                "rating": 2,
+                "user": "s20 fe(865)"
+              }
+            ],
+            "rating": "2.5"
+          }
+        },
+        {
+          "count": 1,
+          "totalPrice": 10,
+          "cardItem": {
+            "name": "Сакура Харуно",
+            "image": "https://i.pinimg.com/originals/ad/69/3a/ad693a5904a5a5c5a0c255302571e40c.png",
+            "price": 10,
+            "rank": "Генин",
+            "power": 5,
+            "description": "Сакура на начало первого сезона",
+            "id": 3,
+            "likes": [
+              {
+                "id": 1697528228455,
+                "user": "s20"
+              },
+              {
+                "id": 1697617660611,
+                "user": "madara"
+              }
+            ],
+            "comments": [
+              {
+                "id": 1697528407254,
+                "body": "сакура бесполезный персонаж у которой даже грудь нулевого размера",
+                "rating": 1,
+                "user": "s20"
+              },
+              {
+                "id": 1697530017376,
+                "body": "Начальный уровень всегда будет слабоват так как начальный и я солидарен с верхним комментарием",
+                "rating": 2,
+                "user": "s20 fe(865)"
+              }
+            ],
+            "rating": "1.5"
+          }
+        },
+        {
+          "count": 1,
+          "totalPrice": 50,
+          "cardItem": {
+            "name": "Ирука Умино",
+            "image": "https://i.pinimg.com/originals/3e/05/e1/3e05e168de4e7c92f67eee25db4b5292.png",
+            "price": 50,
+            "rank": "Чунин",
+            "power": 15,
+            "description": "Просто Ирука",
+            "id": 4,
+            "likes": [
+              {
+                "id": 1697528229638,
+                "user": "s20"
+              },
+              {
+                "id": 1697529837273,
+                "user": "s20 fe(865)"
+              }
+            ],
+            "comments": [
+              {
+                "id": 1697528425784,
+                "body": "отец всех отцов",
+                "rating": 5,
+                "user": "s20"
+              },
+              {
+                "id": 1697530077199,
+                "body": "слабак",
+                "rating": 1,
+                "user": "s20 fe(865)"
+              }
+            ],
+            "rating": "3.0"
+          }
+        }
+      ],
+      "cardData": {
+        "number": "4901238109238091",
+        "expiry": "1234",
+        "cvc": "123",
+        "name": "Madara",
+        "focus": "cvc"
+      },
+      "id": 4
     }
   ],
   "quizzes": [
