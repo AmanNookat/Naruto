@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import FavoritesList from "../../favorites/FavoritesList";
 import CardInvet from "../../cards/CardInvent/CardInvet";
 import { getOneUser } from "../../../store/users/usersSlice";
@@ -76,6 +76,7 @@ const UserProfile = () => {
                     <p>{oneUser.name}</p>
                     <p>{oneUser.points} 両</p>
                     <p>{oneUser.level} уровень</p>
+                    <Link to="/users-rating">Рейтинг</Link>
                   </div>
                   <>
                     <FavoritesList />

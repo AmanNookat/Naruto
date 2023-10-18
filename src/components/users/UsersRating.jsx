@@ -13,13 +13,13 @@ const UsersRating = () => {
   return (
     <div
       style={{
-        backgroundColor: "white",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
       }}
+      className="ratingPage"
     >
-      <h1>ТАБЛИЦА ЛИДЕРОВ</h1>
+      <h1 style={{ color: "white" }}>ТАБЛИЦА ЛИДЕРОВ</h1>
       <ol style={{ listStyle: "decimal inside" }}>
         {usersSortByLevel.map((user) => (
           <div
@@ -31,6 +31,7 @@ const UsersRating = () => {
               borderRadius: "20px",
               marginBottom: "10px",
               alignItems: "center",
+              backgroundColor: "white",
             }}
             key={user.id}
           >
