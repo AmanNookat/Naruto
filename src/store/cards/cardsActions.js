@@ -127,7 +127,7 @@ export const toggleCardLike = createAsyncThunk(
 
 export const unlockCard = createAsyncThunk(
   "cards/unclockCard",
-  async ({ cardId }) => {
+  async ({ cardId, bool }) => {
     const { data } = await axios.get(`${CARDS_API}/${cardId}`);
     const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
     const checkCard = oneUser.inventory.find((oneCard) => oneCard.id == cardId);
@@ -135,6 +135,11 @@ export const unlockCard = createAsyncThunk(
     if (checkCard) {
       notify("Эта карта уже есть", NOTIFY_TYPES.error);
     } else {
+      if (bool) {
+        data.price = 0;
+        oneUser.points = oneUser.points - 777;
+      }
+
       if (oneUser.points >= data.price) {
         oneUser.points = +oneUser.points - +data.price;
         oneUser.inventory.push(data);
@@ -158,7 +163,7 @@ export const cardsRandomizer = createAsyncThunk(
       oneUser.points = oneUser.points - 777;
       const randomIndex = Math.floor(Math.random() * data.length);
       const oneCard = data[randomIndex];
-      dispatch(unlockCard({ cardId: oneCard.id }));
+      dispatch(unlockCard({ cardId: oneCard.id, bool: true }));
       await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
       addToLocalStorage(oneUser);
       return oneCard;
