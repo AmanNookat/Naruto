@@ -7,6 +7,7 @@ import CardsMenu from "../CardsMenu/CardsMenu";
 import { cleanBattleSlots } from "../../store/company/companyActions";
 import CardsForBattle from "../CardsForBattle/CardsForBattle";
 import style from "./CompanyContent.module.css";
+import { getUsers } from "../../store/users/usersActions";
 
 const CompanyContent = () => {
   const { oneUser } = useSelector((state) => state.users);

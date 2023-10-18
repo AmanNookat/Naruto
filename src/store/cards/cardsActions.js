@@ -154,13 +154,17 @@ export const cardsRandomizer = createAsyncThunk(
   async (_, { dispatch }) => {
     const { data } = await axios.get(CARDS_API);
     const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
-    oneUser.points = oneUser.points - 777;
-    const randomIndex = Math.floor(Math.random() * data.length);
-    const oneCard = data[randomIndex];
-    dispatch(unlockCard({ cardId: oneCard.id }));
-    await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
-    addToLocalStorage(oneUser);
-    return oneCard;
+    if (oneUser.points >= 777) {
+      oneUser.points = oneUser.points - 777;
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const oneCard = data[randomIndex];
+      dispatch(unlockCard({ cardId: oneCard.id }));
+      await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+      addToLocalStorage(oneUser);
+      return oneCard;
+    } else {
+      notify("недостаточно средств", NOTIFY_TYPES.warning);
+    }
   }
 );
 

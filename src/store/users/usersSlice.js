@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import {
   createUser,
   deleteCardFromFavorite,
+  getUsers,
   loginUser,
   savePoints,
   toggleCardFavorite,
@@ -16,6 +17,7 @@ const usersSlice = createSlice({
     oneUser: null,
     loading: false,
     inventory: [],
+    usersSortByLevel: [],
   },
   reducers: {
     clearOneUserState: (state) => {
@@ -62,6 +64,9 @@ const usersSlice = createSlice({
       })
       .addCase(deleteCardFromFavorite.fulfilled, (state, action) => {
         state.oneUser = action.payload;
+      })
+      .addCase(getUsers.fulfilled, (state, action) => {
+        state.usersSortByLevel = action.payload;
       });
   },
 });

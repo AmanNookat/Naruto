@@ -15,6 +15,7 @@ import MapPage from "../pages/MapPage/MapPage";
 import BattleField from "../company/BattleField/BattleField";
 import QuizCreate from "../components/quiz/QuizCreate";
 import CasePage from "../pages/CasePage/CasePage";
+import UsersRating from "../components/users/UsersRating";
 
 const MainRoutes = () => {
   return (
@@ -34,6 +35,7 @@ const MainRoutes = () => {
       <Route path="/battleField/:id" element={<BattleField />} />
       <Route path="/quiz-create" element={<QuizCreate />} />
       <Route path="/cases" element={<CasePage />} />
+      <Route path="/users-rating" element={<UsersRating />} />
     </Routes>
   );
 };

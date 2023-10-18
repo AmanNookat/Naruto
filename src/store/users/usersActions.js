@@ -93,3 +93,8 @@ export const deleteCardFromFavorite = createAsyncThunk(
     return oneUser;
   }
 );
+
+export const getUsers = createAsyncThunk("users/getUsers", async () => {
+  const { data } = await axios.get(`${USERS_API}?q=&_sort=level&_order=desc`);
+  return data;
+});
