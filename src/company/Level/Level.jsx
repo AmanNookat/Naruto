@@ -19,6 +19,7 @@ const Level = ({ i, setModal }) => {
         <p>lvl</p>
       </div>
       <span
+        className={`${style.arrow}`}
         style={{
           fontSize: "30px",
           marginRight: "10px",

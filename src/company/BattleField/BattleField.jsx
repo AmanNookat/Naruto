@@ -12,7 +12,6 @@ import { useParams } from "react-router-dom";
 import { getTeamPowers } from "../../helpers/functions";
 import BattleResult from "../BattleResult/BattleResult";
 import AttackModal from "../AttackModal/AttackModal";
-import style from "./BattleField.module.css";
 
 import "./BattleField.css";
 
@@ -55,13 +54,6 @@ const BattleField = () => {
       );
     }
   }, [oneLevel]);
-
-  // useEffect(() => {
-  //   return () => {
-  //     //   cleanBattleSlots();
-  //     //   dispatch(clearCardsForBattle());
-  //   };
-  // }, []);
 
   return (
     <div className="battle--field">

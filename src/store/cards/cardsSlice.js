@@ -1,5 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getCards, getCategories, getOneCard } from "./cardsActions";
+import {
+  cardsRandomizer,
+  getALlCards,
+  getCards,
+  getCategories,
+  getOneCard,
+} from "./cardsActions";
 
 const cardsSlice = createSlice({
   name: "cards",
@@ -14,6 +20,8 @@ const cardsSlice = createSlice({
     categories: [],
     sortByRating: "",
     priceRange: "",
+    allCards: [],
+    randomCard: null,
   },
   reducers: {
     clearOneCardState: (state) => {
@@ -80,6 +88,12 @@ const cardsSlice = createSlice({
       })
       .addCase(getCategories.fulfilled, (state, action) => {
         state.categories = action.payload;
+      })
+      .addCase(getALlCards.fulfilled, (state, action) => {
+        state.allCards = action.payload;
+      })
+      .addCase(cardsRandomizer.fulfilled, (state, action) => {
+        state.randomCard = action.payload;
       });
   },
 });

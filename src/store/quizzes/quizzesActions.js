@@ -14,3 +14,18 @@ export const getOneQuiz = createAsyncThunk(
     return data;
   }
 );
+
+export const createQuiz = createAsyncThunk(
+  "quizzes/createQuiz",
+  async ({ quiz }) => {
+    await axios.post(QUIZZES_API, quiz);
+  }
+);
+
+export const deleteQuiz = createAsyncThunk(
+  "quizzes/deleteQuiz",
+  async ({ id }, { dispatch }) => {
+    await axios.delete(`${QUIZZES_API}/${id}`);
+    dispatch(getQuizzes());
+  }
+);

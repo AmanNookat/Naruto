@@ -8,7 +8,12 @@ import {
   getTotalPages,
   notify,
 } from "../../helpers/functions";
-import { deleteCardFromCart } from "../cart/cartActions";
+import {
+  cleanCart,
+  deleteCardFromCart,
+  getCartData,
+  setCartData,
+} from "../cart/cartActions";
 import { deleteCardFromFavorite } from "../users/usersActions";
 import { deleteCardFromInventory } from "../users/usersSlice";
 
@@ -51,6 +56,19 @@ export const editCard = createAsyncThunk(
   "cards/editCard",
   async ({ card }, { dispatch }) => {
     await axios.patch(`${CARDS_API}/${card.id}`, card);
+
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+
+    oneUser.favorites = oneUser.favorites.map((oneCard) =>
+      oneCard.id == card.id ? card : oneCard
+    );
+    oneUser.inventory = oneUser.inventory.map((oneCard) =>
+      oneCard.id == card.id ? card : oneCard
+    );
+    cleanCart();
+    await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+    addToLocalStorage(oneUser);
+
     dispatch(getCards());
   }
 );
@@ -109,7 +127,7 @@ export const toggleCardLike = createAsyncThunk(
 
 export const unlockCard = createAsyncThunk(
   "cards/unclockCard",
-  async ({ cardId }) => {
+  async ({ cardId, bool }) => {
     const { data } = await axios.get(`${CARDS_API}/${cardId}`);
     const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
     const checkCard = oneUser.inventory.find((oneCard) => oneCard.id == cardId);
@@ -117,6 +135,11 @@ export const unlockCard = createAsyncThunk(
     if (checkCard) {
       notify("Эта карта уже есть", NOTIFY_TYPES.error);
     } else {
+      if (bool) {
+        data.price = 0;
+        oneUser.points = oneUser.points - 777;
+      }
+
       if (oneUser.points >= data.price) {
         oneUser.points = +oneUser.points - +data.price;
         oneUser.inventory.push(data);
@@ -130,3 +153,27 @@ export const unlockCard = createAsyncThunk(
     return oneUser;
   }
 );
+
+export const cardsRandomizer = createAsyncThunk(
+  "cards/cardsRandomizer",
+  async (_, { dispatch }) => {
+    const { data } = await axios.get(CARDS_API);
+    const oneUser = JSON.parse(localStorage.getItem("NarutoUser"));
+    if (oneUser.points >= 777) {
+      oneUser.points = oneUser.points - 777;
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const oneCard = data[randomIndex];
+      dispatch(unlockCard({ cardId: oneCard.id, bool: true }));
+      await axios.patch(`${USERS_API}/${oneUser.id}`, oneUser);
+      addToLocalStorage(oneUser);
+      return oneCard;
+    } else {
+      notify("недостаточно средств", NOTIFY_TYPES.warning);
+    }
+  }
+);
+
+export const getALlCards = createAsyncThunk("cards/getAllCards", async () => {
+  const { data } = await axios.get(CARDS_API);
+  return data;
+});

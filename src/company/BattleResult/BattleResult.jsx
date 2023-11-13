@@ -31,7 +31,7 @@ const BattleResult = ({ resultModal, cardsForBattle }) => {
           ) : (
             <div className={style.loseModal}>
               <h1>ПОРАЖЕНИЕ</h1>
-              <p>К сожалению вы потеряли половину своих очков</p>
+              <p>К сожалению, вы потеряли половину своих очков</p>
               <Link className="returnLink" to="/company">
                 Вернуться
               </Link>

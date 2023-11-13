@@ -1,4 +1,4 @@
-.cardEditPage {
+.quiz-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -6,14 +6,14 @@
   align-items: center;
 }
 
-.cardEditPage::before {
+.quiz-container::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://moewalls.com/wp-content/uploads/2023/04/akatsuki-members-and-logo-thumb.jpg");
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1612118482566-UAK7L5MO552SWFEPH6VD/Naruto14.jpg");
   filter: brightness(50%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@
   z-index: -1;
 }
 
-.cardEditForm {
+.quiz-form {
   width: 30rem;
   height: auto;
   display: flex;
@@ -33,15 +33,8 @@
   border-radius: 20px;
   backdrop-filter: blur(5px);
 }
-.cardEditForm h1 {
-  font-size: 150%;
-  margin: 20px 0;
-  border: 2px solid black;
-  padding: 1%;
-  border-radius: 10px;
-}
 
-.cardEditForm input {
+.quiz-form input {
   margin: 7px 0;
   width: 85%;
   border-radius: 10px;
@@ -51,31 +44,21 @@
   cursor: pointer;
 }
 
-.cardEditForm select {
+.button {
+  background-color: rgb(12, 67, 87);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.quiz-form select {
   width: 90%;
   border-radius: 10px;
   padding: 2%;
   color: white;
   background-color: black;
   cursor: pointer;
-}
-
-.cardEditForm textarea {
-  width: 85%;
-  border-radius: 10px;
-  padding: 2%;
-  color: white;
-  background-color: black;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.cardEditForm button {
-  background-color: rgb(249, 100, 0);
-  color: white;
-  padding: 3%;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
 }

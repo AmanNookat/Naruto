@@ -126,7 +126,7 @@ const CardFooter = ({ card }) => {
           />
           <button
             onClick={() => {
-              dispatch(unlockCard({ cardId: card.id }));
+              dispatch(unlockCard({ cardId: card.id, bool: false }));
             }}
             className="CardPrice"
           >

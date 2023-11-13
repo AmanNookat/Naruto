@@ -8,6 +8,7 @@ export const addToLocalStorage = (user) => {
 
 export const logout = () => {
   localStorage.removeItem("NarutoUser");
+  localStorage.removeItem("NarutoCart");
 };
 
 export const checkUserLogin = () => {

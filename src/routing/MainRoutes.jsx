@@ -10,10 +10,12 @@ import CardEditPage from "../pages/CardEditPage/CardEditPage";
 import CartPage from "../pages/CartPage/CartPage";
 import QuizzesPage from "../pages/QuizzesPage/QuizzesPage";
 import OneQuiz from "../components/quiz/OneQuiz";
-import FavoritesPage from "../pages/FavoritesPage/FavoritesPage";
 import ProfilePage from "../pages/ProfilePage/ProfilePage";
 import MapPage from "../pages/MapPage/MapPage";
 import BattleField from "../company/BattleField/BattleField";
+import QuizCreate from "../components/quiz/QuizCreate";
+import CasePage from "../pages/CasePage/CasePage";
+import UsersRating from "../components/users/UsersRating";
 
 const MainRoutes = () => {
   return (
@@ -28,10 +30,12 @@ const MainRoutes = () => {
       <Route path="/cart" element={<CartPage />} />
       <Route path="/quizzes" element={<QuizzesPage />} />
       <Route path="/quizzes/:id" element={<OneQuiz />} />
-      {/* <Route path="/favorites/:id" element={<FavoritesPage />} /> */}
       <Route path="/user/:id" element={<ProfilePage />} />
       <Route path="/company" element={<MapPage />} />
       <Route path="/battleField/:id" element={<BattleField />} />
+      <Route path="/quiz-create" element={<QuizCreate />} />
+      <Route path="/cases" element={<CasePage />} />
+      <Route path="/users-rating" element={<UsersRating />} />
     </Routes>
   );
 };

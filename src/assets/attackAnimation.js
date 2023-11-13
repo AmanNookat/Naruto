@@ -1,4 +1,5 @@
 export const attackAnimation = (id) => {
+  // dmklsjkl
   switch (id) {
     case 1:
       return "https://media.tenor.com/r7vnUW8nRVIAAAAd/naruto-clone-failed-clone-jutsu.gif";

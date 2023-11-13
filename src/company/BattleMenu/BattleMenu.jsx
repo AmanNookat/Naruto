@@ -2,13 +2,10 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { cleanBattleSlots } from "../../store/company/companyActions";
 import { useNavigate } from "react-router-dom";
-import {
-  clearCardsForBattle,
-  getCardsForBattle,
-} from "../../store/company/companySlice";
+import { clearCardsForBattle } from "../../store/company/companySlice";
 import { NOTIFY_TYPES, notify } from "../../helpers/functions";
-import CardInvet from "../../components/cards/CardInvent/CardInvet";
 import { Button } from "@mui/material";
+import CardInvet from "../../components/cards/CardInvent/CardInvet";
 
 const BattleMenu = ({ setModal }) => {
   const { oneLevel, cardsForBattle } = useSelector((state) => state.company);

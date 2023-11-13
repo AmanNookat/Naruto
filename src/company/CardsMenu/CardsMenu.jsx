@@ -9,12 +9,6 @@ const CardsMenu = () => {
   const { inventory, oneUser } = useSelector((state) => state.users);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    return () => {
-      //   cleanBattleSlots();
-    };
-  }, []);
-
   return (
     <div style={{ height: "85%", width: "auto" }}>
       <p style={{ fontSize: "20px", fontWeight: "700", textAlign: "center" }}>

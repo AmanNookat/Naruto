@@ -6,7 +6,6 @@ import "./AttackModal.css";
 
 const AttackModal = ({ setAttack, attack }) => {
   const { whoAttack } = useSelector((state) => state.company);
-  console.log(whoAttack);
   useEffect(() => {
     if (attack) {
       const timer = setTimeout(() => {
